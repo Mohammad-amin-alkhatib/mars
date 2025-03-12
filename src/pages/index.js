@@ -1,3 +1,4 @@
+import LetsWorkTogether from "@/components/LetsWorkTogether";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,10 +11,11 @@ export default function Home() {
       </Head>
       <div
       >
-        <main>
-        </main>
-        <footer >
-        </footer>
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        <LetsWorkTogether hasTransperantBackground={true} />
       </div>
     </>
   );

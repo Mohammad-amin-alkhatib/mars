@@ -37,24 +37,7 @@
     text-align: justify;
 }
 
-.learnMore {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    color: $black-200;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 28px;
-
-    &:hover {
-        .learnMoreIcon {
-            color: $orange;
-        }
-    }
-
-}
-
-.learnMoreIcon {
-    color: $black-200;
+.learnMore span {
+    font-size: 20px !important;
+    line-height: 28px !important;
 }

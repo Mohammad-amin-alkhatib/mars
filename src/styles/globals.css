@@ -127,7 +127,6 @@ main {
   background-color: #FAFAFA;
 }
 
-footer,
-main {
-  padding: 0 100px;
+.backgroundImageFooter {
+  background: url('../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
 }

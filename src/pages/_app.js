@@ -5,10 +5,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <link href="https://fonts.cdnfonts.com/css/gibson-walsh" rel="stylesheet"></link>
+      {/* Navbar */}
       <main>
         <Component {...pageProps} />
       </main>
-      <Footer />
+      <Footer className={pageProps.footerClassName}/>
     </>
   );
 }

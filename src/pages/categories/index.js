@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import CardContainer from '@/components/CardContainer';
+import LetsWorkTogether from '@/components/LetsWorkTogether';
 import styles from '@/styles/pages/products.module.scss';
 
 const ProductsPage = ({ categories }) => {
@@ -9,7 +10,7 @@ const ProductsPage = ({ categories }) => {
         <div>
             {/* Header */}
             <CardContainer className={styles.cards} cards={categories} />
-            {/* Lets work Together */}
+            <LetsWorkTogether />
         </div>
     )
 };
@@ -22,6 +23,7 @@ export const getServerSideProps = async () => {
     return {
         props: {
             categories,
+            footerClassName: 'backgroundImageFooter'
         }
     };
 };

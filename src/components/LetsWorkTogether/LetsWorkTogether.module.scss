@@ -1,0 +1,29 @@
+@import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
+
+.container {
+    background: url('../../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
+    padding: 80px 100px;
+    display: flex;
+    gap: 155px;
+}
+
+.transperatBackground {
+    background: none;
+}
+
+.textPart {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.title {
+    color: $black-200;
+    font: 600 60px $gibson;
+}
+
+.descitpion {
+    color: $black-200;
+    font: 400 20px $gibson;
+}

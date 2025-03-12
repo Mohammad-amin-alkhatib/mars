@@ -1,0 +1,25 @@
+@import '../../styles/variables/fonts.scss';
+@import '../../styles/variables/colors.scss';
+
+.container {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: $black-200;
+
+    &:hover {
+        .arrow {
+            color: $orange;
+        }
+    }
+}
+
+.arrow {
+    height: 41px;
+    width: 41px;
+}
+
+.text {
+    font: 600 30px $gibson;
+}
