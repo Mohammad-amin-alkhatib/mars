@@ -1,0 +1,61 @@
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1440px,
+    ) !default;
+
+@mixin bp-above($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint
+        );
+
+    @media (min-width: ($breakpoint-value + 1px)) {
+        @content;
+    }
+}
+
+// If the breakpoint doesn't exist in the map.
+@else {
+    @warn 'Invalid breakpoint (bp-above): #{$breakpoint}.';
+}
+}
+
+@mixin bp-below($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media (max-width: ($breakpoint-value)) {
+            @content;
+        }
+
+        // If the breakpoint doesn't exist in the map.
+    }
+
+    @else {
+        @warn 'Invalid breakpoint (bp-below): #{$breakpoint}.';
+    }
+}
+
+@mixin bp-between($lower, $upper) {
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+        $lower-breakpoint: map-get($breakpoints, $lower);
+        $upper-breakpoint: map-get($breakpoints, $upper);
+
+        @media (min-width: ($lower-breakpoint + 1)) and (max-width: $upper-breakpoint) {
+            @content;
+        }
+
+        // If one or both of the breakpoints don't exist.
+    }
+
+    @else {
+        @if (map-has-key($breakpoints, $lower)==false) {
+            @warn 'Your lower breakpoint was invalid (bp-between): #{$lower}.';
+        }
+
+        @if (map-has-key($breakpoints, $upper)==false) {
+            @warn 'Your upper breakpoint was invalid (bp-between): #{$upper}.';
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/fonts.scss";
+
+
+.footer {
+    background-color: $black-100;
+    padding: 60px 55px;
+}
+
+.logo {
+    width: 196.414px;
+    height: 22.75px;
+}
+
+.navigationFooter {
+    display: flex;
+    align-items: center;
+    gap: 134px;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px
+}
+
+.navigationItem {
+    color: $white;
+    font: 20px $gibson;
+    text-decoration-line: underline;
+}
+
+.socialBlock {
+    display: flex;
+    gap: 20px;
+}
+
+.socialIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 66px;
+}
+
+.contactLabel {
+    background-color: $orange;
+    color: $white;
+    font: 20px $gibson;
+    padding: 0 7px;
+    width: fit-content;
+}
+
+.contactItems {
+    font: 18px $gibson;
+    color: $white;
+}
+
+.contactKey {
+    text-transform: capitalize;
+}
+
+.copyRight {
+    margin-top: 50px;
+    border-top: 1px solid $white;
+}
+
+.copyRightText {
+    color: $white;
+    display: flex;
+    font: 18px $gibson;
+    gap: 40px;
+    margin-top: 50px;
+}

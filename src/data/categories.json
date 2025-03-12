@@ -1,0 +1,32 @@
+[
+    {
+        "id": "nav",
+        "title": "MARSNAV",
+        "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+        "image": "products.png"
+    },
+    {
+        "id": "ecu",
+        "title": "ECU",
+        "description": "An electronic device designed to enhance engine performance by regulating various actuators within the engine. By optimizing fuel injection timing, controlling the amount of fuel injected, and adjusting ignition timing, the ECU plays a crucial role in reducing fuel consumption and minimizing pollutant emissions.",
+        "image": "products.png"
+    },
+    {
+        "id": "anthena",
+        "title": "ANTENNA TRACKER",
+        "description": "The Antenna Tracker developed for BVLOS missions that requires table, high-quality communication between the ground station and UAVs, especially in environments with considerable obstructions and interference. It is an indispensable asset in expanding the boundaries of UAV operations, and consequently, improving the quality of data received and the effectiveness of the mission.",
+        "image": "products.png"
+    },
+    {
+        "id": "marsfly",
+        "title": "MARSFly",
+        "description": "An autonomous flight management system consists of multiple avionics systems, including autopilot, ground station, and user interface. MARS Fly’s design flexibility and commitment to continuous development ensure that the system can be tailored to meet the unique needs and preferences of customers while adapting to evolving market demands.",
+        "image": "products.png"
+    },
+    {
+        "id": "eyeGamble",
+        "title": "MARS EYE MINI GIMBAL",
+        "description": "Compact and agile, our Mini Gimbal for UAVs delivers stabilized imaging capabilities, empowering aerial platforms with precision and versatility.",
+        "image": "products.png"
+    }
+]

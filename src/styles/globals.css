@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  -moz-font-feature-settings: 'kern';
+  -moz-font-kerning: normal;
+  -moz-font-variant-ligatures: common-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-family: 'Graphik', sans-serif;
+  font-feature-settings: 'kern';
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  overflow-x: hidden;
+  text-rendering: optimizelegibility;
+  width: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+p a {
+  color: #003891;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+li {
+  -webkit-font-smoothing: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  color: inherit;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+}
+
+footer,
+main {
+  padding: 0 100px;
+}
