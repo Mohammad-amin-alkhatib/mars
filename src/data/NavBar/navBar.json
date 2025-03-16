@@ -1,0 +1,79 @@
+[
+    {
+        "title": "About",
+        "url": "/about",
+        "hasDropDown": false
+    },
+    {
+        "title": "Solutions",
+        "url": "/solutions",
+        "hasDropDown": true,
+        "dropDownItems": [
+            {
+                "title": "Products",
+                "menuItems": [
+                    {
+                        "subItem": "Navigation Solution",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "Antenna Tracker",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "The Engine Control Unit (ECU)",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "Mars Eye Mini Gimbal",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "MARSFly",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "UAVs System Design",
+                        "url": ""
+                    }
+                ]
+            },
+            {
+                "title": "Services",
+                "menuItems": [
+                    {
+                        "subItem": "Systems Operation & Integration",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "Structure, Mechanics & System Design",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "Aeronautical Stress Engineering",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "Simulation",
+                        "url": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Geomatics & RS",
+        "url": "/geomatics",
+        "hasDropDown": false
+    },
+    {
+        "title": "Media",
+        "url": "/media",
+        "hasDropDown": false
+    },
+    {
+        "title": "Careers",
+        "url": "/careers",
+        "hasDropDown": false
+    }
+]

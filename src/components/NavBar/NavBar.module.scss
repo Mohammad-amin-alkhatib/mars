@@ -1,0 +1,46 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/fonts.scss";
+
+.navBarContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background-color: $main-bg;
+    gap: 40px;
+}
+
+.subItemsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.subNavItem {
+    font: 400 20px/100% $gibson;
+    white-space: nowrap;
+    position: relative;
+}
+
+.contactBtn {
+    border: 1px solid $black-100;
+    width: 138px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 400 20px/100% $gibson;
+
+    &:hover {
+        background-color: $orange;
+        color: $white;
+        border-color: $orange;
+    }
+}
+
+.itemWrapper:hover {
+    a:first-child {
+        color: $orange;
+    }
+}

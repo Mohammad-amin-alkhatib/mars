@@ -1,0 +1,28 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/fonts.scss";
+
+.dropDownContainer {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: $white;
+    display: flex;
+    gap: 20px;
+}
+
+.dropDownWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropDownTitle {
+    font: 600 20px/18px $gibson;
+    margin-bottom: 10px;
+}
+
+.subItem {
+    font: 400 20px/18px $gibson;
+    color: #929492;
+    margin-bottom: 5px;
+}

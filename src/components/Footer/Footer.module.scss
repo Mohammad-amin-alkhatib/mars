@@ -20,6 +20,10 @@
     display: flex;
     align-items: center;
     gap: 134px;
+
+    path:first-child {
+        fill: $white;
+    }
 }
 
 .navigation {
