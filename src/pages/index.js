@@ -1,8 +1,11 @@
-import LetsWorkTogether from "@/components/LetsWorkTogether";
 import Head from "next/head";
+import React from "react";
+import LetsWorkTogether from "@/components/LetsWorkTogether";
 import styles from "./index.module.scss";
 import NavBar from "@/components/NavBar";
-import React from "react";
+import Banner from "@/components/Banner";
+import Card from "@/components/Card";
+import PIX from "@/assets/icons/pix.svg";
 
 export default function Home() {
   return (
@@ -13,14 +16,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div>
-        {/* <LetsWorkTogether
-          hasTransperantBackground={true}
-          imgSrc={'gears.svg'}
-          title={"Let's work together"}
-          discription={"Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success."}
-          href={"/contact"}
-          className={styles.worktogether}
-        /> */}
         <div className={styles.headerContainer}>
           <video autoPlay loop muted className={styles.video}>
             <source src="/homepageVideo.mp4" type="video/mp4" />
@@ -32,7 +27,53 @@ export default function Home() {
             className={styles.header}
           />
         </div>
-      </div>
+        <Banner
+          title={"EXPLORE OUR SOLUTIONS"}
+          text={"( Fill Text ) we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies."}
+        />
+        <div className={styles.servicesSection}>
+          <div className={styles.containerServices}>
+            <Card
+              description={"We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."}
+              title={"Products"}
+              image={"products.png"}
+              href={"uavs-system-design"}
+            />
+            <Card
+              description={"We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."}
+              title={"Services"}
+              image={"services.svg"}
+              href={"uavs-system-design"}
+            />
+          </div>
+          <p className={styles.serviceDescription}>we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies. (fill text) </p>
+        </div>
+        <LetsWorkTogether
+          className={styles.whyChooseSection}
+          title={"Why Choose MARS Robotics"}
+          imgSrc={'lampInHand.svg'}
+          description={[
+            "Innovation: We are constantly pushing the boundaries of robotic technology.",
+            "Focus on You: our solutions are customer-centric, tailored to meet your needs and challenges.",
+            "ITAR-Free Advantage: Our solutions are not subject to ITAR restrictions, making them accessible to a wider audience.",
+            "Reliable Partner: We are committed to providing you with the support and expertise you need to succeed."
+          ]}
+          listStyle={true}
+        />
+        <div className={styles.pixSection}>
+          {Array(5).fill(0).map((_, index) => (
+            <div key={index} className={styles.pixIcon}>
+              <PIX />
+            </div>
+          ))}
+        </div>
+        <LetsWorkTogether
+          title={"Let's Work Together"}
+          description={"Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success."}
+          href={"/contact"}
+          imgSrc={'work-together.svg'}
+        />
+      </div >
     </>
   );
 }

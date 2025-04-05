@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
     subsets: ['latin'],
 })
 
-const Card = ({ title, description, image, id }) => {
+const Card = ({ title, description, image, href }) => {
     return (
         <div className={styles.container}>
             <div className={styles.image}>
@@ -23,7 +23,7 @@ const Card = ({ title, description, image, id }) => {
                 <Arrow className={styles.learnMoreIcon} />
                 <span>Learn more</span>
             </Link> */}
-            <ArrowButton text="Learn More" href={`/category/${id}`} className={styles.learnMore}/>
+            <ArrowButton text="Learn More" href={href} className={styles.learnMore}/>
         </div>
     );
 }

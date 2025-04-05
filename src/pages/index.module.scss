@@ -1,4 +1,6 @@
 @import '../styles/variables/breakpoints.scss';
+@import '../styles/variables/colors.scss';
+@import '../styles/variables/fonts.scss';
 
 .headerContainer {
     position: relative;
@@ -6,7 +8,7 @@
 
 .worktogether {
     @include bp-below(medium) {
-       flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
 
@@ -21,4 +23,31 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.servicesSection {
+    margin: 40px 100px;
+}
+
+.containerServices {
+    display: flex;
+    gap: 40px;
+}
+
+
+.whyChooseSection {
+    background: url('../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
+}
+
+.serviceDescription {
+    margin-top: 50px;
+    color: $black-200;
+    font: 400 20px $gibson;
+}
+
+.pixSection {
+    padding: 40px 100px;
+    display: flex;
+    gap: 50px;
+    background-color: $orange;
 }

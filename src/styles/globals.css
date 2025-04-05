@@ -28,6 +28,7 @@ body {
   overflow-x: hidden;
   text-rendering: optimizelegibility;
   width: 100%;
+  background-color: #FAFAFA;
 }
 
 article,
@@ -125,9 +126,8 @@ dd {
 
 main {
   min-height: 100vh;
-  background-color: #FAFAFA;
 }
 
-.backgroundImageFooter {
+/* .backgroundImageFooter {
   background: url('../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
-}
+} */

@@ -23,7 +23,6 @@ export const getServerSideProps = async () => {
     return {
         props: {
             categories,
-            footerClassName: 'backgroundImageFooter'
         }
     };
 };

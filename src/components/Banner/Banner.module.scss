@@ -1,0 +1,20 @@
+@import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
+
+.container {
+    background-color: $black-200;
+    padding: 60px 100px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font: 600 48px/130% 'Gibson', sans-serif;
+    letter-spacing: -1.44px;
+}
+
+.text {
+    font: 400 20px 'Gibson', sans-serif;
+    max-width: 550px;
+}
