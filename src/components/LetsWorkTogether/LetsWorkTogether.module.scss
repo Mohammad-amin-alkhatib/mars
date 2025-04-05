@@ -40,25 +40,29 @@
 }
 
 .scaleAnimation {
-    animation: scaleFromLeft .5s ease-in-out forwards, removeBackground 0s ease 0.5s forwards;
+    animation: scaleFromLeft 0.5s ease-in-out forwards,
+        removeBackground 0.5s ease 0.5s forwards,
+        showText 0.5s ease 1s forwards;
     background-color: rgb(255, 86, 34);
-    color: white;
+    color: transparent;
     display: inline-block;
-    opacity: 1;
+    opacity: 0;
     transform-origin: 0% 50%;
     transform: scale(0, 1);
-    will-change: transform;
+    will-change: transform, opacity;
 }
 
 @keyframes scaleFromLeft {
     0% {
         background-color: rgb(255, 86, 34);
         transform: scale(0, 1);
+        opacity: 0;
     }
 
     100% {
         background-color: rgb(255, 86, 34);
         transform: scale(1, 1);
+        opacity: 1;
     }
 }
 
@@ -66,5 +70,11 @@
     100% {
         background-color: transparent;
         color: black;
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
     }
 }
