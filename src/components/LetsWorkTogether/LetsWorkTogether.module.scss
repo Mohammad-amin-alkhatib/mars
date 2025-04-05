@@ -38,3 +38,32 @@
     text-align: justify;
     font: 400 20px $gibson;
 }
+
+.scaleAnimation {
+    display: inline-block;
+    transform: scale(0, 1);
+    transform-origin: 0% 50%;
+    background-color: rgb(255, 86, 34);
+    opacity: 1;
+    color: white;
+    animation: scaleFromLeft .5s ease-in-out forwards, removeBackground 0s ease 0.5s forwards;
+}
+
+@keyframes scaleFromLeft {
+    0% {
+        transform: scale(0, 1);
+        background-color: rgb(255, 86, 34);
+    }
+
+    100% {
+        transform: scale(1, 1);
+        background-color: rgb(255, 86, 34);
+    }
+}
+
+@keyframes removeBackground {
+    100% {
+        background-color: transparent;
+        color: black;
+    }
+}
