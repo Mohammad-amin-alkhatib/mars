@@ -11,8 +11,9 @@ const LetsWorkTogether = ({
     imgSrc,
     description,
     href,
-    listStyle,
+    textButton,
     title }) => {
+    const listStyle = Array.isArray(description);
 
     const { ref, inView } = useInView({
         threshold: 0.1,
@@ -52,7 +53,7 @@ const LetsWorkTogether = ({
                         ))}
                     </ul>
                 )}
-                {href && <ArrowButton text="Contact Us" href={href} />}
+                {href && <ArrowButton text={textButton} href={href} />}
             </div>
             {!!imgSrc && <div className={styles.icon}>
                 <img src={imgSrc} />

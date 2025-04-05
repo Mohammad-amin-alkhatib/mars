@@ -1,13 +1,25 @@
-import Head from "next/head";
+// Packages
 import React from "react";
+import Head from "next/head";
+import path from "path";
+import fs from "fs";
+// Components
 import LetsWorkTogether from "@/components/LetsWorkTogether";
-import styles from "./index.module.scss";
 import NavBar from "@/components/NavBar";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
+// Styles
+import styles from "./index.module.scss";
+// Assets
 import PIX from "@/assets/icons/pix.svg";
 
-export default function Home() {
+export default function Home({
+  banner,
+  chooseUs,
+  header,
+  letsWorkTogether,
+  services,
+}) {
   return (
     <>
       <Head>
@@ -18,47 +30,38 @@ export default function Home() {
       <div>
         <div className={styles.headerContainer}>
           <video autoPlay loop muted className={styles.video}>
-            <source src="/homepageVideo.mp4" type="video/mp4" />
+            <source src={header.videoUrl} type="video/mp4" />
           </video>
           <NavBar />
           <LetsWorkTogether
-            title={'UAVs System Design'}
-            description={'MARS Robotics® focuses on the innovative design and development of advanced Unmanned Aerial Systems (UAS), covering a wide range from Group 1 to Group 4 classifications.'}
+            title={header?.title}
+            description={header?.description}
             className={styles.header}
           />
         </div>
         <Banner
-          title={"EXPLORE OUR SOLUTIONS"}
-          text={"( Fill Text ) we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies."}
+          title={banner?.title}
+          text={banner?.text}
         />
         <div className={styles.servicesSection}>
           <div className={styles.containerServices}>
-            <Card
-              description={"We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."}
-              title={"Products"}
-              image={"products.png"}
-              href={"uavs-system-design"}
-            />
-            <Card
-              description={"We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."}
-              title={"Services"}
-              image={"services.svg"}
-              href={"uavs-system-design"}
-            />
+            {services?.cards.map((card, index) => (
+              <Card
+                key={index}
+                description={card.description}
+                title={card.title}
+                image={card.image}
+                href={card.href}
+              />
+            ))}
           </div>
-          <p className={styles.serviceDescription}>we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies. (fill text) </p>
+          {!!services?.description && <p className={styles.serviceDescription}> {services.description}</p>}
         </div>
         <LetsWorkTogether
           className={styles.whyChooseSection}
-          title={"Why Choose MARS Robotics"}
-          imgSrc={'lampInHand.svg'}
-          description={[
-            "Innovation: We are constantly pushing the boundaries of robotic technology.",
-            "Focus on You: our solutions are customer-centric, tailored to meet your needs and challenges.",
-            "ITAR-Free Advantage: Our solutions are not subject to ITAR restrictions, making them accessible to a wider audience.",
-            "Reliable Partner: We are committed to providing you with the support and expertise you need to succeed."
-          ]}
-          listStyle={true}
+          title={chooseUs?.title}
+          imgSrc={chooseUs?.imgSrc}
+          description={chooseUs?.description}
         />
         <div className={styles.pixSection}>
           {Array(5).fill(0).map((_, index) => (
@@ -68,12 +71,26 @@ export default function Home() {
           ))}
         </div>
         <LetsWorkTogether
-          title={"Let's Work Together"}
-          description={"Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success."}
-          href={"/contact"}
-          imgSrc={'work-together.svg'}
+          title={letsWorkTogether?.title}
+          description={letsWorkTogether?.description}
+          href={letsWorkTogether?.href}
+          imgSrc={letsWorkTogether?.imgSrc}
+          textButton={letsWorkTogether?.buttonText}
         />
       </div >
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'src/data/homepage.json');
+  const jsonData = fs.readFileSync(filePath, 'utf8');
+  const data = JSON.parse(jsonData) || {};
+
+  return {
+    props: {
+      ...data
+    },
+  };
 }
