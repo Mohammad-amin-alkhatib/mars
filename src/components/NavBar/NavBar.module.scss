@@ -7,8 +7,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 80px 100px;
-    background-color: $main-bg;
     gap: 40px;
+}
+
+.mainLogo {
+    position: relative;
 }
 
 .subItemsWrapper {
@@ -24,6 +27,7 @@
 }
 
 .contactBtn {
+    position: relative;
     border: 1px solid $black-100;
     width: 138px;
     height: 64px;

@@ -1,45 +1,71 @@
 @import "../../styles/variables/colors.scss";
 @import "../../styles/variables/fonts.scss";
-
-
-.container {
-    padding: 0 100px;
-}
+@import "../../styles/variables/breakpoints.scss";
 
 .footer {
-    background-color: $black-100;
+    background-color: $black-400;
     padding: 60px 55px;
+
+    @include bp-below(medium) {
+        padding: 50px 30px;
+    }
 }
 
 .logo {
     width: 196.414px;
     height: 22.75px;
+
+    @include bp-below(medium) {
+        width: 219.537px;
+        height: 36px;
+    }
 }
 
 .navigationFooter {
     display: flex;
     align-items: center;
-    gap: 134px;
+    gap: 66px;
+    justify-content: space-between;
 
     path:first-child {
         fill: $white;
+    }
+
+    @include bp-below(medium) {
+        flex-direction: column;
+        gap: 37px;
     }
 }
 
 .navigation {
     display: flex;
-    gap: 40px
+    gap: 40px;
+
+    @include bp-below(medium) {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
 
 .navigationItem {
     color: $white;
     font: 20px $gibson;
-    text-decoration-line: underline;
+    text-decoration: none;
+    border-bottom: 1px solid $white;
+
+    @include bp-below(medium) {
+        border-bottom: none;
+    }
 }
 
 .socialBlock {
     display: flex;
     gap: 20px;
+
+    @include bp-below(medium) {
+        display: none;
+    }
 }
 
 .socialIcon {
@@ -52,19 +78,34 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 66px;
+
+    @include bp-below(medium) {
+        margin-top: 37px;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 .contactLabel {
     background-color: $orange;
     color: $white;
-    font: 20px $gibson;
+    font: 600 20px $gibson;
     padding: 0 7px;
     width: fit-content;
+
+    @include bp-below(medium) {
+        font-size: 18px;
+    }
 }
 
 .contactItems {
     font: 18px $gibson;
     color: $white;
+
+    @include bp-below(medium) {
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
 .contactKey {
@@ -74,6 +115,10 @@
 .copyRight {
     margin-top: 50px;
     border-top: 1px solid $white;
+
+    @include bp-below(medium) {
+        margin-top: 37px;
+    }
 }
 
 .copyRightText {
@@ -82,4 +127,23 @@
     font: 18px $gibson;
     gap: 40px;
     margin-top: 50px;
+
+    @include bp-below(medium) {
+        margin-bottom: 37px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        font-size: 16px;
+    }
+}
+
+.socialBlockSmalScreen {
+    display: none;
+
+    @include bp-below(medium) {
+        display: flex;
+        gap: 20px;
+        margin-top: 37px;
+        justify-content: center;
+    }
 }

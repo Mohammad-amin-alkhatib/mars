@@ -62,6 +62,10 @@ const Footer = ({ className }) => {
 						</div>
 					))}
 				</div>
+				<div className={styles.socialBlockSmalScreen}>
+						<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
+						<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
+					</div>
 				<div className={styles.copyRight}>
 					<div className={styles.copyRightText}>
 						<span>

@@ -1,11 +1,15 @@
 @import '../../styles/variables/colors.scss';
 @import '../../styles/variables/fonts.scss';
+@import '../../styles/variables/breakpoints.scss';
 
 .container {
-    background: url('../../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
     padding: 80px 100px;
     display: flex;
-    gap: 155px;
+    justify-content: space-between;
+
+    @include bp-below(medium) {
+        padding: 50px 30px;
+    }
 }
 
 .transperatBackground {
@@ -16,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    max-width: 550px;
 }
 
 .title {
