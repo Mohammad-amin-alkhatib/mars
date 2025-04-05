@@ -42,7 +42,7 @@ const LetsWorkTogether = ({
             <div className={styles.textPart}>
                 <h2 className={titleClassName} ref={titleRef}>{title}</h2>
                 <Separator className={styles.separator} />
-                {!!description?.length && !listStyle && <p className={styles.description}>{description}</p>}
+                {!!description?.length && !listStyle && <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}></div>}
                 {!!description?.length && listStyle && (
                     <ul className={styles.description}>
                         {description.map((item, index) => (

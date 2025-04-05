@@ -1,9 +1,9 @@
 // Packages
 import React from "react";
-import Head from "next/head";
 import path from "path";
 import fs from "fs";
 // Components
+import Head from "next/head";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 import NavBar from "@/components/NavBar";
 import Banner from "@/components/Banner";
@@ -12,6 +12,7 @@ import Card from "@/components/Card";
 import styles from "./index.module.scss";
 // Assets
 import PIX from "@/assets/icons/pix.svg";
+import InrtoHeader from "@/components/IntroHeader";
 
 export default function Home({
   banner,
@@ -28,17 +29,7 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div>
-        <div className={styles.headerContainer}>
-          <video autoPlay loop muted className={styles.video}>
-            <source src={header.videoUrl} type="video/mp4" />
-          </video>
-          <NavBar />
-          <LetsWorkTogether
-            title={header?.title}
-            description={header?.description}
-            className={styles.header}
-          />
-        </div>
+        <InrtoHeader header={header} />
         <Banner
           title={banner?.title}
           text={banner?.text}
