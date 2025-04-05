@@ -5,7 +5,6 @@ import fs from "fs";
 // Components
 import Head from "next/head";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
-import NavBar from "@/components/NavBar";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
 // Styles

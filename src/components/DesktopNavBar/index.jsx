@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import styles from "./NavBar.module.scss";
+import styles from "./DesktopNavBar.module.scss";
 import navBarData from "../../data/NavBar/navBar.json";
 import MarsLogo from "../../assets/icons/mars-logo.svg";
+import Plus from '../../assets/icons/plus.svg'
 import DropDownMenu from "@/components/DropDownMenu";
 
-const NavBar = () => {
+const DesktopNavBar = () => {
   const [isHoveredItem, setIsHoveredItem] = useState(false);
 
   return (
@@ -21,8 +22,9 @@ const NavBar = () => {
             onMouseLeave={() => setIsHoveredItem(false)}
           >
             <div className={styles.itemWrapper}>
+              {(item.hasDropDown && !isHoveredItem) && <Plus />}
               <a className={styles.subNavItem}>{item.title}</a>
-              {item.hasDropDown && isHoveredItem && (
+              {(item.hasDropDown && isHoveredItem) && (
                 <DropDownMenu items={item.dropDownItems} />
               )}
             </div>
@@ -34,4 +36,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default DesktopNavBar;

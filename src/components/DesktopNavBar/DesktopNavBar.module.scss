@@ -8,6 +8,10 @@
     justify-content: space-between;
     padding: 80px 100px;
     gap: 40px;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }
 
 .mainLogo {
@@ -40,6 +44,13 @@
         background-color: $orange;
         color: $white;
         border-color: $orange;
+    }
+}
+
+.itemWrapper {
+    svg {
+        position: relative;
+        margin-right: 5px;
     }
 }
 

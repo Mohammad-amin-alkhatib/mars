@@ -1,0 +1,35 @@
+@import "../../styles/variables/colors.scss";
+@import "../../styles/variables/fonts.scss";
+
+.navBarContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+}
+
+.logo {
+    width: 220px;
+}
+
+.hamMenu {
+    border: 1px solid black;
+    height: 60px;
+    width: 60px;
+    z-index: 20;
+    position: relative;
+}
+
+.menuOpen {
+    border-color: white;
+
+    g {
+        fill: white;
+    }
+}
