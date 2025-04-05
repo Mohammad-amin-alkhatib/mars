@@ -1,7 +1,10 @@
+// Packages
 import cx from "classnames";
-import styles from "./IntroHeader.module.scss";
+// Components
 import NavBar from "../NavBar";
 import LetsWorkTogether from "../LetsWorkTogether";
+// Styles
+import styles from "./IntroHeader.module.scss";
 
 const InrtoHeader = ({ header }) => {
     return (
@@ -10,7 +13,6 @@ const InrtoHeader = ({ header }) => {
                 { [styles.headerContainerImage]: !header?.imgSrc })}
             {...(header?.imgSrc && {
                 style: {
-                    position: "absolute",
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                 },
             })}>

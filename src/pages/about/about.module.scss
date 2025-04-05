@@ -1,0 +1,9 @@
+@import '../../styles/variables/colors.scss';
+
+.ourMission {
+    background-color: $black-400;
+}
+
+.ourVision {
+    flex-direction: row-reverse;
+}

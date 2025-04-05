@@ -12,6 +12,8 @@ const LetsWorkTogether = ({
     description,
     href,
     textButton,
+    darkMode = false,
+    descriptionTitle,
     title }) => {
     const listStyle = Array.isArray(description);
 
@@ -38,10 +40,13 @@ const LetsWorkTogether = ({
     });
 
     return (
-        <div className={cx(styles.container, className)} ref={ref}>
+        <div className={cx(styles.container, {
+            [styles.darkMode]: darkMode,
+        }, className)} ref={ref}>
             <div className={styles.textPart}>
                 <h2 className={titleClassName} ref={titleRef}>{title}</h2>
                 <Separator className={styles.separator} />
+                {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
                 {!!description?.length && !listStyle && <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}></div>}
                 {!!description?.length && listStyle && (
                     <ul className={styles.description}>
