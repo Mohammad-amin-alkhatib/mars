@@ -38,7 +38,7 @@ const Form = ({ className }) => {
                     </div>
                     <div className={styles.inputGroup}>
                         <label htmlFor="name">Email</label>
-                        <input type="email" className={styles.input} {...register('email', { required: true })} placeholder="email" />
+                        <input type="email" className={styles.input} {...register('email', { required: true })} placeholder="Email" />
                     </div>
                     <div className={styles.inputGroup}>
                         <label htmlFor="message">Message</label>
