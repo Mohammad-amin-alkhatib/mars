@@ -1,3 +1,5 @@
+@import '../../styles/variables/breakpoints.scss';
+
 .header {
     background-position-y: 70% !important;
 }
@@ -6,9 +8,21 @@
     margin: 0px 100px;
     display: flex;
     gap: 40px;
+
+    @include bp-below('large') {
+        flex-direction: column-reverse;
+    }
+
+    @include bp-below('medium') {
+        margin: 0px 30px;
+    }
 }
 
 .location {
     width: 100%;
     max-width: 480px;
+
+    @include bp-below('large') {
+        max-width: 100%;
+    }
 }
