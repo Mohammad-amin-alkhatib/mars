@@ -10,7 +10,6 @@
     }
   }
 
-
 .mobileMenu {
     position: fixed;
     top: 0;
@@ -32,6 +31,9 @@
   }
 
   .navLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     text-decoration: none;
     padding: 15px 0;
@@ -51,10 +53,45 @@
 
   .contactButton {
     display: inline-block;
-    background-color: #e8643e;
+    background-color: $orange;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+  }
+
+  .backIcon {
+    margin: 75px 0 -75px 40px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    path:first-child {
+      fill: $orange;
+    }
+  }
+
+  .subItemsContainer {
+    margin-left: 15px;
+    padding: 5px 0 10px 10px;
+  }
+
+  .subItemsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .subItem {
+    margin-bottom: 8px;
+  }
+
+  .subItemLink {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
   }

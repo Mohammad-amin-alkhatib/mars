@@ -10,7 +10,7 @@
     padding: 80px 100px;
     gap: 40px;
 
-    @include bp-below(medium) {
+    @include bp-below(large) {
         display: none;
     }
 }
