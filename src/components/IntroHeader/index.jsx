@@ -7,11 +7,12 @@ import LetsWorkTogether from "../LetsWorkTogether";
 // Styles
 import styles from "./IntroHeader.module.scss";
 
-const InrtoHeader = ({ header }) => {
+const InrtoHeader = ({ header, className }) => {
     return (
         <div
             className={cx(styles.headerContainer,
-                { [styles.headerContainerImage]: !header?.imgSrc })}
+                { [styles.headerContainerImage]: !header?.imgSrc }
+            , className)}
             {...(header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,

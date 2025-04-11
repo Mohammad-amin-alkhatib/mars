@@ -1,0 +1,68 @@
+@import '../../styles/variables/breakpoints.scss';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
+
+.container {
+    padding: 60px 30px 60px 100px;
+    background: #F3F3F3;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    color: #2E3134;
+    font: 18px $gibson;
+}
+
+.input {
+    padding: 18px 30px;
+}
+
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.checkbox {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    accent-color: $orange;
+}
+
+.submit {
+    padding: 20px 35px;
+    background: var(--MarsGray-light, #767E87);
+    color: #FFF;
+
+    text-align: center;
+    /* p */
+    font-family: Gibson;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.error {
+    color: red;
+    font-family: $gibson;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
