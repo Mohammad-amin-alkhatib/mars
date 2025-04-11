@@ -1,5 +1,6 @@
 @import "../../styles/variables/colors.scss";
 @import "../../styles/variables/fonts.scss";
+@import "../../styles/variables/breakpoints.scss";
 
 .navBarContainer {
     position: relative;
@@ -9,7 +10,7 @@
     padding: 60px 30px;
     width: 100%;
 
-    @media screen and (min-width: 480px) {
+    @include bp-above(medium) {
         display: none;
     }
 }

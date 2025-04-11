@@ -11,7 +11,7 @@
 .servicesSection {
     margin: 40px 100px;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         margin: 35px 45px;
      }
 }
@@ -20,7 +20,7 @@
     display: flex;
     gap: 40px;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
        flex-direction: column;
     }
 }
@@ -35,7 +35,7 @@
     color: $black-200;
     font: 400 20px $gibson;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         font-size: 16px;
         text-align: justify;
     }
@@ -47,7 +47,7 @@
     gap: 50px;
     background-color: $orange;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         overflow-x: scroll;
     }
 }

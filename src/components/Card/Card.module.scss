@@ -12,7 +12,7 @@
     padding: 50px;
     width: calc(50% - 25px);
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         width: 100%;
         padding: 25px;
     }
@@ -36,7 +36,7 @@
         border-color: $orange;
     }
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         font-size: 26px;
     }
 }
@@ -46,7 +46,7 @@
     font: 18px $gibson;
     text-align: justify;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         font-size: 16px;
         text-align: left;
     }
@@ -56,7 +56,8 @@
     font-size: 20px !important;
     line-height: 28px !important;
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         font-size: 18px;
     }
 }
+

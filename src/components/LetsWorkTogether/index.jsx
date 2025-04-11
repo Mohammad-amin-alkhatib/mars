@@ -44,6 +44,9 @@ const LetsWorkTogether = ({
             [styles.darkMode]: darkMode,
         }, className)} ref={ref}>
             <div className={styles.textPart}>
+                {!!imgSrc && <div className={styles.iconAbove}>
+                    <img src={imgSrc} />
+                </div>}
                 <h2 className={titleClassName} ref={titleRef}>{title}</h2>
                 <Separator className={styles.separator} />
                 {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}

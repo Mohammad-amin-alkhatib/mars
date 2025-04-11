@@ -56,9 +56,6 @@
 
     @include bp-below(medium) {
         border-bottom: none;
-    }
-
-    @include bp-below(small) {
         font-size: 16px;
     }
 }
@@ -89,7 +86,7 @@
         gap: 15px;
     }
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         margin-top: 0;
     }
 }
@@ -105,7 +102,7 @@
         font-size: 18px;
     }
 
-    @include bp-below(small) {
+    @include bp-below(medium) {
         margin: 37px auto 22px;
     }
 }
