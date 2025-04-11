@@ -1,3 +1,6 @@
+/* @import '../node_modules/swiper/swiper-bundle'; */
+@import '../../node_modules/swiper/swiper-bundle.css';
+
 *,
 *::before,
 *::after {
@@ -131,3 +134,24 @@ main {
 /* .backgroundImageFooter {
   background: url('../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
 } */
+
+.aboutPage .swiper-pagination {
+  position: static;
+}
+
+.aboutPage .swiper-pagination-bullet {
+  border-radius: unset;
+  opacity: 1;
+}
+
+.aboutPage  .swiper-pagination-bullet-active {
+  background-color: #ff4713;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.swiper-slide:last-child {
+  margin-right: 20px;
+}

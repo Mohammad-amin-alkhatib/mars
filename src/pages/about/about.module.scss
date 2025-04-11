@@ -1,4 +1,6 @@
 @import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
+@import '../../styles/variables/breakpoints.scss';
 
 .ourMission {
     background-color: $black-400;
@@ -6,4 +8,32 @@
 
 .ourVision {
     flex-direction: row-reverse;
+}
+
+.meetOurTeam {
+    margin: 70px 0px 70px 100px;
+
+    @include bp-below(medium) {
+        margin: 70px 0px 70px 50px;
+    }
+}
+
+.meetOurTeamTitleSection {
+    padding: 0;
+}
+
+.carousel {
+    margin: 60px 20px 60px 0;
+    position: relative;
+}
+
+.carouselControls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 565px;
+    margin: 0 auto;
+}
+
+.arrowRight {
+    transform: rotate(180deg);
 }

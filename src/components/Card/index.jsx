@@ -1,7 +1,5 @@
 import Image from "next/image";
 import styles from "./Card.module.scss";
-import Link from "next/link";
-import Arrow from '@/assets/icons/arrow.svg';
 import { Space_Grotesk } from 'next/font/google'
 import cx from 'classnames';
 import ArrowButton from "../ArrowButton";

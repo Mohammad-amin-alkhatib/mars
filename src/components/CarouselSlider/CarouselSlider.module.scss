@@ -1,0 +1,80 @@
+@import '../../styles/variables/breakpoints.scss';
+// @import '../../../node_modules/swiper/swiper-bundle';
+
+.container {
+    display: flex;
+    position: relative;
+
+    @include bp-below('medium') {
+        flex-wrap: wrap;
+    }
+}
+
+.control {
+    align-self: center;
+}
+
+.controlPrev {
+    margin: auto 16px auto auto;
+    order: 1;
+
+    @include bp-below('medium') {
+        order: 2;
+    }
+}
+
+.controlNext {
+    margin: auto auto auto 16px;
+    order: 3;
+}
+
+.swiper {
+    order: 2;
+    // needed when virtualization is enabled
+    width: 100%;
+
+    @include bp-below('medium') {
+        order: 1;
+
+        &.withDefaultControls {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.slide {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.noTransitions {
+    transition: none !important;
+}
+
+.bullet {
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+}
+
+.bulletActive {
+    background-color: gray;
+}
+
+.customPagination {
+    bottom: -24px;
+    display: flex;
+    gap: 8px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.swiperContianer {
+    padding: 5px 0;
+}
