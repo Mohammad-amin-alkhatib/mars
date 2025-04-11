@@ -57,6 +57,10 @@
     @include bp-below(medium) {
         border-bottom: none;
     }
+
+    @include bp-below(small) {
+        font-size: 16px;
+    }
 }
 
 .socialBlock {
@@ -84,6 +88,10 @@
         align-items: center;
         gap: 15px;
     }
+
+    @include bp-below(small) {
+        margin-top: 0;
+    }
 }
 
 .contactLabel {
@@ -95,6 +103,10 @@
 
     @include bp-below(medium) {
         font-size: 18px;
+    }
+
+    @include bp-below(small) {
+        margin: 37px auto 22px;
     }
 }
 
@@ -118,6 +130,10 @@
 
     @include bp-below(medium) {
         margin-top: 37px;
+
+        a {
+            text-decoration: none;
+        }
     }
 }
 

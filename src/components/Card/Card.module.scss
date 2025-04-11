@@ -1,5 +1,6 @@
 @import '../../styles/variables/colors.scss';
 @import '../../styles/variables/fonts.scss';
+@import '../../styles//variables/breakpoints.scss';
 
 .container {
     background: $white;
@@ -10,6 +11,11 @@
     gap: 25px;
     padding: 50px;
     width: calc(50% - 25px);
+
+    @include bp-below(small) {
+        width: 100%;
+        padding: 25px;
+    }
 }
 
 .image {
@@ -29,15 +35,28 @@
         background-color: $orange;
         border-color: $orange;
     }
+
+    @include bp-below(small) {
+        font-size: 26px;
+    }
 }
 
 .description {
     color: $black-200;
     font: 18px $gibson;
     text-align: justify;
+
+    @include bp-below(small) {
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
 .learnMore span {
     font-size: 20px !important;
     line-height: 28px !important;
+
+    @include bp-below(small) {
+        font-size: 18px;
+    }
 }
