@@ -1,7 +1,7 @@
 // Styles
 import styles from './PersonCard.module.scss';
 // Icons
-import LinkedIn from '@/assets/icons/dark-linkedin.svg';
+import LinkedIn from '@/assets/icons/dark-linkedIn.svg';
 
 const PersonCard = ({ imgSrc, name, jobTitle }) => {
     return (
