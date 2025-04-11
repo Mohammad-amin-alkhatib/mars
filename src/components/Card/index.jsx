@@ -19,11 +19,7 @@ const Card = ({ title, description, image, href }) => {
             </div>
             <h2 className={styles.title}>{title}</h2>
             <p className={cx(styles.description, spaceGrotesk.className)}>{description}</p>
-            {/* <Link href={`/category/${id}`} className={styles.learnMore}>
-                <Arrow className={styles.learnMoreIcon} />
-                <span>Learn more</span>
-            </Link> */}
-            <ArrowButton text="Learn More" href={href} className={styles.learnMore}/>
+            {href && <ArrowButton text="Learn More" href={href} className={styles.learnMore}/>}
         </div>
     );
 }
