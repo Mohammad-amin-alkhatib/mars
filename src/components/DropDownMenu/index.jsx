@@ -8,7 +8,7 @@ const DropDownMenu = ({ items }) => {
         <div key={item.title} className={styles.dropDownWrapper}>
           <span className={styles.dropDownTitle}>{item.title}</span>
           {item.menuItems?.map((item, index) => (
-            <a key={index} className={styles.subItem}>
+            <a key={index} className={styles.subItem} href={item.url}>
               {item.subItem}
             </a>
           ))}

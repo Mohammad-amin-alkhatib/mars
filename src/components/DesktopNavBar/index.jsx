@@ -8,10 +8,12 @@ import DropDownMenu from "@/components/DropDownMenu";
 
 const DesktopNavBar = () => {
   const [isHoveredItem, setIsHoveredItem] = useState(false);
-
+  console.log(navBarData)
   return (
     <div className={styles.navBarContainer}>
-      <MarsLogo className={styles.mainLogo} />
+      <a href='/'>
+        <MarsLogo className={styles.mainLogo}/>
+      </a>
       <div className={styles.subItemsWrapper}>
         {navBarData.map((item) => (
           <div
@@ -24,15 +26,15 @@ const DesktopNavBar = () => {
           >
             <div className={styles.itemWrapper}>
               {(item.hasDropDown && !isHoveredItem) && <Plus />}
-              {(item.hasDropDown && isHoveredItem) && <Minus className={styles.minusIcon}/>}
-              <a className={styles.subNavItem}>{item.title}</a>
+              {(item.hasDropDown && isHoveredItem) && <Minus className={styles.minusIcon} />}
+              <a className={styles.subNavItem} href={item.url}>{item.title}</a>
               {(item.hasDropDown && isHoveredItem) && (
                 <DropDownMenu items={item.dropDownItems} />
               )}
             </div>
           </div>
         ))}
-        <a className={styles.contactBtn}>Contact</a>
+        <a className={styles.contactBtn} href="/contact">Contact</a>
       </div>
     </div>
   );

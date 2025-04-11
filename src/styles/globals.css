@@ -64,6 +64,7 @@ select {
 a {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 p a {
