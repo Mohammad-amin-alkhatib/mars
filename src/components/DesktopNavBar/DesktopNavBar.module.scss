@@ -1,5 +1,6 @@
 @import "../../styles/variables/colors.scss";
 @import "../../styles/variables/fonts.scss";
+@import "../../styles/variables/breakpoints.scss";
 
 .navBarContainer {
     height: 100%;
@@ -9,7 +10,7 @@
     padding: 80px 100px;
     gap: 40px;
 
-    @media screen and (max-width: 480px) {
+    @include bp-below(large) {
         display: none;
     }
 }
@@ -33,9 +34,8 @@
 .contactBtn {
     position: relative;
     border: 1px solid $black-100;
-    width: 138px;
-    height: 64px;
     display: flex;
+    padding: 20px 35px;
     align-items: center;
     justify-content: center;
     font: 400 20px/100% $gibson;
@@ -48,10 +48,16 @@
 }
 
 .itemWrapper {
+    white-space: nowrap;
+
     svg {
         position: relative;
         margin-right: 5px;
     }
+}
+
+.minusIcon {
+    height: 8px;
 }
 
 .itemWrapper:hover {

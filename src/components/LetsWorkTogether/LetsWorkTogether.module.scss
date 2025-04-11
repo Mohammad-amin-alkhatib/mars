@@ -9,7 +9,11 @@
     padding: 80px 100px;
 
     @include bp-below(medium) {
-        padding: 50px 30px;
+        padding: 50px 100px;
+    }
+
+    @include bp-below(small) {
+        padding: 55px 45px;
     }
 }
 
@@ -22,11 +26,42 @@
     flex-direction: column;
     gap: 60px;
     max-width: 550px;
+
+    @include bp-below(medium) {
+        gap: 25px;
+    }
 }
 
 .title {
     color: $black-200;
     font: 600 60px $gibson;
+
+    @include bp-below(small) {
+        font-size: 43px;
+    }
+}
+
+.iconAbove {
+    @include bp-above(medium) {
+        display: none;
+    }
+
+    @include bp-below(medium) {
+        img {
+            width: 50%;
+            margin: 60px 0 85px;
+        }
+    }
+
+    @include bp-below(small) {
+        display: none;
+    }
+}
+
+.icon {
+    @include bp-below(medium) {
+        display: none;
+    }
 }
 
 .descitpion {

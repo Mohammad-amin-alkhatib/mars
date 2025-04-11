@@ -1,5 +1,6 @@
 @import '../../styles/variables/colors.scss';
 @import '../../styles/variables/fonts.scss';
+@import '../../styles//variables/breakpoints.scss';
 
 .container {
     background-color: $black-200;
@@ -7,14 +8,29 @@
     color: $white;
     display: flex;
     justify-content: space-between;
+
+    @include bp-below(medium) {
+        flex-direction: column;
+        gap: 40px;
+        padding: 54px 52px;
+    }
 }
 
 .title {
     font: 600 48px/130% 'Gibson', sans-serif;
     letter-spacing: -1.44px;
+
+    @include bp-below(medium) {
+        font-size: 43px;
+    }
 }
 
 .text {
     font: 400 20px 'Gibson', sans-serif;
     max-width: 550px;
+
+    @include bp-below(medium) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
