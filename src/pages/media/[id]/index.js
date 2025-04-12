@@ -22,20 +22,13 @@ export async function getStaticPaths() {
             params: { id },
         };
     });
-    console.log('paths', paths);
+
     if (paths.length > 0) {
-        return {
-            paths,
-            fallback: false,
-        };
+        console.warn('No paths found');
     }
-    // If no paths are found, return an empty array
-    // and set fallback to false
-    // to prevent Next.js from trying to generate any new pages
-    // at build time.
-    console.log('No paths found');
+
     return {
-        paths: [],
+        paths,
         fallback: false,
     };
 }
