@@ -47,8 +47,6 @@ export default function About({ header, ourMission, ourVision }) {
     const nextRefCustom = React.useRef(null);
     const paginationRef = React.useRef(null);
 
-    console.log(getBreakPoints(10));
-
     return (
         <>
             <Head>

@@ -8,7 +8,7 @@ import DropDownMenu from "@/components/DropDownMenu";
 
 const DesktopNavBar = () => {
   const [isHoveredItem, setIsHoveredItem] = useState(false);
-  console.log(navBarData)
+
   return (
     <div className={styles.navBarContainer}>
       <a href='/'>
