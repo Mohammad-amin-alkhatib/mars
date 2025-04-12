@@ -12,14 +12,21 @@ const InrtoHeader = ({ header, className }) => {
         <div
             className={cx(styles.headerContainer,
                 { [styles.headerContainerImage]: !header?.imgSrc }
-            , className)}
+                , className)}
             {...(header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                 },
             })}>
             {header?.videoUrl &&
-                <video autoPlay loop muted className={styles.video}>
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className={styles.video}
+                    onContextMenu={(e) => e.preventDefault()}
+                >
                     <source src={header.videoUrl} type="video/mp4" />
                 </video>
             }
