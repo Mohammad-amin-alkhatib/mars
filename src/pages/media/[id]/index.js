@@ -26,6 +26,8 @@ export async function getStaticProps({ params }) {
     const jsonData = fs.readFileSync(filePath, 'utf8');
     const data = JSON.parse(jsonData) || {};
 
+    console.log('data', data);
+    console.log('id', id);
 
     return {
         props: {

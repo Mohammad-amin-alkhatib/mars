@@ -15,7 +15,7 @@ const ContactPage = ({ header, news = [] }) => {
     const [currentPage, setCurrentPage] = React.useState(0);
     const newsPerPage = 3;
     const currentNews = news?.slice(currentPage * newsPerPage, (currentPage * newsPerPage) + newsPerPage);
-    console.log(currentNews);
+
     return (
         <>
             <Head>
