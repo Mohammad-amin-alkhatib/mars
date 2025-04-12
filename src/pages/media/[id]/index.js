@@ -14,6 +14,26 @@ const NewsPage = ({ header }) => {
 }
 
 export async function getStaticPaths() {
+    const dirPath = path.join(process.cwd(), 'src/data/news');
+    const files = fs.readdirSync(dirPath);
+    const paths = files.map(file => {
+        const id = file.replace('.json', '');
+        return {
+            params: { id },
+        };
+    });
+    console.log('paths', paths);
+    if (paths.length > 0) {
+        return {
+            paths,
+            fallback: false,
+        };
+    }
+    // If no paths are found, return an empty array
+    // and set fallback to false
+    // to prevent Next.js from trying to generate any new pages
+    // at build time.
+    console.log('No paths found');
     return {
         paths: [],
         fallback: false,
