@@ -2,5 +2,14 @@
     "header": {
         "title": "MARS News",
         "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)"
+    },
+    "content": {
+        "isVideo": true,
+        "description": "Hello World! This is a test page for MARS. (fill text) (fill text)",
+        "src": "/homepageVideo.mp4",
+        "paragraphs": [
+            "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)  Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)  Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)   Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)  Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)  Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)  Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)"
+        ]
     }
 }
