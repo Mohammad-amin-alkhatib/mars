@@ -1,0 +1,45 @@
+@import '../../styles/variables/breakpoints.scss';
+@import '../../styles/variables/fonts.scss';
+
+.news {
+    background-color: #FAFAFA;
+    gap: 15px;
+    padding: 15px 100px;
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.newCard {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    background: #FFF;
+    padding: 10px;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+}
+
+.image {
+    width: 490px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    width: 386px;
+}
+
+.titleCard {
+    color: #4A4F54;
+    font: 600 48px/56px $gibson;
+}
+
+.descriptionCard {
+    font: 400 15px/20px $gibson;
+    color: #8D8D8D;
+}

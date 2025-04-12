@@ -1,0 +1,74 @@
+{
+    "header": {
+        "title": "MARS News",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)"
+    },
+    "news": [
+        {
+            "title": "MARS News 1",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news1.jpg",
+            "id": "1"
+        },
+        {
+            "title": "MARS News 2",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news2.jpg",
+            "id": "2"
+        },
+        {
+            "title": "MARS News 3",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news3.jpg",
+            "id": "3"
+        },
+        {
+            "title": "MARS News 4",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news4.jpg",
+            "id": "4"
+        },
+        {
+            "title": "MARS News 5",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news5.jpg",
+            "id": "5"
+        },
+        {
+            "title": "MARS News 6",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news6.jpg",
+            "id": "6"
+        },
+        {
+            "title": "MARS News 7",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news7.jpg",
+            "id": "7"
+        },
+        {
+            "title": "MARS News 8",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news8.jpg",
+            "id": "8"
+        },
+        {
+            "title": "MARS News 9",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news9.jpg",
+            "id": "9"
+        },
+        {
+            "title": "MARS News 10",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news10.jpg",
+            "id": "10"
+        },
+        {
+            "title": "MARS News 11",
+            "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.(fill text) (fill text)",
+            "image": "/images/news/news10.jpg",
+            "id": "11"
+        }
+    ]
+}
