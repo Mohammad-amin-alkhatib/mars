@@ -74,7 +74,7 @@ export default function Home({
 
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'src/data/homePage.json');
+  const filePath = path.join(process.cwd(), 'src/data/homepage.json');
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const data = JSON.parse(jsonData) || {};
 
