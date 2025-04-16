@@ -36,7 +36,7 @@ const HamMenuItems = ({
         {items.map((item, index) => (
           <div key={index} className={styles.menuItemContainer}>
             <a
-              href={item.hasDropDown ? "#" : `#${item.title.toLowerCase()}`}
+              href={item.hasDropDown ? "#" : `/${item.title.toLowerCase()}`}
               className={styles.navLink}
               onClick={
                 item.hasDropDown ? (e) => toggleDropdown(e, index) : undefined
@@ -73,7 +73,7 @@ const HamMenuItems = ({
                       <a
                         href={
                           subItem.url ||
-                          `#${subItem.subItem
+                          `/${subItem.subItem
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`
                         }
@@ -91,7 +91,7 @@ const HamMenuItems = ({
 
         {level === 0 && (
           <div className={styles.contactButtonContainer}>
-            <a href="#contact" className={styles.contactButton}>
+            <a href="/contact" className={styles.contactButton}>
               CONTACT
             </a>
           </div>
