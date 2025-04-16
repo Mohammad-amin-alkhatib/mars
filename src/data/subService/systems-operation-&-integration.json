@@ -1,0 +1,17 @@
+{
+    "header": {
+        "videoUrl": "/homepageVideo.mp4",
+        "title": "UAVs System Design",
+        "description": "MARS Robotics® focuses on the innovative design and development of advanced Unmanned Aerial Systems (UAS), covering a wide range from Group 1 to Group 4 classifications."
+    },
+    "chooseUs": {
+        "title": "Why Choose MARS Robotics",
+        "imgSrc": "/lampInHand.svg",
+        "description": [
+            "Innovation: We are constantly pushing the boundaries of robotic technology.",
+            "Focus on You: our solutions are customer-centric, tailored to meet your needs and challenges.",
+            "ITAR-Free Advantage: Our solutions are not subject to ITAR restrictions, making them accessible to a wider audience.",
+            "Reliable Partner: We are committed to providing you with the support and expertise you need to succeed."
+        ]
+    }
+}
