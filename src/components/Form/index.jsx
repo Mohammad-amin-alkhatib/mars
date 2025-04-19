@@ -22,14 +22,15 @@ const Form = ({ className }) => {
                 console.error('Error:', error);
             });
     };
-
+    console.log(errors)
     return (
         <div className={cx(styles.container, className)}>
             <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles.formGroup}>
                     <div className={styles.inputGroup}>
                         <label htmlFor="name">Name</label>
-                        <input type="text" className={styles.input} {...register('name', { required: true })} placeholder="Name" />
+                        <input type="text" className={styles.input} {...register('name', { required: 'Name is required' })} placeholder="Name" />
+                        {errors.name && <p className={styles.error}>{errors.name.message}</p>}
                     </div>
                     <div className={styles.inputGroup}>
                         <label htmlFor="phoneNumber">Phone</label>
@@ -50,18 +51,21 @@ const Form = ({ className }) => {
                         {errors.phoneNumber && <p className={styles.error}>{errors.phoneNumber.message}</p>}
                     </div>
                     <div className={styles.inputGroup}>
-                        <label htmlFor="name">Email</label>
-                        <input type="email" className={styles.input} {...register('email', { required: true })} placeholder="Email" />
+                        <label htmlFor="email">Email</label>
+                        <input type="email" className={styles.input} {...register('email', { required: 'Email is required' })} placeholder="Email" />
+                        {errors.email && <p className={styles.error}>{errors.email.message}</p>}
                     </div>
                     <div className={styles.inputGroup}>
                         <label htmlFor="message">Message</label>
-                        <textarea cols={5} type="email" className={styles.input} {...register('message', { required: true })} placeholder="Message" />
+                        <textarea cols={5} type="email" className={styles.input} {...register('message', { required: 'Message is required' })} placeholder="Message" />
+                        {errors.message && <p className={styles.error}>{errors.message.message}</p>}
                     </div>
                 </div>
                 <div className={styles.consent}>
-                    <input type="radio" className={styles.checkbox} {...register('consent', { required: true })} />
+                    <input type="radio" className={styles.checkbox} {...register('consent', { required: 'Please Conset before sendin email' })} />
                     <label htmlFor="consent">I agree that my data will be collected and stored electronically with our privacy policy to answer my inquiry, and none of this gathered information will be disclosed with any other party nor published to any other entity.</label>
                 </div>
+                {errors.consent && <p className={styles.error}>{errors.consent.message}</p>}
                 <button type="submit" className={styles.submit}>Send Message</button>
             </form>
         </div>
