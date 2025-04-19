@@ -11,6 +11,7 @@
         "dropDownItems": [
             {
                 "title": "Products",
+                "url": "/products",
                 "menuItems": [
                     {
                         "subItem": "Navigation Solution",
@@ -40,6 +41,7 @@
             },
             {
                 "title": "Services",
+                "url": "/services",
                 "menuItems": [
                     {
                         "subItem": "Systems Operation & Integration",

@@ -12,6 +12,7 @@
     "classnames": "^2.5.1",
     "cross-env": "^7.0.3",
     "next": "15.2.2",
+    "nodemailer": "^6.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0",

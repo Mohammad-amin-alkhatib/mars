@@ -6,7 +6,7 @@ const DropDownMenu = ({ items }) => {
     <div className={styles.dropDownContainer}>
       {items.map((item) => (
         <div key={item.title} className={styles.dropDownWrapper}>
-          <span className={styles.dropDownTitle}>{item.title}</span>
+          <a href={item.url} className={styles.dropDownTitle}>{item.title}</a>
           {item.menuItems?.map((item, index) => (
             <a key={index} className={styles.subItem} href={item.url}>
               {item.subItem}

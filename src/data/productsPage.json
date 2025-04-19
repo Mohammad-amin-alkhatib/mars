@@ -1,0 +1,45 @@
+{
+    "header": {
+        "title": "Explore Our Products",
+        "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
+    },
+    "products": [
+        {
+            "title": "Marsnav",
+            "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+            "image": "MARSNAV.png",
+            "href": "/products/marsnav"
+        },
+        {
+            "title": "Marsnav",
+            "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+            "image": "MARSNAV.png",
+            "href": "/products/marsnav"
+        },
+        {
+            "title": "Marsnav",
+            "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+            "image": "MARSNAV.png",
+            "href": "/products/marsnav"
+        },
+        {
+            "title": "Marsnav",
+            "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+            "image": "MARSNAV.png",
+            "href": "/products/marsnav"
+        },
+        {
+            "title": "Marsnav",
+            "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
+            "image": "MARSNAV.png",
+            "href": "/products/marsnav"
+        }
+    ],
+    "letsWorkTogether": {
+        "title": "Let's Work Together",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+        "buttonText": "Contact Us",
+        "href": "/contact",
+        "imgSrc": "/work-together.svg"
+    }
+}
