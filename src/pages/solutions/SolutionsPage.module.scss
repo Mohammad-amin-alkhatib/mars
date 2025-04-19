@@ -1,0 +1,29 @@
+@import '../../styles/variables/breakpoints.scss';
+
+.letsWorkTogether {
+    background: url('../../assets/images/Background\ Noise.png') lightgray 0% 0% / 78.125px 78.125px repeat;
+}
+
+.solutions {
+    margin: 40px 100px;
+
+    @include bp-below(medium) {
+        margin: 35px 45px;
+    }
+}
+
+.solutionsDescription {
+    max-width: 553px;
+
+}
+
+.containerServices {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 200px;
+
+    @include bp-below(medium) {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+}

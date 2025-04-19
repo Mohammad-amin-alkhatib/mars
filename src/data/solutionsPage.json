@@ -1,0 +1,34 @@
+{
+    "header": {
+        "title": "Explore Our Solutions",
+        "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await.(fill text) (fill text) (fill text) (fill text) (fill text)"
+    },
+    "banner": {
+        "title": "EXPLORE OUR SOLUTIONS",
+        "text": "( Fill Text ) we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies."
+    },
+    "letsWorkTogether": {
+        "title": "Let's Work Together",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+        "buttonText": "Contact Us",
+        "href": "/contact",
+        "imgSrc": "/work-together.svg"
+    },
+    "solutions": {
+        "description": "( Fill Text ) we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.",
+        "cards": [
+            {
+                "title": "Products",
+                "description": "(fill text) We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await. (fill text) (fill text) (fill text) ",
+                "imgSrc": "Frame-427321498.png",
+                "href": "/products"
+            },
+            {
+                "title": "Services",
+                "description": "(fill text) We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await. (fill text) (fill text) (fill text) ",
+                "imgSrc": "Reach-s black.svg",
+                "href": "/services"
+            }
+        ]
+    }
+}

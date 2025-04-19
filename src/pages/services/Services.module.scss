@@ -50,7 +50,7 @@
 
     @include bp-below(medium) {
         margin: 35px 45px;
-     }
+    }
 }
 
 .containerServices {
@@ -58,7 +58,7 @@
     gap: 40px;
 
     @include bp-below(medium) {
-       flex-direction: column;
+        flex-direction: column;
     }
 }
 
