@@ -1,7 +1,6 @@
 // make this api route send an email using nodemailer as post request
 
 import nodemailer from 'nodemailer';
-import cors from 'cors';
 
 
 export default async function handler(req, res) {
