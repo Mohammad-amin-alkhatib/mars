@@ -1,5 +1,3 @@
-// make this api route send an email using nodemailer as post request
-
 import nodemailer from 'nodemailer';
 
 
@@ -21,8 +19,8 @@ export default async function handler(req, res) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'mkhatib@marsrobotic.com',       // your Gmail
-                pass: 'mghs iqqu stpl ckhf',          // generated app password
+                user: 'mkhatib@marsrobotic.com',
+                pass: 'mghs iqqu stpl ckhf',
             },
         });
 
