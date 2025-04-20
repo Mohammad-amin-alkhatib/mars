@@ -1,0 +1,17 @@
+{
+    "header": {
+        "title": "Mars Navigation",
+        "description": "Mars Navigation is a navigation system designed for Mars rovers and other vehicles. It provides real-time data on the vehicle's position, speed, and direction, as well as information about the surrounding terrain.",
+        "imgSrc": "/MARSNAV.png"
+    },
+    "keyFeatures": [
+        "adaptability-across-varying-conditions",
+        "digital-video-hd",
+        "adaptability-across-varying-conditions",
+        "adaptability-across-varying-conditions",
+        "adaptability-across-varying-conditions",
+        "adaptability-across-varying-conditions",
+        "adaptability-across-varying-conditions",
+        "adaptability-across-varying-conditions"
+    ]
+}

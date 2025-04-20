@@ -1,11 +1,23 @@
 // make this api route send an email using nodemailer as post request
 
 import nodemailer from 'nodemailer';
+import cors from 'cors';
 
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { name, email, phoneNumber, message } = req.body;
+
+        // Validate the input
+        if (!name || !email || !phoneNumber || !message) {
+            return res.status(400).json({ error: 'All fields are required' });
+        }
+        // accept only requests from same origin
+        // const allowedOrigins = ['http://localhost:3000', 'https://your-production-url.com'];
+        // const origin = req.headers.origin;
+        // if (allowedOrigins.includes(origin)) {
+        //     res.setHeader('Access-Control-Allow-Origin', origin);
+        // }
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',

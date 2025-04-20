@@ -1,0 +1,110 @@
+{
+    "adaptability-across-varying-conditions": {
+        "title": "Adaptability Across Varying Conditions",
+        "icon": "adaptability-across-varying-conditions.svg"
+    },
+    "adaptability-to-customer-needs": {
+        "title": "Adaptability to Customer Needs",
+        "icon": "adaptability-to-customer-needs.svg"
+    },
+    "advanced-proprietary": {
+        "title": "Advanced Proprietary",
+        "icon": "advanced-proprietary.svg"
+    },
+    "ahrs": {
+        "title": "AHRS",
+        "icon": "ahrs.svg"
+    },
+    "altitude-compensation": {
+        "title": "Altitude Compensation",
+        "icon": "altitude-compensation.svg"
+    },
+    "automatic-fuel-injection": {
+        "title": "Automatic Fuel Injection",
+        "icon": "automatic-fuel-injection.svg"
+    },
+    "bias-tracking-and-estimation": {
+        "title": "Bias Tracking and Estimation",
+        "icon": "bias-tracking-and-estimation.svg"
+    },
+    "comprehensive-autonomous-capabilities": {
+        "title": "Comprehensive Autonomous Capabilities",
+        "icon": "comprehensive-autonomous-capabilities.svg"
+    },
+    "digital-video-hd": {
+        "title": "Digital Video HD",
+        "icon": "digital-video-hd.svg"
+    },
+    "direct-drive-architecture": {
+        "title": "Direct Drive Architecture",
+        "icon": "direct-drive-architecture.svg"
+    },
+    "enhancing-engine-performance-and-efficiency": {
+        "title": "Enhancing Engine Performance and Efficiency",
+        "icon": "enhancing-engine-performance-and-efficiency.svg"
+    },
+    "environmentally-seal": {
+        "title": "Environmentally Seal",
+        "icon": "environmentally-seal.svg"
+    },
+    "ethernet-interface": {
+        "title": "Ethernet Interface",
+        "icon": "ethernet-interface.svg"
+    },
+    "graphical-user-interface": {
+        "title": "Graphical User Interface",
+        "icon": "graphical-user-interface.svg"
+    },
+    "ignition-management": {
+        "title": "Ignition Management",
+        "icon": "ignition-management.svg"
+    },
+    "integrability-with-various-autopilots-ensors-and-antennae": {
+        "title": "Integrability with Various Autopilots, Sensors and Antennae",
+        "icon": "integrability-with-various-autopilots-ensors-and-antennae.svg"
+    },
+    "integrability-with-various-platforms-sensors-and-avionics-systems": {
+        "title": "Integrability with Various Platforms, Sensors and Avionics Systems",
+        "icon": "integrability-with-various-platforms-sensors-and-avionics-systems.svg"
+    },
+    "itar-free": {
+        "title": "ITAR Free",
+        "icon": "itar-free.svg"
+    },
+    "laser-rangefinder": {
+        "title": "Laser Rangefinder",
+        "icon": "laser-rangefinder.svg"
+    },
+    "meata": {
+        "title": "MEATA",
+        "icon": "meata.svg"
+    },
+    "plug-play": {
+        "title": "Plug & Play",
+        "icon": "plug-play.svg"
+    },
+    "prediction-mode-based-flight-mission": {
+        "title": "Prediction Mode Based Flight Mission",
+        "icon": "prediction-mode-based-flight-mission.svg"
+    },
+    "regulating-injection-time-and-amount": {
+        "title": "Regulating Injection Time and Amount",
+        "icon": "regulating-injection-time-and-amount.svg"
+    },
+    "start-warm-up-fuel-enrichment": {
+        "title": "Start Warm Up Fuel Enrichment",
+        "icon": "start-warm-up-fuel-enrichment.svg"
+    },
+    "support-engines-cc": {
+        "title": "Support Engines CC",
+        "icon": "support-engines-cc.svg"
+    },
+    "versatile-hardware-for-cross-functional-mission": {
+        "title": "Versatile Hardware for Cross Functional Mission",
+        "icon": "versatile-hardware-for-cross-functional-mission.svg"
+    },
+    "visible-thermal-cameras": {
+        "title": "Visible Thermal Cameras",
+        "icon": "visible-thermal-cameras.svg"
+    }
+}
