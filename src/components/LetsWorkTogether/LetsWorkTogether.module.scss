@@ -157,3 +157,17 @@
         }
     }
 }
+
+.downloadButton {
+    color: #2E3134;
+    font: 600 30px $gibson;
+    border: 1px solid #2E3134;
+    padding: 11px;
+    width: fit-content;
+
+    &:hover {
+        color: $white;
+        background-color: $orange;
+        border-color: $orange;
+    }
+}

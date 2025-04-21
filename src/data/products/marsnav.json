@@ -13,5 +13,11 @@
         "adaptability-across-varying-conditions",
         "adaptability-across-varying-conditions",
         "adaptability-across-varying-conditions"
-    ]
+    ],
+    "footer": {
+        "title": "Specifications",
+        "description": "Mars Navigation is designed to operate in extreme conditions, including high radiation levels and low temperatures. It is equipped with advanced sensors and algorithms to ensure accurate navigation and obstacle detection.",
+        "pdfFile": "marsnav-specs.pdf",
+        "imgSrc": "/work-together.svg"
+    }
 }

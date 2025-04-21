@@ -9,14 +9,24 @@ import DesktopNavBar from "@/components/DesktopNavBar";
 import KeyFeatures from "@/components/KeyFeatures";
 // Styles
 import styles from "./ProductPage.module.scss";
+import CardContainer from "@/components/CardContainer";
 
-const ProductPage = ({ header, keyFeatures }) => {
+const ProductPage = ({ header, keyFeatures, products, footer }) => {
     return (
         <>
             <DesktopNavBar />
             <MobileNavBar />
             <LetsWorkTogether {...header} />
-            {keyFeatures && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
+            {!!products?.length && <CardContainer cards={products} className={styles.productsContainer} />}
+            {!!keyFeatures?.length && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
+            <LetsWorkTogether
+                className={styles.letsWorkTogether}
+                title={footer?.title}
+                imgSrc={footer?.imgSrc}
+                description={footer?.description}
+                href={footer?.href}
+                pdfFile={footer?.pdfFile}
+            />
         </>
     )
 }

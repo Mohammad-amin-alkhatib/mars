@@ -14,6 +14,7 @@ const LetsWorkTogether = ({
     textButton,
     darkMode = false,
     descriptionTitle,
+    pdfFile,
     title }) => {
     const listStyle = Array.isArray(description);
 
@@ -62,6 +63,7 @@ const LetsWorkTogether = ({
                     </ul>
                 )}
                 {href && <ArrowButton text={textButton} href={href} />}
+                {pdfFile && <a href={`/pdfs/${pdfFile}`} download className={styles.downloadButton}>Download Brouchure</a>}
             </div>
             {!!imgSrc && <div className={styles.icon}>
                 <img src={imgSrc} />
