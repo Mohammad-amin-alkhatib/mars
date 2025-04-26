@@ -27,9 +27,9 @@
     border: 1px solid $black-200;
     color: $black-200;
     font: 600 30px $gibson;
-    max-width: 215px;
     padding: 4px 11px;
     width: fit-content;
+    white-space: nowrap;
 
     &:hover {
         color: $white;
@@ -39,6 +39,7 @@
 
     @include bp-below(medium) {
         font-size: 26px;
+        white-space: pre-wrap;
     }
 }
 

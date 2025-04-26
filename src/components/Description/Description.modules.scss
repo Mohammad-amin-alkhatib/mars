@@ -1,0 +1,14 @@
+@import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
+@import '../../styles//variables/breakpoints.scss';
+
+.descContainer {
+    display: flex;
+    gap: 37px;
+}
+
+.descWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
