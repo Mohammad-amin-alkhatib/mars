@@ -6,10 +6,10 @@ const Description = ({ items }) => {
     <div className={styles.descContainer}>
       {items.map((item) => (
         <div key={item.title} className={styles.descWrapper}>
-            <img></img>
-            <div>
+            <img src={`/${item.imgSrc}`} />
+            <div className={styles.titleContainer}>
                 <h1>{item.title}</h1>
-                <p>{item.desc}</p>
+                <p>{item.description}</p>
             </div>
         </div>
       ))}

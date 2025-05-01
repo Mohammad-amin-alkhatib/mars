@@ -14,6 +14,7 @@ const LetsWorkTogether = ({
     textButton,
     darkMode = false,
     descriptionTitle,
+    showSeparator = true,
     pdfFile,
     title }) => {
     const listStyle = Array.isArray(description);
@@ -49,7 +50,7 @@ const LetsWorkTogether = ({
                     <img src={imgSrc} />
                 </div>}
                 <h2 className={titleClassName} ref={titleRef}>{title}</h2>
-                <Separator className={styles.separator} />
+                {showSeparator && <Separator className={styles.separator} />}
                 {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
                 {!!description?.length && !listStyle && <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}></div>}
                 {!!description?.length && listStyle && (

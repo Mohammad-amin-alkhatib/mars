@@ -1,5 +1,14 @@
 @import '../../../styles/variables/fonts.scss';
 
+.headerContainer {
+    min-height: 600px;
+}
+
+.discriptionHeader {
+    margin: 40px 100px;
+    width: 695px;
+}
+
 .content {
     margin: 0 100px 100px;
     max-width: 90%;
@@ -22,4 +31,8 @@
     flex-direction: column;
     font: 20px $gibson;
     gap: 20px;
+}
+
+.cardContainer {
+    margin: 0 100px;
 }
