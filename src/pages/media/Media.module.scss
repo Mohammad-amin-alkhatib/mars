@@ -5,6 +5,10 @@
     background-color: #FAFAFA;
     gap: 15px;
     padding: 15px 100px;
+
+    @include bp-below(large) {
+        padding: 15px 45px;
+    }
 }
 
 .newsContainer {
@@ -20,11 +24,19 @@
         row-gap: 20px;
         margin-bottom: 120px;
     }
+
+    @include bp-below(medium) {
+        margin-bottom: 40px;
+    }
 }
 
 .newsItem {
     @include bp-below(large) {
         width: 48%;
+    }
+
+    @include bp-below(medium) {
+        width: 100%;
     }
 }
 

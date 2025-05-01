@@ -1,4 +1,5 @@
 @import '../../../styles/variables/fonts.scss';
+@import '../../../styles/variables/breakpoints.scss';
 
 .headerContainer {
     min-height: 600px;
@@ -6,7 +7,15 @@
 
 .discriptionHeader {
     margin: 40px 100px;
-    width: 695px;
+    max-width: 695px;
+
+    @include bp-below(small) {
+        margin: 40px 45px;
+    }
+
+    @include bp-below(small) {
+        max-width: 350px;
+    }
 }
 
 .content {
@@ -35,4 +44,8 @@
 
 .cardContainer {
     margin: 0 100px;
+
+    @include bp-below(medium) {
+        margin: 0 45px;
+    }
 }

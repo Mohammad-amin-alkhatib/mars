@@ -1,7 +1,13 @@
+@import '../../../styles/variables/breakpoints.scss';
+
 .InrtoHeader {
     background-position-y: 75% !important;
 }
 
 .productsContainer {
     margin: 33px 100px;
+
+    @include bp-below(medium) {
+        margin: 33px 45px;
+    }
 }

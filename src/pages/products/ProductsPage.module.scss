@@ -1,3 +1,5 @@
+@import '../../styles/variables/breakpoints.scss';
+
 .productsContainer {
     margin: 25px 100px
 }
@@ -8,4 +10,8 @@
 
 .cardContainer {
     margin: 33px 100px;
+
+    @include bp-below(medium) {
+        margin: 33px 45px;
+    }
 }

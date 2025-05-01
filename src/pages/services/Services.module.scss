@@ -51,6 +51,10 @@
     @include bp-below(medium) {
         margin: 35px 45px;
     }
+
+    @include bp-below(small) {
+        max-width: 350px;
+    }
 }
 
 .containerServices {

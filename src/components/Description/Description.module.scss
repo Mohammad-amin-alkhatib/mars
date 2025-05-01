@@ -7,16 +7,30 @@
     gap: 37px;
     flex-direction: column;
     margin: 100px 100px 0;
+
+    @include bp-below(medium) {
+        margin: 45px;
+    }
 }
 
 .descWrapper {
     display: flex;
     justify-content: space-between;
     gap: 60px;
+
+    @include bp-below(large) {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 .descWrapper:nth-child(2n) {
     flex-direction: row-reverse;
+
+
+    @include bp-below(large) {
+        flex-direction: column;
+    }
 }
 
 .titleContainer {
@@ -24,4 +38,8 @@
     flex-direction: column;
     gap: 60px;
     margin-top: 27px;
+
+    @include bp-below(large) {
+        margin-top: 0;
+    }
 }
