@@ -1,5 +1,5 @@
 // Packages
-import React from "react";
+import React, { useEffect } from "react";
 import path from "path";
 import fs from "fs";
 // Components
@@ -13,8 +13,20 @@ import styles from "./Media.module.scss";
 
 const ContactPage = ({ header, news = [] }) => {
     const [currentPage, setCurrentPage] = React.useState(0);
-    const newsPerPage = 3;
+    const [newsPerPage, setNewsPerPage] = React.useState(3);
     const currentNews = news?.slice(currentPage * newsPerPage, (currentPage * newsPerPage) + newsPerPage);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 769) {
+                setNewsPerPage(4);
+            } else {
+                setNewsPerPage(3);
+            }
+        };
+
+        handleResize();
+    }, []);
 
     return (
         <>

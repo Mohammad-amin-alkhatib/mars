@@ -11,6 +11,21 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @include bp-below(large) {
+        gap: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+        margin-bottom: 120px;
+    }
+}
+
+.newsItem {
+    @include bp-below(large) {
+        width: 48%;
+    }
 }
 
 .newCard {
@@ -20,10 +35,22 @@
     background: #FFF;
     padding: 10px;
     box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+
+    @include bp-below(large) {
+        box-shadow: unset;
+        flex-direction: column;
+        gap: 14px;
+        padding: 0;
+        background-color: unset;
+    }
 }
 
 .image {
     width: 490px;
+
+    @include bp-below(large) {
+        width: 100%;
+    }
 }
 
 .info {
@@ -32,14 +59,27 @@
     gap: 40px;
     justify-content: center;
     width: 386px;
+
+    @include bp-below(large) {
+        gap: 14px;
+        max-width: 270px;
+    }
 }
 
 .titleCard {
     color: #4A4F54;
     font: 600 48px/56px $gibson;
+
+    @include bp-below(large) {
+        max-width: 270px;
+    }
 }
 
 .descriptionCard {
     font: 400 15px/20px $gibson;
     color: #8D8D8D;
+
+    @include bp-below(large) {
+        max-width: 270px;
+    }
 }
