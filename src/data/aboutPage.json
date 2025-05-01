@@ -17,5 +17,86 @@
         "title": "Vision",
         "description": "To be customers first-choice in providing World-Class UAS services and innovative products while leading Guidance and Control technologies to support UAS OEMs solutions in the region.",
         "imgSrc": "/vision.svg"
-    }
+    },
+    "teamMembers": [
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg",
+            "href": "/"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg"
+        },
+        {
+            "name": "Dr. Mazari",
+            "jobTitle": "CEO",
+            "imgSrc": "/vision.svg"
+        },
+        {
+            "name": "John Doe",
+            "jobTitle": "CTO",
+            "imgSrc": "/vision.svg"
+        }
+    ]
 }

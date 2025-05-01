@@ -28,9 +28,11 @@ function parseBreakpoint(breakpoint) {
 function getBreakPoints() {
     return {
         spaceBetween: 20,
+        slidesPerView: 1,
         breakpoints: {
             [parseBreakpoint(breakpoints.small)]: {
                 slidesPerView: 1.5,
+                spaceBetween: 10,
             },
             [parseBreakpoint(breakpoints.medium)]: {
                 slidesPerView: 2.5,
@@ -42,7 +44,7 @@ function getBreakPoints() {
     };
 };
 
-export default function About({ header, ourMission, ourVision }) {
+export default function About({ header, ourMission, ourVision, teamMembers }) {
     const prevRefCustom = React.useRef(null);
     const nextRefCustom = React.useRef(null);
     const paginationRef = React.useRef(null);
@@ -70,31 +72,30 @@ export default function About({ header, ourMission, ourVision }) {
                     imgSrc={ourVision.imgSrc}
                     className={styles.ourVision}
                 />
-                <div className={styles.meetOurTeam}>
-                    <LetsWorkTogether title={"Meet Our Team"} className={styles.meetOurTeamTitleSection} />
-                    <CaraouselSlider
-                        {...getBreakPoints(10)}
-                        prevRefCustom={prevRefCustom}
-                        nextRefCustom={nextRefCustom}
-                        containerProps={{ className: styles.carousel }}
-                        paginationRefCustom={paginationRef}
-                    >
-                        {Array.from({ length: 10 }, (_, i) => (
-                            <PersonCard
-                                key={i}
-                                name={"John Doe"}
-                                jobTitle={"Software Engineer"}
-                                imgSrc={"/vision.svg"}
-                                href={"/"}
-                            />
-                        ))}
-                    </CaraouselSlider>
-                    <div className={styles.carouselControls}>
-                        <button ref={prevRefCustom} className={styles.arrowRight}><Arrow /></button>
-                        <div ref={paginationRef} className={cx('swiper-pagination', styles.dots)} role="tablist"></div>
-                        <button ref={nextRefCustom} className={styles.arrow}><Arrow /></button>
+                {teamMembers && (
+                    <div className={styles.meetOurTeam}>
+                        <LetsWorkTogether title={"Meet Our Team"} className={styles.meetOurTeamTitleSection} />
+                        <CaraouselSlider
+                            {...getBreakPoints(teamMembers.length)}
+                            prevRefCustom={prevRefCustom}
+                            nextRefCustom={nextRefCustom}
+                            containerProps={{ className: styles.carousel }}
+                            paginationRefCustom={paginationRef}
+                        >
+                            {teamMembers.map((member, i) => (
+                                <PersonCard
+                                    key={i}
+                                    {...member}
+                                />
+                            ))}
+                        </CaraouselSlider>
+                        <div className={styles.carouselControls}>
+                            <button ref={prevRefCustom} className={styles.arrowRight}><Arrow /></button>
+                            <div ref={paginationRef} className={cx('swiper-pagination', styles.dots)} role="tablist"></div>
+                            <button ref={nextRefCustom} className={styles.arrow}><Arrow /></button>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </>
     );

@@ -1,5 +1,11 @@
+@import "../../styles/variables/breakpoints.scss";
+
 .contaier {
     margin: 100px;
+
+    @include bp-below(medium) {
+        margin: 55px 45px;
+    }
 }
 
 .keyFeaturesTitle {
@@ -11,6 +17,10 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+
+    @include bp-below(medium) {
+        flex-direction: column;
+    }
 }
 
 .keysContainer::after {
@@ -26,7 +36,7 @@
 
 .keyFeature {
     position: relative;
-    padding: 15px;
+    padding: 50px 30px;
     flex: 1 0 30%;
     text-align: center;
     border: 0.5px solid #2C2F32;

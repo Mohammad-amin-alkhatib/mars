@@ -170,4 +170,11 @@
         background-color: $orange;
         border-color: $orange;
     }
+
+    @include bp-below(medium) {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
 }
