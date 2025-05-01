@@ -34,7 +34,7 @@ const ProductPage = ({ header, keyFeatures, products, footer }) => {
 export async function getStaticPaths() {
     const dirPath = path.join(process.cwd(), 'src/data/products');
     const files = fs.readdirSync(dirPath);
-    const paths = files.map(file => {
+    const paths = files.filter((file) => file.includes('.json')).map(file => {
         const id = file.replace('.json', '');
 
         return {
