@@ -1,1 +1,57 @@
-{}
+{
+    "header": {
+        "title": "Careers",
+        "description": "Join our team and help us shape the future of UAV technology. We are always looking for talented individuals who are passionate about innovation and excellence."
+    },
+    "jobs": [
+        {
+            "title": "Graphic Designer",
+            "description": "We need a graphic designer",
+            "href": "https://www.linkedin.com/jobs/view/1234567890/"
+        },
+        {
+            "title": "Software Engineer",
+            "description": "We need a software engineer"
+        },
+        {
+            "title": "Data Scientist",
+            "description": "We need a data scientist"
+        },
+        {
+            "title": "Marketing Specialist",
+            "description": "We need a marketing specialist"
+        },
+        {
+            "title": "Sales Representative",
+            "description": "We need a sales representative"
+        },
+        {
+            "title": "Project Manager",
+            "description": "We need a project manager"
+        },
+        {
+            "title": "Quality Assurance Engineer",
+            "description": "We need a quality assurance engineer"
+        },
+        {
+            "title": "Technical Writer",
+            "description": "We need a technical writer"
+        },
+        {
+            "title": "Customer Support Specialist",
+            "description": "We need a customer support specialist"
+        },
+        {
+            "title": "Business Analyst",
+            "description": "We need a business analyst"
+        },
+        {
+            "title": "Network Engineer",
+            "description": "We need a network engineer"
+        },
+        {
+            "title": "Database Administrator",
+            "description": "We need a database administrator"
+        }
+    ]
+}
