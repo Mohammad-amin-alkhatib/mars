@@ -45,6 +45,11 @@
     @include bp-below(medium) {
         max-width: 200px;
     }
+
+    @include bp-below(small) {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 
