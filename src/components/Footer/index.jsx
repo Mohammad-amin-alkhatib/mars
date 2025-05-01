@@ -49,8 +49,12 @@ const Footer = ({ className }) => {
 						))}
 					</div>
 					<div className={styles.socialBlock}>
-						<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
-						<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
+						<a href="https://www.linkedin.com/company/mars-robotics" target='_blank'>
+							<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
+						</a>
+						<a href="https://web.facebook.com/marsroboticc" target='_blank'>
+							<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
+						</a>
 					</div>
 				</div>
 				<div className={styles.contactSection}>
