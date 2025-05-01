@@ -1,0 +1,38 @@
+@import '../../../../styles/variables/fonts.scss';
+
+.headerContainer {
+    min-height: 600px;
+}
+
+.discriptionHeader {
+    margin: 40px 100px;
+    width: 695px;
+}
+
+.content {
+    margin: 0 100px 100px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.video,
+.image {
+    height: 600px;
+    width: 100%;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+}
+
+.text {
+    text-align: justify;
+    color: #2E3134;
+    display: flex;
+    flex-direction: column;
+    font: 20px $gibson;
+    gap: 20px;
+}
+
+.cardContainer {
+    margin: 0 100px;
+}

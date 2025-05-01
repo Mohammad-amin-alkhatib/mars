@@ -36,6 +36,7 @@ const InrtoHeader = ({ header, className }) => {
                 title={header?.title}
                 description={header?.description}
                 className={styles.header}
+                showSeparator={header?.showSeparator}
             />
         </div>
     );

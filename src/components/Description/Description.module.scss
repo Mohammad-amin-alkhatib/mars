@@ -5,10 +5,23 @@
 .descContainer {
     display: flex;
     gap: 37px;
+    flex-direction: column;
+    margin: 100px 100px 0;
 }
 
 .descWrapper {
     display: flex;
     justify-content: space-between;
     gap: 60px;
+}
+
+.descWrapper:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 27px;
 }

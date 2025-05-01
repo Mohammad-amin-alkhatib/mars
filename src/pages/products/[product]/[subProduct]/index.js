@@ -8,7 +8,7 @@ import MobileNavBar from "@/components/MobileNavBar";
 import DesktopNavBar from "@/components/DesktopNavBar";
 import KeyFeatures from "@/components/KeyFeatures";
 // Styles
-import styles from "./ProductPage.module.scss";
+import styles from "./SubProductPage.module.scss";
 import CardContainer from "@/components/CardContainer";
 
 const ProductPage = ({ header, keyFeatures, products, footer }) => {
@@ -32,15 +32,37 @@ const ProductPage = ({ header, keyFeatures, products, footer }) => {
 }
 
 export async function getStaticPaths() {
-    const dirPath = path.join(process.cwd(), 'src/data/products');
+    const dirPath = path.join(process.cwd(), 'src/data/products/subProducts');
     const files = fs.readdirSync(dirPath);
-    const paths = files.filter((file) => file.includes('.json')).map(file => {
-        const id = file.replace('.json', '');
-
+    if (!files.length) {
         return {
-            params: { product: id },
+            paths: [],
+            fallback: false,
         };
+    }
+
+    const paths = [];
+    files.forEach(file => {
+        const subFilers = path.join(dirPath, file);
+
+        const subProductData = fs.readdirSync(subFilers);
+
+        if (!subProductData.length) return;
+
+        subProductData.forEach(subProduct => {
+            paths.push({
+                params: { product: file, subProduct: subProduct.replace('.json', '') },
+            });
+        })
+
     });
+
+    if (!paths.length) {
+        return {
+            paths: [],
+            fallback: false,
+        };
+    }
 
     return {
         paths,
@@ -51,9 +73,8 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }) {
-    const { product } = params;
-
-    const filePath = path.join(process.cwd(), 'src/data/products', `${product}.json`);
+    const { product, subProduct } = params;
+    const filePath = path.join(process.cwd(), 'src/data/products/subProducts', product, `${subProduct}.json`);
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const content = JSON.parse(fileContent) || {};
 

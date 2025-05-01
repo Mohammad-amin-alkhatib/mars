@@ -1,0 +1,36 @@
+{
+    "header": {
+        "imgSrc": "/amara-drone.png",
+        "title": "UAVs System Design",
+        "showSeparator": false
+    },
+    "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the\nimplementation of cutting-edge remote sensing solutions. We specialize in providing\nhigh-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications.\nOur services span through a wide range of applications that serve several sectors.",
+    "subServices": [
+        {
+            "title": "Photogrammetry",
+            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
+            "image": "MARSNAV.png",
+            "href": "/services/geomatics-and-remote-sensing/photogrammetry"
+        },
+        {
+            "title": "UAVs System Design",
+            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
+            "image": "MARSNAV.png"
+        },
+        {
+            "title": "UAVs System Design",
+            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
+            "image": "MARSNAV.png"
+        }
+    ],
+    "chooseUs": {
+        "title": "Why Choose MARS Robotics",
+        "imgSrc": "/lampInHand.svg",
+        "description": [
+            "Innovation: We are constantly pushing the boundaries of robotic technology.",
+            "Focus on You: our solutions are customer-centric, tailored to meet your needs and challenges.",
+            "ITAR-Free Advantage: Our solutions are not subject to ITAR restrictions, making them accessible to a wider audience.",
+            "Reliable Partner: We are committed to providing you with the support and expertise you need to succeed."
+        ]
+    }
+}
