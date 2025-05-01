@@ -92,7 +92,7 @@ export default function About({ header, ourMission, ourVision }) {
                     <div className={styles.carouselControls}>
                         <button ref={prevRefCustom} className={styles.arrowRight}><Arrow /></button>
                         <div ref={paginationRef} className={cx('swiper-pagination', styles.dots)} role="tablist"></div>
-                        <button ref={nextRefCustom}><Arrow /></button>
+                        <button ref={nextRefCustom} className={styles.arrow}><Arrow /></button>
                     </div>
                 </div>
             </div>

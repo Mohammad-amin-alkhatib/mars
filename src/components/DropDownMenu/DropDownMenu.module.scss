@@ -3,13 +3,14 @@
 
 .dropDownContainer {
     position: absolute;
-    width: fit-content;
+    width: 730px;
     height: fit-content;
     padding: 30px;
     background-color: $white;
     display: flex;
     gap: 20px;
     z-index: 10;
+    top: 70px;
 }
 
 .dropDownWrapper {
@@ -20,10 +21,18 @@
 .dropDownTitle {
     font: 600 20px/18px $gibson;
     margin-bottom: 10px;
+
+    &:hover {
+        color: $orange;
+    }
 }
 
 .subItem {
     font: 400 20px/18px $gibson;
     color: #929492;
     margin-bottom: 5px;
+
+    &:hover {
+        color: $orange;
+    }
 }

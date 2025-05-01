@@ -28,6 +28,7 @@
 }
 
 .carouselControls {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     max-width: 565px;
@@ -36,4 +37,14 @@
 
 .arrowRight {
     transform: rotate(180deg);
+
+    svg {
+        height: 25px;
+    }
+}
+
+.arrow {
+    svg {
+        height: 25px;
+    }
 }
