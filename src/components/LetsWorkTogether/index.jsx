@@ -16,7 +16,8 @@ const LetsWorkTogether = ({
     descriptionTitle,
     showSeparator = true,
     pdfFile,
-    title }) => {
+    title
+}) => {
     const listStyle = Array.isArray(description);
 
     const { ref, inView } = useInView({
@@ -27,32 +28,36 @@ const LetsWorkTogether = ({
 
     useEffect(() => {
         if (titleRef.current) {
-            if (inView) {
-                console.log('Adding scaleAnimation');
-                titleRef.current.classList.add(styles.scaleAnimation);
-            } else {
-                console.log('Removing scaleAnimation');
-                titleRef.current.classList.remove(styles.scaleAnimation);
-            }
+            titleRef.current.style.opacity = inView ? '1' : '0';
         }
     }, [inView]);
 
-    const titleClassName = cx(styles.title, {
-        [styles.scaleAnimation]: inView,
-    });
-
     return (
-        <div className={cx(styles.container, {
-            [styles.darkMode]: darkMode,
-        }, className)} ref={ref}>
+        <div
+            className={cx(styles.container, {
+                [styles.darkMode]: darkMode,
+            }, className)}
+            ref={ref}
+        >
             <div className={styles.textPart}>
                 {!!imgSrc && <div className={styles.iconAbove}>
                     <img src={imgSrc} />
                 </div>}
-                <h2 className={titleClassName} ref={titleRef}>{title}</h2>
+
+                {/* TITLE WITH ANIMATION */}
+                <div className={styles.revealTextWrapper}>
+                    <h2 className={styles.revealText} ref={titleRef}>{title}</h2>
+                    {inView && <div className={styles.revealOverlay}></div>}
+                </div>
+
                 {showSeparator && <Separator className={styles.separator} />}
                 {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
-                {!!description?.length && !listStyle && <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }}></div>}
+                {!!description?.length && !listStyle && (
+                    <div
+                        className={styles.description}
+                        dangerouslySetInnerHTML={{ __html: description }}
+                    ></div>
+                )}
                 {!!description?.length && listStyle && (
                     <ul className={styles.description}>
                         {description.map((item, index) => (
@@ -64,13 +69,23 @@ const LetsWorkTogether = ({
                     </ul>
                 )}
                 {href && <ArrowButton text={textButton} href={href} />}
-                {pdfFile && <a href={`/pdfs/${pdfFile}`} download className={styles.downloadButton}>Download Brouchure</a>}
+                {pdfFile && (
+                    <a
+                        href={`/pdfs/${pdfFile}`}
+                        download
+                        className={styles.downloadButton}
+                    >
+                        Download Brouchure
+                    </a>
+                )}
             </div>
-            {!!imgSrc && <div className={styles.icon}>
-                <img src={imgSrc} />
-            </div>}
+            {!!imgSrc && (
+                <div className={styles.icon}>
+                    <img src={imgSrc} />
+                </div>
+            )}
         </div>
     );
-}
+};
 
 export default LetsWorkTogether;

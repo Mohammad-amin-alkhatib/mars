@@ -3,178 +3,145 @@
 @import '../../styles/variables/breakpoints.scss';
 
 .container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
 
-    @include bp-below(medium) {
-        padding: 50px 100px;
-    }
+  @include bp-below(medium) {
+    padding: 50px 100px;
+  }
 
-    @include bp-below(small) {
-        padding: 55px 45px;
-    }
+  @include bp-below(small) {
+    padding: 55px 45px;
+  }
 }
 
 .transperatBackground {
-    background: none;
+  background: none;
 }
 
 .textPart {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 550px;
 
-    @include bp-below(medium) {
-        gap: 25px;
-    }
+  @include bp-below(medium) {
+    gap: 25px;
+  }
 }
 
-.title {
-    color: $black-200;
-    font: 600 60px $gibson;
+.revealTextWrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
 
-    @include bp-below(small) {
-        font-size: 43px;
-    }
+.revealText {
+  font: 600 60px $gibson;
+  color: $black-200;
+  opacity: 0;
+  transition: opacity 1ms linear;
+  transition-delay: 1.1s;
+  position: relative;
+  z-index: 1;
+
+  @include bp-below(small) {
+    font-size: 43px;
+  }
+}
+
+.revealOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: $orange;
+  z-index: 2;
+  opacity: 1;
+  animation:
+    expandOverlay 0.5s ease 0.5s forwards,
+    slideAwayOverlay 0.4s ease-out 1.1s forwards;
+}
+
+@keyframes expandOverlay {
+  0% {
+    width: 3px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes slideAwayOverlay {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .iconAbove {
-    @include bp-above(medium) {
-        display: none;
-    }
+  @include bp-above(medium) {
+    display: none;
+  }
 
-    @include bp-below(medium) {
-        img {
-            width: 50%;
-            margin: 60px 0 85px;
-        }
+  @include bp-below(medium) {
+    img {
+      width: 50%;
+      margin: 60px 0 85px;
     }
+  }
 
-    @include bp-below(small) {
-        display: none;
-    }
+  @include bp-below(small) {
+    display: none;
+  }
 }
 
 .icon {
-    @include bp-below(medium) {
-        display: none;
-    }
+  @include bp-below(medium) {
+    display: none;
+  }
 }
 
-.descitpion {
-    color: $black-200;
-    font: 400 20px $gibson;
-}
-
+.description,
 .listItem {
-    color: $black-200;
-    text-align: justify;
-    font: 400 20px $gibson;
-}
-
-.scaleAnimation {
-    animation: scaleFromLeft 0.5s ease-in-out forwards,
-        removeBackground 0.5s ease 0.5s forwards,
-        showText 0.5s ease 1s forwards;
-    background-color: $orange;
-    color: transparent;
-    display: inline-block;
-    opacity: 0;
-    transform-origin: 0% 50%;
-    transform: scale(0, 1);
-    will-change: transform, opacity;
-}
-
-@keyframes scaleFromLeft {
-    0% {
-        background-color: $orange;
-        transform: scale(0, 1);
-        opacity: 0;
-    }
-
-    100% {
-        background-color: $orange;
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-}
-
-@keyframes removeBackground {
-    100% {
-        background-color: transparent;
-        color: $black-200;
-    }
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-}
-
-.darkMode {
-    * {
-        color: $white;
-    }
-
-    .scaleAnimation {
-        animation: darkModeScaleFromLeft 0.5s ease-in-out forwards,
-            darkModeRemoveBackground 0.5s ease 0.5s forwards,
-            darkModeShowText 0.5s ease 1s forwards;
-        background-color: $orange;
-        color: transparent;
-    }
-
-    @keyframes darkModeScaleFromLeft {
-        0% {
-            background-color: $orange;
-            transform: scale(0, 1);
-            opacity: 0;
-            color: transparent;
-        }
-
-        100% {
-            background-color: $orange;
-            transform: scale(1, 1);
-            opacity: 1;
-            color: $white;
-        }
-    }
-
-    @keyframes darkModeRemoveBackground {
-        100% {
-            background-color: transparent;
-            color: $white;
-        }
-    }
-
-    @keyframes darkModeShowText {
-        100% {
-            opacity: 1;
-        }
-    }
+  color: $black-200;
+  font: 400 20px $gibson;
+  text-align: justify;
 }
 
 .downloadButton {
-    color: #2E3134;
-    font: 600 30px $gibson;
-    border: 1px solid #2E3134;
-    padding: 11px;
-    width: fit-content;
+  color: #2E3134;
+  font: 600 30px $gibson;
+  border: 1px solid #2E3134;
+  padding: 11px;
+  width: fit-content;
 
-    &:hover {
-        color: $white;
-        background-color: $orange;
-        border-color: $orange;
-    }
+  &:hover {
+    color: $white;
+    background-color: $orange;
+    border-color: $orange;
+  }
 
-    @include bp-below(medium) {
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
+  @include bp-below(medium) {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+/* Dark mode overrides */
+.darkMode {
+  * {
+    color: $white;
+  }
+
+  .revealText {
+    color: $white;
+  }
 }
