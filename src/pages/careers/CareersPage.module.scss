@@ -1,0 +1,63 @@
+@import '../../styles/variables/fonts.scss';
+@import '../../styles/variables/breakpoints.scss';
+
+.jobs {
+    margin: 150px 0 0px;
+}
+
+.jobsContainer {
+    background-color: #FAFAFA;
+    padding: 30px 100px;
+
+    @include bp-below(medium) {
+        padding: 30px 45px;
+    }
+}
+
+.jobWrpaper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jobCard {
+    background: #FFF;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 232px;
+    max-width: 611.537px;
+    padding: 30px 60px;
+    width: 100%;
+}
+
+.titleCard {
+    color: #4A4F54;
+    font-family: $gibson;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    max-width: 250px;
+
+    @include bp-below(medium) {
+        max-width: 200px;
+    }
+}
+
+
+.descriptionCard {
+    color: #8D8D8D;
+    font-family: $gibson;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 250px;
+
+    @include bp-below(medium) {
+        max-width: 200px;
+    }
+}

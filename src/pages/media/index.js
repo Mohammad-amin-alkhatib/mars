@@ -6,10 +6,10 @@ import fs from "fs";
 import Head from "next/head";
 import DesktopNavBar from "@/components/DesktopNavBar";
 import MobileNavBar from "@/components/MobileNavBar";
+import Pagination from "@/components/Pagination";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 // Styles
 import styles from "./Media.module.scss";
-import Pagination from "@/components/Pagination";
 
 const ContactPage = ({ header, news = [] }) => {
     const [currentPage, setCurrentPage] = React.useState(0);
