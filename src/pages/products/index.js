@@ -6,7 +6,6 @@ import fs from "fs";
 import CardContainer from "@/components/CardContainer";
 import Head from "next/head";
 import InrtoHeader from "@/components/IntroHeader";
-import KeyFeatures from "@/components/KeyFeatures";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 // Styles
 import styles from "./ProductsPage.module.scss";
@@ -26,7 +25,6 @@ const ProductsPage = ({ header, products, letsWorkTogether, keyFeatures }) => {
                     header={header}
                 />
                 {products?.length && <CardContainer cards={products} className={styles.cardContainer}/>}
-                {keyFeatures && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
                 <LetsWorkTogether
                     className={styles.letsWorkTogether}
                     title={letsWorkTogether?.title}
