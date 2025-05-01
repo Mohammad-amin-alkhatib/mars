@@ -25,7 +25,7 @@ const ProductsPage = ({ header, products, letsWorkTogether, keyFeatures }) => {
                 <InrtoHeader
                     header={header}
                 />
-                {products?.length && <CardContainer cards={products} />}
+                {products?.length && <CardContainer cards={products} className={styles.cardContainer}/>}
                 {keyFeatures && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
                 <LetsWorkTogether
                     className={styles.letsWorkTogether}
