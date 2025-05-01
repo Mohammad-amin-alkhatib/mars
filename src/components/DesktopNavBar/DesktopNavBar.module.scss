@@ -2,12 +2,58 @@
 @import "../../styles/variables/fonts.scss";
 @import "../../styles/variables/breakpoints.scss";
 
+@keyframes btn-hover {
+    0% {
+      background-color: initial;
+      color: initial;
+      border-color: initial;
+    }
+    100% {
+      background-color: $orange;
+      color: $white;
+      border-color: $orange;
+    }
+}
+
+@keyframes btn-unhover {
+    0% {
+      background-color: $orange;
+      color: $white;
+      border-color: $orange;
+    }
+    100% {
+      background-color: initial;
+      color: initial;
+      border-color: initial;
+    }
+}
+
+@keyframes title-hover {
+    0% {
+      color:  initial;
+    }
+    100% {
+      color: $orange;
+      border-bottom: 2px solid $orange;
+    }
+}
+
+@keyframes title-unhover {
+    0% {
+      color: $orange;
+      border-bottom: 2px solid $orange;
+    }
+    100% {
+        color:  initial;
+    }
+}
+
 .navBarContainer {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 100px;
+    padding: 1rem 100px;
     gap: 40px;
 
     @include bp-below(large) {
@@ -23,6 +69,15 @@
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+.navItemWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .subNavItem {
@@ -41,14 +96,20 @@
     font: 400 20px/100% $gibson;
 
     &:hover {
-        background-color: $orange;
-        color: $white;
-        border-color: $orange;
+        animation: btn-hover 0.3s ease-in forwards;
     }
+}
+
+.btnUnHover {
+    animation: btn-unhover 0.3s ease-out forwards;
 }
 
 .itemWrapper {
     white-space: nowrap;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 
     svg {
         position: relative;
@@ -56,12 +117,12 @@
     }
 }
 
-.minusIcon {
-    height: 8px;
+.navItemWrapper:hover {
+    .subNavItem {
+        animation: title-hover 0.3s ease-in forwards;
+    }
 }
 
-.itemWrapper:hover {
-    a:first-child {
-        color: $orange;
-    }
+.unHover {
+    animation: title-unhover 0.3s ease-out forwards;
 }

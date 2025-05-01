@@ -2,13 +2,13 @@
 @import "../../styles/variables/fonts.scss";
 
 @keyframes slide-up {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
 .mobileMenu {
     position: fixed;
