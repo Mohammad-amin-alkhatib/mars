@@ -40,7 +40,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 56px;
-    max-width: 250px;
 
     @include bp-below(medium) {
         max-width: 200px;
