@@ -55,16 +55,20 @@ export default function Home({
           description={chooseUs?.description}
         />
         {ourPartners && (
-          <div className={styles.pixSection}>
-            {ourPartners.map((icon, index) => {
-              const Icon = dynamic(() => import(`../assets/icons/partners/${icon}.svg`), {
-                ssr: false,
-              });
+          <div className={styles.scrollerWrapper}>
+            <div className={styles.pixSection}>
+              {ourPartners.map((icon, index) => {
+                const Icon = dynamic(() => import(`../assets/icons/partners/${icon}.svg`), {
+                  ssr: false,
+                });
 
-              return <div key={index} className={styles.pixIcon}>
-                <Icon />
-              </div>
-            })}
+                return (
+                  <div key={index} className={styles.pixIcon}>
+                    <Icon />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
         <LetsWorkTogether
