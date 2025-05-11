@@ -46,8 +46,5 @@
     display: flex;
     gap: 50px;
     background-color: $orange;
-
-    @include bp-below(medium) {
-        overflow-x: scroll;
-    }
+    overflow-x: scroll;
 }

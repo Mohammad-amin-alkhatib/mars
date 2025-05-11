@@ -41,5 +41,6 @@
         "buttonText": "Contact Us",
         "href": "/contact",
         "imgSrc": "work-together.svg"
-    }
+    },
+    "ourPartners": ["pix","pix","pix","pix","pix","pix", "pix","pix","pix","pix","pix", "pix","pix","pix","pix","pix", "pix","pix","pix","pix"]
 }

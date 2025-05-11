@@ -10,8 +10,8 @@ import Card from "@/components/Card";
 // Styles
 import styles from "./index.module.scss";
 // Assets
-import PIX from "@/assets/icons/pix.svg";
 import InrtoHeader from "@/components/IntroHeader";
+import dynamic from "next/dynamic";
 
 export default function Home({
   banner,
@@ -19,6 +19,7 @@ export default function Home({
   header,
   letsWorkTogether,
   services,
+  ourPartners = []
 }) {
   return (
     <>
@@ -53,13 +54,19 @@ export default function Home({
           imgSrc={chooseUs?.imgSrc}
           description={chooseUs?.description}
         />
-        <div className={styles.pixSection}>
-          {Array(5).fill(0).map((_, index) => (
-            <div key={index} className={styles.pixIcon}>
-              <PIX />
-            </div>
-          ))}
-        </div>
+        {ourPartners && (
+          <div className={styles.pixSection}>
+            {ourPartners.map((icon, index) => {
+              const Icon = dynamic(() => import(`../assets/icons/partners/${icon}.svg`), {
+                ssr: false,
+              });
+
+              return <div key={index} className={styles.pixIcon}>
+                <Icon />
+              </div>
+            })}
+          </div>
+        )}
         <LetsWorkTogether
           title={letsWorkTogether?.title}
           description={letsWorkTogether?.description}
