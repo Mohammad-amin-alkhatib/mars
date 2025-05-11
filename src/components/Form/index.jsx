@@ -62,7 +62,7 @@ const Form = ({ className }) => {
                     </div>
                 </div>
                 <div className={styles.consent}>
-                    <input type="radio" className={styles.checkbox} {...register('consent', { required: 'Please Conset before sendin email' })} />
+                    <input type="checkbox" className={styles.checkbox} {...register('consent', { required: 'Please Conset before sendin email' })} />
                     <label htmlFor="consent">I agree that my data will be collected and stored electronically with our privacy policy to answer my inquiry, and none of this gathered information will be disclosed with any other party nor published to any other entity.</label>
                 </div>
                 {errors.consent && <p className={styles.error}>{errors.consent.message}</p>}
