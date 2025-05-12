@@ -54,7 +54,7 @@ export default function Home({
           imgSrc={chooseUs?.imgSrc}
           description={chooseUs?.description}
         />
-        {ourPartners && (
+        {!!ourPartners.length && (
           <div className={styles.scrollerWrapper}>
             <div className={styles.pixSection}>
               {ourPartners.map((icon, index) => {
