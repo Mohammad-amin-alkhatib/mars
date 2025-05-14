@@ -16,6 +16,7 @@ const InrtoHeader = ({ header, className }) => {
             {...(header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
+                    backgroundSize: "cover",
                 },
             })}>
             {header?.videoUrl &&
@@ -23,6 +24,7 @@ const InrtoHeader = ({ header, className }) => {
                     autoPlay
                     muted
                     loop
+                    controls={false}
                     playsInline
                     className={styles.video}
                     onContextMenu={(e) => e.preventDefault()}
