@@ -6,7 +6,6 @@ import MobileNavBar from "../MobileNavBar";
 import LetsWorkTogether from "../LetsWorkTogether";
 // Styles
 import styles from "./IntroHeader.module.scss";
-import { useEffect, useState } from "react";
 
 const InrtoHeader = ({ header, className }) => {
     return (
