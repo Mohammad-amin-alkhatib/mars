@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "MARS Robotics - Unmanned Aerial Systems",
+        "description": "MARS Robotics® focuses on the innovative design and development of advanced Unmanned Aerial Systems (UAS), covering a wide range from Group 1 to Group 4 classifications.",
+        "keywords": "UAV, UAS, drones, robotics, MARS Robotics"
+    },
     "header": {
         "videoUrl": "/homepageVideo.mp4",
         "title": "UAVs System Design",

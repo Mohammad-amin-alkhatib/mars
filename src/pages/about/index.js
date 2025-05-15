@@ -51,11 +51,6 @@ export default function About({ header, ourMission, ourVision, teamMembers }) {
 
     return (
         <>
-            <Head>
-                <title>About Us</title>
-                <meta name="description" content="About Us Page" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-            </Head>
             <div className="aboutPage">
                 <InrtoHeader header={header} />
                 <LetsWorkTogether
