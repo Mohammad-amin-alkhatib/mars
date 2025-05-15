@@ -1,9 +1,16 @@
+@import '../../styles/variables/breakpoints.scss';
+
 .headerContainer {
     position: relative;
 }
 
 .header {
     position: relative;
+    height: 100vh;
+
+    @include bp-below(medium) {
+        height: 100%;
+    }
 }
 
 .video {

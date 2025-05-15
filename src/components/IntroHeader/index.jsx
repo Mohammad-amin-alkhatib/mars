@@ -16,7 +16,7 @@ const InrtoHeader = ({ header, className }) => {
             {...(header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
-                    backgroundSize: header.coverImage? "cover": "",
+                    backgroundSize: header.coverImage ? "cover" : "",
                 },
             })}>
             {header?.videoUrl &&
@@ -39,6 +39,7 @@ const InrtoHeader = ({ header, className }) => {
                 description={header?.description}
                 className={styles.header}
                 showSeparator={header?.showSeparator}
+                {...header}
             />
         </div>
     );
