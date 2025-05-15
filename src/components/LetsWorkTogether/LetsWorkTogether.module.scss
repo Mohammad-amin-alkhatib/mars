@@ -5,12 +5,10 @@
 .container {
   align-items: center;
   display: flex;
-  height: 100vh;
   justify-content: space-between;
   padding: 80px 100px;
 
   @include bp-below(medium) {
-    height: 100%;
     padding: 50px 100px;
   }
 
