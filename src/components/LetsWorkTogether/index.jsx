@@ -16,7 +16,9 @@ const LetsWorkTogether = ({
     descriptionTitle,
     showSeparator = true,
     pdfFile,
-    title
+    title,
+    hrefHeader,
+    ctaHeader
 }) => {
     const listStyle = Array.isArray(description);
 
@@ -68,6 +70,10 @@ const LetsWorkTogether = ({
                         ))}
                     </ul>
                 )}
+                {!!hrefHeader && (
+                    <a href={`/pdfs/${hrefHeader}`} className={styles.linkDownload} download>
+                        {ctaHeader}
+                    </a>)}
                 {href && <ArrowButton text={textButton} href={href} />}
                 {pdfFile && (
                     <a

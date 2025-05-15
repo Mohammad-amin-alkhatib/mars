@@ -3,12 +3,14 @@
 @import '../../styles/variables/breakpoints.scss';
 
 .container {
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 100vh;
   justify-content: space-between;
   padding: 80px 100px;
 
   @include bp-below(medium) {
+    height: 100%;
     padding: 50px 100px;
   }
 
@@ -133,6 +135,13 @@
     font-weight: 600;
     line-height: normal;
   }
+}
+
+
+.linkDownload {
+  color: #2C2F32;
+  font: 400 20px $gibson;
+  text-decoration: underline;
 }
 
 /* Dark mode overrides */
