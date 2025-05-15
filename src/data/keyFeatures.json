@@ -12,7 +12,7 @@
         "icon": "advanced-proprietary.svg"
     },
     "ahrs": {
-        "title": "AHRS",
+        "title": "AHRS Stabilization ",
         "icon": "ahrs.svg"
     },
     "altitude-compensation": {
@@ -32,7 +32,7 @@
         "icon": "comprehensive-autonomous-capabilities.svg"
     },
     "digital-video-hd": {
-        "title": "Digital Video HD",
+        "title": "1080P HD Digital Video",
         "icon": "digital-video-hd.svg"
     },
     "direct-drive-architecture": {
@@ -44,7 +44,7 @@
         "icon": "enhancing-engine-performance-and-efficiency.svg"
     },
     "environmentally-seal": {
-        "title": "Environmentally Seal",
+        "title": "Environmentally Sealed",
         "icon": "environmentally-seal.svg"
     },
     "ethernet-interface": {
@@ -96,7 +96,7 @@
         "icon": "start-warm-up-fuel-enrichment.svg"
     },
     "support-engines-cc": {
-        "title": "Support Engines CC",
+        "title": "Support Engines from 35 to 300 CC",
         "icon": "support-engines-cc.svg"
     },
     "versatile-hardware-for-cross-functional-mission": {
@@ -104,7 +104,47 @@
         "icon": "versatile-hardware-for-cross-functional-mission.svg"
     },
     "visible-thermal-cameras": {
-        "title": "Visible Thermal Cameras",
+        "title": "Visible & Thermal Cameras",
         "icon": "visible-thermal-cameras.svg"
+    },
+    "Environmental-Adaptability": {
+        "title": "Environmental Adaptability",
+        "icon": "Environmental-Adaptability.svg"
+    },
+    "Quaternion-based": {
+        "title": "Quaternion based",
+        "icon": "Quaternion-based.svg"
+    },
+    "Precision-Attitude-Estimation": {
+        "title": "Precision Attitude Estimation",
+        "icon": "Precision-Attitude-Estimation.svg"
+    },
+    "Intuitive-interface": {
+        "title": "Intuitive interface",
+        "icon": "Intuitive-interface.svg"
+    },
+    "Static-and-Dynamic-Accuracy": {
+        "title": "Static & Dynamic Accuracy",
+        "icon": "Static-and-Dynamic-Accuracy.svg"
+    },
+    "Easy-Installation": {
+        "title": "Easy Installation",
+        "icon": "Easy-Installation.svg"
+    },
+    "Cost-Effective-Precision": {
+        "title": "Cost Effective Precision",
+        "icon": "Cost-Effective-Precision.svg"
+    },
+    "Navigate-with-Confidence": {
+        "title": "Navigate with Confidence",
+        "icon": "Navigate-with-Confidence.svg"
+    },
+    "Low-Power-Operation": {
+        "title": "Low Power Operation",
+        "icon": "Low-Power-Operation.svg"
+    },
+    "Multi-Band-GNSS-Constellation-Versatility": {
+        "title": "Multi Band GNSS Constellation Versatility",
+        "icon": "Multi-Band-GNSS-Constellation-Versatility.svg"
     }
 }

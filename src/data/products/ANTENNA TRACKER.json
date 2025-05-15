@@ -1,0 +1,20 @@
+{
+    "header": {
+        "title": "ANTENNA TRACKER",
+        "description": "The Antenna Tracker was developed for BVLOS missions that require stable, high-quality communication  between the ground station and UAVs, especially in environments with considerable obstructions  and interference. It is an indispensable asset in expanding the boundaries of UAV operations, and  consequently, improving the quality of data received and the effectiveness of the mission.",
+        "imgSrc": "/ANTENNA TRACKER.png"
+    },
+    "keyFeatures": [
+        "plug-play",
+        "adaptability-to-customer-needs",
+        "itar-free",
+        "integrability-with-various-autopilots-ensors-and-antennae",
+        "prediction-mode-based-flight-mission"
+    ],
+    "footer": {
+        "title": "Specifications",
+        "description": "Read more about  MARS ANTENNA TRACKER 300 .",
+        "pdfFile": "MARSECU.pdf",
+        "imgSrc": "/ANTENNA TRACKER.png"
+    }
+}

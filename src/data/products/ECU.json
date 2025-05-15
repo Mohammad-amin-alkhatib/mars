@@ -1,0 +1,24 @@
+{
+    "header": {
+        "title": "MARSECU",
+        "description": "The Engine Control Unit (ECU) is an electronic device designed to optimize engine performance by  regulating fuel injection timing, the amount of fuel being injected, and ignition timing. This improves  fuel efficiency, reduces emissions, and enhances overall engine performance. Our ECU features a  user-friendly Graphical User Interface (GUI) that monitors various engine data.",
+        "imgSrc": "/ECU.png"
+    },
+    "keyFeatures": [
+        "support-engines-cc",
+        "automatic-fuel-injection",
+        "regulating-injection-time-and-amount",
+        "ignition-management",
+        "start-warm-up-fuel-enrichment",
+        "altitude-compensation",
+        "graphical-user-interface",
+        "adaptability-across-varying-conditions",
+        "enhancing-engine-performance-and-efficiency"
+    ],
+    "footer": {
+        "title": "Specifications",
+        "description": "Read more about the Engine Control Unit(ECU).",
+        "pdfFile": "MARSECU.pdf",
+        "imgSrc": "/ECU.png"
+    }
+}
