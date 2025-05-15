@@ -6,6 +6,7 @@ import MobileNavBar from "../MobileNavBar";
 import LetsWorkTogether from "../LetsWorkTogether";
 // Styles
 import styles from "./IntroHeader.module.scss";
+import { useEffect, useState } from "react";
 
 const InrtoHeader = ({ header, className }) => {
     return (
@@ -16,7 +17,7 @@ const InrtoHeader = ({ header, className }) => {
             {...(header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
-                    backgroundSize: "cover",
+                    backgroundSize: header.coverImage? "cover": "",
                 },
             })}>
             {header?.videoUrl &&

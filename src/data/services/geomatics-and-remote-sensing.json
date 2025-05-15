@@ -2,7 +2,8 @@
     "header": {
         "imgSrc": "/amara-drone.png",
         "title": "UAVs System Design",
-        "showSeparator": false
+        "showSeparator": false,
+        "coverImage": true
     },
     "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the\nimplementation of cutting-edge remote sensing solutions. We specialize in providing\nhigh-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications.\nOur services span through a wide range of applications that serve several sectors.",
     "subServices": [
