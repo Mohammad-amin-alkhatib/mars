@@ -1,29 +1,24 @@
 {
     "header": {
-        "imgSrc": "/amara-drone.png",
-        "title": "UAVs System Design",
+        "videoUrl": "/-215b-40d0-84e4-4b375229e349.mp4",
+        "title": "Photogrammetry",
         "showSeparator": false,
          "coverImage": true
     },
-    "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the\nimplementation of cutting-edge remote sensing solutions. We specialize in providing\nhigh-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications.\nOur services span through a wide range of applications that serve several sectors.",
+    "serviceDescription": "Photogrammetry is the science and technology of extracting accurate measurements and spatial information from photographs. It transforms 2D images into 3D models, maps, or orthophotos, widely used in surveying, architecture, and remote sensing. By analyzing image overlaps and camera positions, photogrammetry reconstructs real-world objects or terrains with precision. It is essential for applications like topographic mapping, urban planning, and heritage preservation.",
     "articles": [
         {
-            "title": "Photogrammetry",
-            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "videoUrl": "homepageVideo.mp4"
+            "title": "GIS Applications",
+            "description": "integrate high-resolution 3D models and orthophotos into spatial analyses and mapping. They support urban planning, infrastructure monitoring, and environmental management with accurate geospatial data. Photogrammetry enhances GIS workflows by providing precise terrain and feature measurements for informed decision-making.",
+            "videoUrl": "-215b-40d0-84e4-4b375229e349.mp4"
         },
         {
-            "title": "Photogrammetry",
-            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "imgSrc": "GIS Applications.png"
-        },
-        {
-            "title": "Photogrammetry",
+            "title": "Topographic mapping",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
             "imgSrc": "GIS Applications.png"
         },
         {
-            "title": "Photogrammetry",
+            "title": "Road Inspection",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
             "imgSrc": "GIS Applications.png"
         }
