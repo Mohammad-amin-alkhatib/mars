@@ -8,7 +8,7 @@
         "icon": "adaptability-to-customer-needs.svg"
     },
     "advanced-proprietary": {
-        "title": "Advanced Proprietary",
+        "title": "Advanced Proprietary GNSS-INS Solution",
         "icon": "advanced-proprietary.svg"
     },
     "ahrs": {
@@ -146,5 +146,17 @@
     "Multi-Band-GNSS-Constellation-Versatility": {
         "title": "Multi Band GNSS Constellation Versatility",
         "icon": "Multi-Band-GNSS-Constellation-Versatility.svg"
+    },
+    "Spoofing-and-Jamming-Detection": {
+        "title": "Spoofing and Jamming Detection",
+        "icon": "Spoofing-and-Jamming-Detection.svg"
+    },
+    "Dead-Reckoning": {
+        "title": "Dead Reckoning",
+        "icon": "Dead-Reckoning.svg"
+    },
+    "Superior-Velocity-Accuracy": {
+        "title": "Superior Velocity Accuracy",
+        "icon": "Superior-Velocity-Accuracy.svg"
     }
 }

@@ -5,23 +5,28 @@
         "showSeparator": false,
         "coverImage": true
     },
-    "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the\nimplementation of cutting-edge remote sensing solutions. We specialize in providing\nhigh-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications.\nOur services span through a wide range of applications that serve several sectors.",
+    "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the implementation of cutting-edge remote sensing solutions. We specialize in providing high-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications. <br /><br/> Our services span through a wide range of applications that serve several sectors.",
     "subServices": [
         {
             "title": "Photogrammetry",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "MARSNAV.png",
+            "image": "Photogrammetry.png",
             "href": "/services/geomatics-and-remote-sensing/photogrammetry"
         },
         {
-            "title": "UAVs System Design",
+            "title": "Thermal",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "MARSNAV.png"
+            "image": "thermal.png"
         },
         {
-            "title": "UAVs System Design",
+            "title": "LiDAR Mapping",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "MARSNAV.png"
+            "image": "LiDAR Mapping.png"
+        },
+        {
+            "title": "Multispectral",
+            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
+            "image": "Multispectral.png"
         }
     ],
     "chooseUs": {

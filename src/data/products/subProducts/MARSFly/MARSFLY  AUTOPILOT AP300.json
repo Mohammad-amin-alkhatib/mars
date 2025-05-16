@@ -1,0 +1,21 @@
+{
+    "header": {
+        "title": "MARSFLY  AUTOPILOT AP300",
+        "description": "MARSFly Autopilot AP300 is a high-performance flight control system designed for mid-range  UAVs. It offers advanced navigation, exceptional stability, and mission adaptability. With GPS  integration, real-time telemetry, robust safety fail-safes, and versatile payload compatibility, it  ensures reliable autonomous operation across diverse environments, making it an ideal choice  for reconnaissance, delivery, and inspection missions.",
+        "imgSrc": "/MARSFLY  AUTOPILOT AP300.png"
+    },
+    "keyFeatures": [
+       "comprehensive-autonomous-capabilities",
+        "adaptability-to-customer-needs",
+        "itar-free",
+        "integrability-with-various-platforms-sensors-and-avionics-systems",
+        "versatile-hardware-for-cross-functional-mission",
+        "advanced-proprietary"
+    ],
+    "footer": {
+        "title": "Specifications",
+        "description": "Read more about  MARSFly Autopilot AP300.",
+        "pdfFile": "MARSFly Autopilot AP300.pdf",
+        "imgSrc": "/MARSFLY  AUTOPILOT AP300.png"
+    }
+}

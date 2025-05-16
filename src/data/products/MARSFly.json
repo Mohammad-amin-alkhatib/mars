@@ -1,0 +1,28 @@
+{
+    "header": {
+        "title": "MARSFly",
+        "description": "An autonomous flight management system consists of multiple avionics systems, including autopilot, ground station, and user interface. MARS Fly’s design flexibility and commitment to continuous development ensure that the system can be tailored to meet the unique needs and preferences of customers while adapting to evolving market demands.",
+        "imgSrc": "/MARSFLY  AUTOPILOT AP300.png"
+    },
+    "products": [
+        {
+            "title": "MARSFLY  AUTOPILOT AP300",
+            "description": "MARSNAV-AHRS 100 is a compact, cost-effective navigation solution based on an Adaptive Extended Kalman Filter (AEKF) algorithm, delivering precise roll, pitch, and heading data for accurate attitude determination up to 200 Hz update rate. Built with an industrial-grade sensor (9-DOF), it ensures robust performance and stabilization in dynamic land, marine, and aerospace environments.",
+            "image": "MARSFLY  AUTOPILOT AP300.png",
+            "href": "/products/MARSFly/MARSFLY  AUTOPILOT AP300"
+        },
+        {
+            "title": "MARSFLY  AUTOPILOT AP200",
+            "description": "MARSFly Autopilot AP200, designed for lower-cost UAVs, provides autonomous capabilities for  UAVs performing various mapping or tactical missions.   The AP200 autopilot system seamlessly blends state-of-the-art algorithms with intuitive design to  meet safety, convenience, and flight performance objectives.",
+            "image": "MARSFLY AUTOPILOT AP200.png",
+            "href": "/products/MARSFly/MARSFLY  AUTOPILOT AP200"
+        }
+    ], 
+    
+    "footer": {
+        "title": "Specifications",
+        "description": "Mars Navigation is designed to operate in extreme conditions, including high radiation levels and low temperatures. It is equipped with advanced sensors and algorithms to ensure accurate navigation and obstacle detection.",
+        "pdfFile": "marsnav-specs.pdf",
+        "imgSrc": "/work-together.svg"
+    }
+}

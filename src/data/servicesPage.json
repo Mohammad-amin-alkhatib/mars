@@ -2,24 +2,24 @@
     "header": {
         "videoUrl": "/homepageVideo.mp4",
         "title": "UAVs System Design",
-        "description": "MARS Robotics® focuses on the innovative design and development of advanced Unmanned Aerial Systems (UAS), covering a wide range from Group 1 to Group 4 classifications."
+        "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
     },
     "services": {
         "cards": [
             {
                 "title": "Unmanned Aerial Systems(UAS)",
-                "href": "/services/geomatics-and-remote-sensing",
+                "href": "/services",
                 "image": "services.svg",
-                "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
+                "description": "MARSRobotics Design Team specializes in the development and manufacturing of advanced  airframes for Unmanned Aerial Vehicles (UAVs) and other related subsystems. Our innovative  airframe designs prioritize efficiency, durability, and versatility, ensuring optimal performance across  various applications."
             },
             {
                 "title": "Geomatics & RS",
-                "href": "/services",
-                "image": "services.svg",
-                "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
+                "href": "/services/geomatics-and-remote-sensing",
+                "image": "Urban Planning.png",
+                "description": "The Remote Sensing Division is dedicated to empowering our clientele through the implementation of cutting-edge remote sensing solutions. We specialize in providing high-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications."
             }
-        ],
-        "description": "we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies. (fill text) "
+        ]
+      
     },
     "chooseUs": {
         "title": "Why Choose MARS Robotics",

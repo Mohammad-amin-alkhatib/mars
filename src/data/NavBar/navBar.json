@@ -15,27 +15,23 @@
                 "menuItems": [
                     {
                         "subItem": "Navigation Solution",
-                        "url": ""
+                        "url": "/products/marsnav/"
                     },
                     {
                         "subItem": "Antenna Tracker",
-                        "url": ""
+                        "url": "/products/ANTENNA%20TRACKER/"
                     },
                     {
                         "subItem": "The Engine Control Unit (ECU)",
-                        "url": ""
+                        "url": "/products/ECU/"
                     },
                     {
                         "subItem": "Mars Eye Mini Gimbal",
-                        "url": ""
+                        "url": "/products/MARS%20EYE%20MINI%20GIMBAL/"
                     },
                     {
                         "subItem": "MARSFly",
-                        "url": ""
-                    },
-                    {
-                        "subItem": "UAVs System Design",
-                        "url": ""
+                        "url": "/products/MARSFly/"
                     }
                 ]
             },
@@ -57,6 +53,10 @@
                     },
                     {
                         "subItem": "Simulation",
+                        "url": ""
+                    },
+                    {
+                        "subItem": "UAVs System Design",
                         "url": ""
                     }
                 ]

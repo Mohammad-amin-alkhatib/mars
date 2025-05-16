@@ -1,0 +1,21 @@
+{
+    "header": {
+       "title": "MARSFLY  AUTOPILOT AP200",
+        "description": "MARSFly Autopilot AP200, designed for lower-cost UAVs, provides autonomous capabilities for  UAVs performing various mapping or tactical missions.   The AP200 autopilot system seamlessly blends state-of-the-art algorithms with intuitive design to  meet safety, convenience, and flight performance objectives.",
+        "imgSrc": "/MARSFLY AUTOPILOT AP200.png"
+    },
+   "keyFeatures": [
+        "comprehensive-autonomous-capabilities",
+        "adaptability-to-customer-needs",
+        "itar-free",
+        "integrability-with-various-platforms-sensors-and-avionics-systems",
+        "versatile-hardware-for-cross-functional-mission",
+        "advanced-proprietary"
+    ],
+    "footer": {
+        "title": "Specifications",
+        "description": "Read more about  MARSFly Autopilot AP200.",
+        "pdfFile": "MARSFly Autopilot AP200.pdf",
+         "imgSrc": "/MARSFLY AUTOPILOT AP200.png"
+    }
+}
