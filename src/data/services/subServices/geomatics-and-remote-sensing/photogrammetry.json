@@ -14,13 +14,13 @@
         },
         {
             "title": "Topographic mapping",
-            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "imgSrc": "GIS Applications.png"
+            "description": "generates accurate maps by converting overlapping aerial images into 3D terrain models. This method captures detailed elevation data, contour lines, and surface features efficiently. It is widely used in engineering, construction, and environmental studies for precise land analysis and planning.",
+            "imgSrc": "Topographic mapping.png"
         },
         {
             "title": "Road Inspection",
-            "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "imgSrc": "GIS Applications.png"
+            "description": "captures high-resolution aerial images to create detailed 3D models and orthophotos of road networks. It enables accurate assessment of road conditions, detecting cracks, deformations, and other surface issues. This efficient method supports maintenance planning, infrastructure monitoring, and safety enhancements.",
+            "imgSrc": "Road Inspection.png"
         }
     ],
     "chooseUs": {

@@ -16,17 +16,20 @@
         {
             "title": "Thermal",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "thermal.png"
+            "image": "thermal.png",
+            "href": "/services/geomatics-and-remote-sensing/Thermal"
         },
         {
             "title": "LiDAR Mapping",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "LiDAR Mapping.png"
+            "image": "LiDAR Mapping.png",
+            "href": "/services/geomatics-and-remote-sensing/LiDAR Mapping"
         },
         {
             "title": "Multispectral",
             "description": "We design and manufacture UAV systems for a variety of applications, including aerial mapping, surveying, and public safety. Our systems are tailored to meet the specific needs of our clients.",
-            "image": "Multispectral.png"
+            "image": "Multispectral.png",
+            "href": "/services/geomatics-and-remote-sensing/Multispectral"
         }
     ],
     "chooseUs": {
