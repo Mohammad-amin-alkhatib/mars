@@ -14,7 +14,7 @@ const InrtoHeader = ({ header, className }) => {
     useEffect(() => {
         const handleResize = () => {
             console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
-            
+
             if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
                 setIsMobile(true);
                 return;
@@ -42,7 +42,7 @@ const InrtoHeader = ({ header, className }) => {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                     backgroundSize: header.coverImage ? "cover" : "",
                     backgroundBlendMode: header.reduceOpacity ? "overlay" : "",
-                    backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${reduceOpacity})` : "",
+                    backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${header.reduceOpacity})` : "",
                 },
             })}>
             {header?.videoUrl &&
@@ -50,7 +50,7 @@ const InrtoHeader = ({ header, className }) => {
                     autoPlay
                     muted
                     loop
-                    style={{ opacity: header.reduceOpacity ? 0.5 : 1 }}
+                    style={{ opacity: header.reduceOpacity ?? 1 }}
                     controls={false}
                     playsInline
                     className={styles.video}
