@@ -34,12 +34,11 @@
 }
 
 .image {
-    height: 100%;
     height: 250px !important;
     text-align: center;
 
     @include bp-below(medium) {
-        height: 100%;
+        height: 100% !important;
     }
 }
 
