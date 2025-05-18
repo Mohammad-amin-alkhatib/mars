@@ -6,7 +6,7 @@
 
 .header {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 100px);
 
     @include bp-below(medium) {
         height: 100%;
