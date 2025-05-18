@@ -4,7 +4,7 @@
         "title": "UAVs System Design",
         "showSeparator": false,
         "coverImage": true,
-        "reduceOpacity": true
+        "reduceOpacity": 0.5
     },
     "serviceDescription": "The Remote Sensing Division is dedicated to empowering our clientele through the implementation of cutting-edge remote sensing solutions. We specialize in providing high-accuracy workflows tailored for construction inspection, surveying, aerial mapping, mining, and public safety applications. <br /><br/> Our services span through a wide range of applications that serve several sectors.",
     "subServices": [

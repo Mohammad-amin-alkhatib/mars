@@ -42,7 +42,7 @@ const InrtoHeader = ({ header, className }) => {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                     backgroundSize: header.coverImage ? "cover" : "",
                     backgroundBlendMode: header.reduceOpacity ? "overlay" : "",
-                    backgroundColor: header.reduceOpacity ? "rgba(255, 255, 255, 0.5);" : "",
+                    backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${reduceOpacity})` : "",
                 },
             })}>
             {header?.videoUrl &&
