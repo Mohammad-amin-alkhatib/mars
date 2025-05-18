@@ -38,7 +38,6 @@ const ContactPage = ({ header, getIntouch }) => {
 
     return <>
         <div>
-            {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
             <InrtoHeader
                     header={header}
                 />
