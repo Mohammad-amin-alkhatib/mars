@@ -2,7 +2,7 @@
     "header": {
         "title": "About",
         "description": "Mazari Autonomous Robotics Systems (MARS Robotics®) specializes in UAV solutions, offering flight control systems, GPS/INS navigation, mission planning, and testing. Focused on low-speed, short-range UAVs and UGVs, MARS Robotics® provides ITAR-free products. <br /><br/> They offer turnkey solutions, OEM support, and technical assistance for autonomous systems design, integration, and adaptation. Their MARSFly system cuts autopilot costs by 50-60%. MARS Robotics® also designs and develops MALE UAV systems, providing comprehensive design, development, and flight control integration per customer needs.",
-        "imgSrc": "/test_image2.png",
+        "imgSrc": "/Group1.png",
         "coverImage": true
     },
     "ourMission": {

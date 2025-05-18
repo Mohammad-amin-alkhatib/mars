@@ -3,8 +3,8 @@
         "imgSrc": "/thermal-cover.png",
         "title": "Thermal",
         "showSeparator": false,
-         "coverImage": true,
-                     "description":"Thermal imaging with drones captures heat signatures using thermal sensors, providing detailed temperature data for various applications. These images help detect anomalies like heat loss, electrical faults, or water leaks in infrastructure and buildings. They are widely used in agriculture, search and rescue, industrial inspections, and environmental monitoring. Drones equipped with thermal cameras offer efficient, safe, and cost-effective solutions for inspecting hard-to-reach or hazardous areas."
+        "coverImage": true,
+        "description": "Thermal imaging with drones captures heat signatures using thermal sensors, providing detailed temperature data for various applications. These images help detect anomalies like heat loss, electrical faults, or water leaks in infrastructure and buildings. They are widely used in agriculture, search and rescue, industrial inspections, and environmental monitoring. Drones equipped with thermal cameras offer efficient, safe, and cost-effective solutions for inspecting hard-to-reach or hazardous areas."
     },
     "serviceDescription": "",
     "articles": [
@@ -19,8 +19,7 @@
             "imgSrc": "Solar Panel Inspection.png"
         },
         {
-              "title": "Industrial Inspections",
-          
+            "title": "Industrial Inspections",
             "description": "Thermal imaging for industrial inspections detects overheating, electrical faults, and mechanical issues in equipment and infrastructure. It allows for early identification of potential failures, preventing costly repairs and downtime. This non-contact method enhances safety and improves maintenance efficiency in various industries.",
             "imgSrc": "Industrial-Inspections.png"
         },
