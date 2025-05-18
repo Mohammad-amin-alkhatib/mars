@@ -11,10 +11,6 @@
 .header {
     position: relative;
     height: calc(100vh - 100px);
-
-    @include bp-below(medium) {
-        height: 100%;
-    }
 }
 
 .video {
