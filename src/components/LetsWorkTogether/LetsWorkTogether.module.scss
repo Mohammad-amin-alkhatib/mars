@@ -70,6 +70,7 @@
   0% {
     width: 3px;
   }
+
   100% {
     width: 100%;
   }
@@ -79,6 +80,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -112,6 +114,10 @@
   color: $black-200;
   font: 400 20px $gibson;
   text-align: justify;
+}
+
+.listItem {
+  margin-top: 16px;
 }
 
 .downloadButton {
