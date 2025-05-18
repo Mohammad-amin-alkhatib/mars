@@ -10,6 +10,7 @@ import Head from "next/head";
 import styles from "./Contact.module.scss";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 import Form from "@/components/Form";
+import InrtoHeader from "@/components/IntroHeader";
 
 const ContactPage = ({ header, getIntouch }) => {
     const [isMobile, setIsMobile] = useState(false);
@@ -38,7 +39,9 @@ const ContactPage = ({ header, getIntouch }) => {
     return <>
         <div>
             {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
-            <LetsWorkTogether {...header} />
+            <InrtoHeader
+                    header={header}
+                />
             <LetsWorkTogether
                 title={getIntouch?.title}
                 description={getIntouch?.description}
