@@ -1,5 +1,6 @@
 // Packages
 import cx from "classnames";
+import { useEffect, useState } from "react";
 // Components
 import DesktopNavBar from "../DesktopNavBar";
 import MobileNavBar from "../MobileNavBar";
@@ -8,6 +9,29 @@ import LetsWorkTogether from "../LetsWorkTogether";
 import styles from "./IntroHeader.module.scss";
 
 const InrtoHeader = ({ header, className }) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
+            
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+                setIsMobile(true);
+                return;
+            }
+
+            setIsMobile(window.innerWidth <= 1440);
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div
             className={cx(styles.headerContainer,
@@ -17,6 +41,8 @@ const InrtoHeader = ({ header, className }) => {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                     backgroundSize: header.coverImage ? "cover" : "",
+                    backgroundBlendMode: header.reduceOpacity ? "overlay" : "",
+                    backgroundColor: header.reduceOpacity ? "rgba(255, 255, 255, 0.5);" : "",
                 },
             })}>
             {header?.videoUrl &&
@@ -24,6 +50,7 @@ const InrtoHeader = ({ header, className }) => {
                     autoPlay
                     muted
                     loop
+                    style={{ opacity: header.reduceOpacity ? 0.5 : 1 }}
                     controls={false}
                     playsInline
                     className={styles.video}
@@ -32,8 +59,7 @@ const InrtoHeader = ({ header, className }) => {
                     <source src={header.videoUrl} type="video/mp4" />
                 </video>
             }
-            <DesktopNavBar />
-            <MobileNavBar />
+            {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
             <LetsWorkTogether
                 title={header?.title}
                 description={header?.description}

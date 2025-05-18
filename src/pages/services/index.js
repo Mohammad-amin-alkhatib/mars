@@ -1,5 +1,5 @@
 // Packages
-import React from "react";
+import React, { useEffect, useState } from "react";
 import path from "path";
 import fs from "fs";
 // Components
@@ -12,11 +12,33 @@ import Card from "@/components/Card"
 import styles from "./Services.module.scss";
 
 const ContactPage = ({ header, services, chooseUs }) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
+
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+                setIsMobile(true);
+                return;
+            }
+
+            setIsMobile(window.innerWidth <= 1440);
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <>
             <div>
-                <DesktopNavBar />
-                <MobileNavBar />
+                {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
                 <LetsWorkTogether
                     title={header?.title}
                     description={header?.description}

@@ -1,5 +1,5 @@
 // Packages
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import path from "path";
 import fs from "fs";
 // Components
@@ -15,6 +15,7 @@ const ContactPage = ({ header, news = [] }) => {
     const [currentPage, setCurrentPage] = React.useState(0);
     const [newsPerPage, setNewsPerPage] = React.useState(3);
     const currentNews = news?.slice(currentPage * newsPerPage, (currentPage * newsPerPage) + newsPerPage);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,13 +27,31 @@ const ContactPage = ({ header, news = [] }) => {
         };
 
         handleResize();
+
+        const handleResizeForUserAgent = () => {
+            console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
+
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+                setIsMobile(true);
+                return;
+            }
+
+            setIsMobile(window.innerWidth <= 1440);
+        };
+
+        handleResizeForUserAgent();
+
+        window.addEventListener("resize", handleResizeForUserAgent);
+
+        return () => {
+            window.removeEventListener("resize", handleResizeForUserAgent);
+        };
     }, []);
 
     return (
         <>
             <div>
-                <DesktopNavBar />
-                <MobileNavBar />
+                {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
                 <LetsWorkTogether
                     title={header?.title}
                     description={header?.description}
