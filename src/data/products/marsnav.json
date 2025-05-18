@@ -17,12 +17,12 @@
             "image": "MARSNAV.png",
             "href": "/products/marsnav/MARSNAVGNSS INS 100"
         }
-    ], 
-    
+    ],
     "footer": {
-        "title": "Specifications",
-        "description": "Mars Navigation is designed to operate in extreme conditions, including high radiation levels and low temperatures. It is equipped with advanced sensors and algorithms to ensure accurate navigation and obstacle detection.",
-        "pdfFile": "marsnav-specs.pdf",
+        "title": "Let's Work Together",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+        "buttonText": "Contact Us",
+        "href": "/contact",
         "imgSrc": "/work-together.svg"
     }
 }
