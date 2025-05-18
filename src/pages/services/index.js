@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 import path from "path";
 import fs from "fs";
 // Components
-import Head from "next/head";
-import DesktopNavBar from "@/components/DesktopNavBar";
-import MobileNavBar from "@/components/MobileNavBar";
+import InrtoHeader from "@/components/IntroHeader";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 import Card from "@/components/Card"
 // Styles
@@ -38,11 +36,7 @@ const ContactPage = ({ header, services, chooseUs }) => {
     return (
         <>
             <div>
-                {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
-                <LetsWorkTogether
-                    title={header?.title}
-                    description={header?.description}
-                />
+                <InrtoHeader header={header}/>
                 <div className={styles.servicesSection}>
                     <div className={styles.containerServices}>
                         {services?.cards.map((card, index) => (
