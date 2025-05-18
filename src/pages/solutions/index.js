@@ -39,9 +39,7 @@ const SolutionsPage = ({ header, banner, letsWorkTogether, solutions }) => {
             </div>
             <LetsWorkTogether
                 className={styles.whyChooseSection}
-                title={letsWorkTogether?.title}
-                imgSrc={letsWorkTogether?.imgSrc}
-                description={letsWorkTogether?.description}
+               {...letsWorkTogether}
             />
         </>
     )

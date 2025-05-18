@@ -53,9 +53,7 @@ const ContactPage = ({ header, services, chooseUs }) => {
                 </div>
                 <LetsWorkTogether
                     className={styles.whyChooseSection}
-                    title={chooseUs?.title}
-                    imgSrc={chooseUs?.imgSrc}
-                    description={chooseUs?.description}
+                    {...chooseUs}
                 />
             </div>
         </>

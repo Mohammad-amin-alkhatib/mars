@@ -38,7 +38,7 @@
     "letsWorkTogether": {
         "title": "Let's Work Together",
         "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
-        "buttonText": "Contact Us",
+        "textButton": "Contact Us",
         "href": "/contact",
         "imgSrc": "/work-together.svg"
     }

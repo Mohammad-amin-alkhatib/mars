@@ -46,11 +46,7 @@ const ProductPage = ({ header, keyFeatures, products, footer }) => {
             {!!keyFeatures?.length && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
             <LetsWorkTogether
                 className={styles.letsWorkTogether}
-                title={footer?.title}
-                imgSrc={footer?.imgSrc}
-                description={footer?.description}
-                href={footer?.href}
-                pdfFile={footer?.pdfFile}
+                {...footer}
             />
         </>
     )

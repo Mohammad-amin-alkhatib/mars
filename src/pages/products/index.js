@@ -21,9 +21,7 @@ const ProductsPage = ({ header, products, letsWorkTogether, keyFeatures }) => {
                 {products?.length && <CardContainer cards={products} className={styles.cardContainer}/>}
                 <LetsWorkTogether
                     className={styles.letsWorkTogether}
-                    title={letsWorkTogether?.title}
-                    imgSrc={letsWorkTogether?.imgSrc}
-                    description={letsWorkTogether?.description}
+                    {...letsWorkTogether}
                 />
             </div>
         </div>

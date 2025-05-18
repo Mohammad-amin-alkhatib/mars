@@ -24,9 +24,7 @@ const NewsPage = ({ header, chooseUs, serviceDescription, subServices, articles 
                 {articles?.length && <Description items={articles} />}
                 <LetsWorkTogether
                     className={styles.whyChooseSection}
-                    title={chooseUs?.title}
-                    imgSrc={chooseUs?.imgSrc}
-                    description={chooseUs?.description}
+                    {...chooseUs}
                 />
             </div >
         </>
