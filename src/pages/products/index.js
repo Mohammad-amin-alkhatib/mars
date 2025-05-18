@@ -12,7 +12,6 @@ import styles from "./ProductsPage.module.scss";
 
 
 const ProductsPage = ({ header, products, letsWorkTogether, keyFeatures }) => {
-
     return (
         <div>
             <div>

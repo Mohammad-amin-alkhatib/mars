@@ -10,13 +10,16 @@ import KeyFeatures from "@/components/KeyFeatures";
 // Styles
 import styles from "./SubProductPage.module.scss";
 import CardContainer from "@/components/CardContainer";
+import InrtoHeader from "@/components/IntroHeader";
 
 const ProductPage = ({ header, keyFeatures, products, footer }) => {
     return (
         <>
-            <DesktopNavBar />
-            <MobileNavBar />
-            <LetsWorkTogether {...header} />
+            {header.coverImage ? <InrtoHeader header={header} /> : (<>
+                <DesktopNavBar />
+                <MobileNavBar />
+                <LetsWorkTogether {...header} />
+            </>)}
             {!!products?.length && <CardContainer cards={products} className={styles.productsContainer} />}
             {!!keyFeatures?.length && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
             <LetsWorkTogether

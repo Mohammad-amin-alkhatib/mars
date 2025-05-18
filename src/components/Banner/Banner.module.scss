@@ -8,10 +8,10 @@
     color: $white;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 
     @include bp-below(medium) {
         flex-direction: column;
-        gap: 40px;
         padding: 54px 52px;
     }
 }

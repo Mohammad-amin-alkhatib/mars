@@ -17,12 +17,12 @@
             "image": "MARSFLY AUTOPILOT AP200.png",
             "href": "/products/MARSFly/MARSFLY  AUTOPILOT AP200"
         }
-    ], 
-    
+    ],
     "footer": {
-        "title": "Specifications",
+        "title": "Contact Us",
         "description": "Mars Navigation is designed to operate in extreme conditions, including high radiation levels and low temperatures. It is equipped with advanced sensors and algorithms to ensure accurate navigation and obstacle detection.",
-        "pdfFile": "marsnav-specs.pdf",
+        "href": "/contact",
+        "textButton": "Contact Us",
         "imgSrc": "/work-together.svg"
     }
 }

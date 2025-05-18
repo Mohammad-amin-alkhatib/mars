@@ -27,7 +27,7 @@ const Card = ({ title, description, image, href }) => {
                 <img src={`/${image}`} alt={title} />
             </div>
             {wrapLink(href, <h2 className={styles.title}>{title}</h2>)}
-            <p className={cx(styles.description, spaceGrotesk.className)}>{description}</p>
+            <div className={cx(styles.description, spaceGrotesk.className)}>{description}</div>
             {href && <ArrowButton text="Learn More" href={href} className={styles.learnMore} />}
         </div>
     );
