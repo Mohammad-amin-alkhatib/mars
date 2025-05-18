@@ -37,8 +37,8 @@
     height: 250px !important;
     text-align: center;
 
-    @include bp-below(medium) {
-        height: 100% !important;
+    @include bp-below(large) {
+        height: unset !important;
     }
 }
 
