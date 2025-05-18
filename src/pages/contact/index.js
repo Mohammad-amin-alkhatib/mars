@@ -38,11 +38,7 @@ const ContactPage = ({ header, getIntouch }) => {
     return <>
         <div>
             {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
-            <LetsWorkTogether
-                title={header?.title}
-                description={header?.description}
-                className={styles.header}
-                imgSrc={header?.imgSrc} />
+            <LetsWorkTogether {...header} />
             <LetsWorkTogether
                 title={getIntouch?.title}
                 description={getIntouch?.description}
