@@ -1,5 +1,6 @@
 {
     "header": {
+        "videoUrl": "/homepageVideo.mp4",
         "title": "Explore Our Products",
         "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
     },
@@ -11,7 +12,7 @@
             "href": "/products/marsnav"
         },
         {
-             "title": "MARSECU",
+            "title": "MARSECU",
             "description": "An electronic device designed to enhance engine performance by regulating various actuators within the engine. By optimizing fuel injection timing, controlling the amount of fuel injected, and adjusting ignition timing, the ECU plays a crucial role in reducing fuel consumption and minimizing pollutant emissions.",
             "image": "ECU.png",
             "href": "/products/ECU"
