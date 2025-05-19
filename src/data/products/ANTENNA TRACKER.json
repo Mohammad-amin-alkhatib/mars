@@ -2,7 +2,9 @@
     "header": {
         "title": "ANTENNA TRACKER",
         "description": "The Antenna Tracker was developed for BVLOS missions that require stable, high-quality communication  between the ground station and UAVs, especially in environments with considerable obstructions  and interference. It is an indispensable asset in expanding the boundaries of UAV operations, and  consequently, improving the quality of data received and the effectiveness of the mission.",
-        "imgSrc": "/ANTENNA TRACKER.png"
+        "imgSrc": "/AT-test.png",
+        "coverImage": true,
+        "reduceOpacity":0.3
     },
     "keyFeatures": [
         "plug-play",
