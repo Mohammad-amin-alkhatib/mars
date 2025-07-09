@@ -12,7 +12,7 @@ const navigation = [
 	},
 	{
 		title: 'Solutions',
-		url: '/solututions',
+		url: '/Solutions',
 	},
 	{
 		title: 'Geomatics & RS',
