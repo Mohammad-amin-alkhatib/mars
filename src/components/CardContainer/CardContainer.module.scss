@@ -9,4 +9,9 @@
   @include bp-below(medium) {
     gap: 24px;
   }
+
+    @include bp-below(small) {
+    grid-template-columns: repeat(1, minmax(280px, 1fr));  // ✅ force 1 column on small screens
+    padding: 0 12px;
+  }
 }
