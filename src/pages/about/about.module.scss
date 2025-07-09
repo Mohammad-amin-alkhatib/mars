@@ -5,9 +5,30 @@
 .ourMission {
     background-color: $black-400;
 }
-
+.ourApproach {
+    background-color: $black-400;
+}
 .ourVision {
     flex-direction: row-reverse;
+}
+
+.linkedinIcon {
+    margin-top: 15px;
+    display: inline-block;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: #0077b5;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.letsWorkTogether {
+    background-color: $black-400;
 }
 
 .meetOurTeam {

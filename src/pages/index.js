@@ -44,7 +44,7 @@ export default function Home({
           {!!services?.description && <p className={styles.serviceDescription}> {services.description}</p>}
         </div>
         <LetsWorkTogether
-          className={styles.whyChooseSection}
+          // className={styles.whyChooseSection}
           title={chooseUs?.title}
           imgSrc={chooseUs?.imgSrc}
           description={chooseUs?.description}

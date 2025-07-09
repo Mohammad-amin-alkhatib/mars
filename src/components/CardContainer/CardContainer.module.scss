@@ -1,5 +1,12 @@
+@import '../../styles/variables/breakpoints.scss';
+
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(498px, 1fr)); // 💡 leave space for fixed image width + padding
+  justify-content: center;
+
+  @include bp-below(medium) {
+    gap: 24px;
+  }
 }

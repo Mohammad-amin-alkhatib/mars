@@ -46,18 +46,6 @@
                     {
                         "subItem": "Structure, Mechanics & System Design",
                         "url": ""
-                    },
-                    {
-                        "subItem": "Aeronautical Stress Engineering",
-                        "url": ""
-                    },
-                    {
-                        "subItem": "Simulation",
-                        "url": ""
-                    },
-                    {
-                        "subItem": "UAVs System Design",
-                        "url": ""
                     }
                 ]
             }
@@ -65,7 +53,7 @@
     },
     {
         "title": "Geomatics & RS",
-        "url": "/geomatics",
+        "url": "/services/geomatics-and-remote-sensing",
         "hasDropDown": false
     },
     {

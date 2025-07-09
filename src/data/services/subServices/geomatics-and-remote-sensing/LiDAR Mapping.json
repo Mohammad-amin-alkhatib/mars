@@ -3,9 +3,11 @@
         "videoUrl": "/-215b-40d0-84e4-4b375229e349.mp4",
         "title": "LiDAR Mapping",
         "showSeparator": false,
-        "coverImage": true
+        "coverImage": true,
+        "reduceOpacity": 0.5,
+        "description": " LiDAR mapping uses laser pulses to measure distances and create precise 3D representations of the Earth's surface or objects. Mounted on drones, aircraft, or vehicles, LiDAR sensors capture detailed topographic data, even penetrating vegetation to map ground surfaces. This technology is widely used in surveying, forestry, urban planning, and archaeology. Its ability to generate high-resolution, accurate maps makes it essential for analyzing terrain, infrastructure, and environmental changes."
     },
-    "serviceDescription": "LiDAR mapping uses laser pulses to measure distances and create precise 3D representations of the Earth's surface or objects. Mounted on drones, aircraft, or vehicles, LiDAR sensors capture detailed topographic data, even penetrating vegetation to map ground surfaces. This technology is widely used in surveying, forestry, urban planning, and archaeology. Its ability to generate high-resolution, accurate maps makes it essential for analyzing terrain, infrastructure, and environmental changes.",
+    "serviceDescription": "",
     "articles": [
         {
             "title": "Surveying",
@@ -24,7 +26,7 @@
         },
         {
             "title": "Archaeology",
-            "description": "LiDAR mapping using drones for archaeological documentation focuses on uncovering and preserving ancient document sites, such as ruins, inscriptions, or historical structures. It provides precise 3D models and topographic data, revealing hidden details beneath vegetation or debris. This technology allows archaeologists to efficiently document, analyze, and protect these culturally significant sites.",
+            "description": "LiDAR mapping using drones for archaeological documentation focuses on uncovering and preserving ancient document sites, such as ruins, inscriptions, or historical structures. It provides precise 3D models and topographic data, revealing hidden details beneath vegetation or debris. This technology allows archaeologists to efficiently document, analyze, and protect these culturally significant sites. b ",
             "imgSrc": "Archaeology.png"
         }
     ],

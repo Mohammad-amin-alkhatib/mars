@@ -44,7 +44,7 @@ function getBreakPoints() {
     };
 };
 
-export default function About({ header, ourMission, ourVision, teamMembers }) {
+export default function About({ header, ourMission, ourVision, ourApproach, teamMembers, letsWorkTogether }) {
     const prevRefCustom = React.useRef(null);
     const nextRefCustom = React.useRef(null);
     const paginationRef = React.useRef(null);
@@ -52,6 +52,7 @@ export default function About({ header, ourMission, ourVision, teamMembers }) {
     return (
         <>
             <div className="aboutPage">
+
                 <InrtoHeader header={header} />
                 <LetsWorkTogether
                     title={ourMission.title}
@@ -61,11 +62,21 @@ export default function About({ header, ourMission, ourVision, teamMembers }) {
                     descriptionTitle={ourMission.descriptionTitle}
                     darkMode
                 />
+
                 <LetsWorkTogether
                     title={ourVision.title}
                     description={ourVision.description}
                     imgSrc={ourVision.imgSrc}
                     className={styles.ourVision}
+                />
+
+                <LetsWorkTogether
+                    title={ourApproach.title}
+                    description={ourApproach.description}
+                    imgSrc={ourApproach.imgSrc}
+                    className={styles.ourApproach}
+                    descriptionTitle={ourApproach.descriptionTitle}
+                    darkMode
                 />
                 {teamMembers && (
                     <div className={styles.meetOurTeam}>
@@ -91,6 +102,14 @@ export default function About({ header, ourMission, ourVision, teamMembers }) {
                         </div>
                     </div>
                 )}
+                <LetsWorkTogether
+                    title={letsWorkTogether.title}
+                    description={letsWorkTogether.description}
+                    imgSrc={letsWorkTogether.imgSrc}
+
+                    descriptionTitle={letsWorkTogether.descriptionTitle}
+
+                />
             </div>
         </>
     );

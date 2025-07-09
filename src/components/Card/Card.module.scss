@@ -1,85 +1,109 @@
 @import '../../styles/variables/colors.scss';
 @import '../../styles/variables/fonts.scss';
-@import '../../styles//variables/breakpoints.scss';
+@import '../../styles/variables/breakpoints.scss';
 
 .container {
-    background: $white;
-    border: 1px solid $gray-light;
-    box-shadow: 0px 5px 0px 0px $black-300;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 50px;
-    width: calc(50% - 25px);
-    gap: 40px;
+  background: $white;
+  border: 1px solid $gray-light;
+  border-bottom: 4px solid $black-200;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px;
+  width: 100%; // ✅ fill available grid space
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom-color 0.3s ease;
 
-    @include bp-below(medium) {
-        width: 100%;
-        padding: 25px;
+  @include bp-below(medium) {
+    padding: 24px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 28px 40px rgba(0, 0, 0, 0.16);
+    border-bottom-color: $orange;
+
+    .title {
+      background-color: $orange;
+      color: $white;
+      border-color: $orange;
     }
 
-    &:hover {
-        .title {
-            color: $white;
-            background-color: $orange;
-            border-color: $orange;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .learnMore svg {
-            color: $orange;
-            transition: all 0.3s ease-in-out;
-        }
+    .learnMore svg {
+      color: $orange;
+      transform: translateX(5px);
     }
+
+    .image img {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .image {
-    height: 250px !important;
-    text-align: center;
+  align-self: flex-start; // align image with title (left side)
+  overflow: hidden;
 
-    @include bp-below(large) {
-        height: unset !important;
+  img {
+    height: 280px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  @include bp-below(large) {
+    img {
+      height: 200px;
     }
+  }
 }
 
 .title {
-    border: 1px solid $black-200;
-    color: $black-200;
-    font: 600 30px $gibson;
-    padding: 4px 11px;
-    width: fit-content;
+  border: 1px solid $black-200;
+  color: $black-200;
+  font: 600 28px $gibson;
+  padding: 6px 14px;
+  width: fit-content;
+  background-color: transparent;
+  transition: all 0.3s ease;
 
-    &:hover {
-        color: $white;
-        background-color: $orange;
-        border-color: $orange;
-    }
-
-    @include bp-below(medium) {
-        font-size: 26px;
-        white-space: pre-wrap;
-    }
+  @include bp-below(medium) {
+    font-size: 24px;
+    white-space: pre-wrap;
+  }
 }
 
 .description {
-    color: $black-200;
-    font: 18px $gibson;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    display: -webkit-box;
-    overflow: hidden;
+  color: $black-200;
+  font: 18px $gibson;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
-    @include bp-below(medium) {
-        font-size: 16px;
-        text-align: left;
-    }
+  @include bp-below(medium) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
-.learnMore span {
-    font-size: 20px !important;
-    line-height: 28px !important;
+.learnMore {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    @include bp-below(medium) {
-        font-size: 18px;
-    }
+  svg {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  @include bp-below(medium) {
+    font-size: 18px;
+  }
 }

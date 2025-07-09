@@ -16,7 +16,7 @@ const navigation = [
 	},
 	{
 		title: 'Geomatics & RS',
-		url: '/geomatics-rs',
+		url: "/services/geomatics-and-remote-sensing",
 	},
 	{
 		title: 'Media',
