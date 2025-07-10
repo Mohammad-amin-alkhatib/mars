@@ -12,7 +12,7 @@ const navigation = [
 	},
 	{
 		title: 'Solutions',
-		url: '/Solutions',
+		url: "/solutions",
 	},
 	{
 		title: 'Geomatics & RS',
@@ -67,9 +67,9 @@ const Footer = ({ className }) => {
 					))}
 				</div>
 				<div className={styles.socialBlockSmalScreen}>
-						<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
-						<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
-					</div>
+					<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
+					<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
+				</div>
 				<div className={styles.copyRight}>
 					<div className={styles.copyRightText}>
 						<span>

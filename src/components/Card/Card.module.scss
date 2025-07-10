@@ -58,6 +58,12 @@
       height: 200px;
     }
   }
+   @include bp-below(small) {
+    img {
+      max-width: 100%;
+       object-fit: fill;
+    }
+  }
 }
 
 .title {
