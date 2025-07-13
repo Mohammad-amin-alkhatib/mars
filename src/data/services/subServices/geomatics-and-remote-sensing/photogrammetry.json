@@ -1,10 +1,10 @@
 {
     "header": {
-           "imgSrc": "/Photogrammetryminitham.png",
+           "imgSrc": "/Photogrammetry1.png",
         "title": "Photogrammetry",
         "showSeparator": false,
         "coverImage": true,
-        "reduceOpacity": 0.7,
+        "reduceOpacity": 0.81,
         "description": "Photogrammetry is the science and technology of extracting accurate measurements and spatial information from photographs. It transforms 2D images into 3D models, maps, or orthophotos, widely used in surveying, architecture, and remote sensing. By analyzing image overlaps and camera positions, photogrammetry reconstructs real-world objects or terrains with precision. It is essential for applications like topographic mapping, urban planning, and heritage preservation."
     },
     "serviceDescription": "",

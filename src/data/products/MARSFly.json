@@ -2,9 +2,10 @@
     "header": {
         "title": "MARSFly",
         "description": "An autonomous flight management system consists of multiple avionics systems, including autopilot, ground station, and user interface. MARS Fly’s design flexibility and commitment to continuous development ensure that the system can be tailored to meet the unique needs and preferences of customers while adapting to evolving market demands.",
-        "imgSrc": "/FLY-test.png",
+        "videoUrl": "/VID_20230905_132109.mp4",
+         "reduceOpacity": 0.2,
          "coverImage": true
-
+       
     },
     "products": [
         {
