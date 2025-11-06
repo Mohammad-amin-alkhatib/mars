@@ -1,57 +1,304 @@
 {
-    "header": {
-        "title": "Careers",
-        "description": "Join our team and help us shape the future of UAV technology. We are always looking for talented individuals who are passionate about innovation and excellence."
+  "header": {
+    "title": "Careers",
+    "description": "Join our team and help us shape the future of UAV technology. We are always looking for talented individuals who are passionate about innovation and excellence."
+  },
+  "jobs": [
+    {
+      "title": "Graphic Designer",
+      "description": "We need a graphic designer",
+      "category": "Design",
+      "href": "https://www.linkedin.com/jobs/view/1234567890/",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "graphic-designer",
+      "aboutThisRole": "As a Graphic Designer at Mars, you’ll craft stunning visual stories that bring our UAV technology to life across web, print, and product interfaces.",
+     "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+
+      "whatYouWillDo": [
+        "Design high-fidelity UI mockups and prototypes",
+        "Create brand assets, icons, and marketing collateral",
+        "Collaborate with product and engineering teams",
+        "Maintain and evolve our design system"
+      ],
+      "techStack": [
+        "Figma",
+        "Adobe Creative Suite (Photoshop, Illustrator)",
+        "Sketch",
+        "Principle / After Effects (for animations)"
+      ]
     },
-    "jobs": [
-        {
-            "title": "Graphic Designer",
-            "description": "We need a graphic designer",
-            "href": "https://www.linkedin.com/jobs/view/1234567890/"
-        },
-        {
-            "title": "Software Engineer",
-            "description": "We need a software engineer"
-        },
-        {
-            "title": "Data Scientist",
-            "description": "We need a data scientist"
-        },
-        {
-            "title": "Marketing Specialist",
-            "description": "We need a marketing specialist"
-        },
-        {
-            "title": "Sales Representative",
-            "description": "We need a sales representative"
-        },
-        {
-            "title": "Project Manager",
-            "description": "We need a project manager"
-        },
-        {
-            "title": "Quality Assurance Engineer",
-            "description": "We need a quality assurance engineer"
-        },
-        {
-            "title": "Technical Writer",
-            "description": "We need a technical writer"
-        },
-        {
-            "title": "Customer Support Specialist",
-            "description": "We need a customer support specialist"
-        },
-        {
-            "title": "Business Analyst",
-            "description": "We need a business analyst"
-        },
-        {
-            "title": "Network Engineer",
-            "description": "We need a network engineer"
-        },
-        {
-            "title": "Database Administrator",
-            "description": "We need a database administrator"
-        }
-    ]
+    {
+      "title": "UI/UX Designer",
+      "description": "We need a UI/UX designer",
+      "category": "Design",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "ui-ux-designer",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "aboutThisRole": "You’ll design intuitive, beautiful, and performant interfaces for our drone control platforms and customer dashboards.",
+      "whatYouWillDo": [
+        "Conduct user research and usability testing",
+        "Build wireframes, user flows, and interactive prototypes",
+        "Work closely with developers to ensure pixel-perfect implementation",
+        "Iterate based on analytics and user feedback"
+      ],
+      "techStack": [
+        "Figma",
+        "Miro / FigJam",
+        "UserTesting / Hotjar",
+        "Framer / ProtoPie"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "description": "We need a software engineer",
+      "category": "Engineering",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "software-engineer",
+      "aboutThisRole": "Join the core engineering team to build real-time, mission-critical systems that power autonomous flight and data processing.",
+      
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+
+
+       "whatYouWillDo": [
+        "Write clean, scalable backend services in Node.js / Python",
+        "Develop real-time telemetry pipelines",
+        "Optimize performance for edge devices",
+        "Participate in code reviews and architectural decisions"
+      ],
+      "techStack": [
+        "Node.js / TypeScript",
+        "Python (FastAPI / Django)",
+        "Docker & Kubernetes",
+        "PostgreSQL / Redis",
+        "WebSockets"
+        
+      ]
+    },
+    {
+      "title": "Quality Assurance Engineer",
+      "description": "We need a quality assurance engineer",
+      "category": "Engineering",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "quality-assurance-engineer",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+
+      "aboutThisRole": "Ensure every release meets the highest standards of reliability, safety, and performance for UAV operations.",
+      "whatYouWillDo": [
+        "Design and execute test plans for hardware-in-the-loop simulations",
+        "Automate regression and stress tests",
+        "Track defects and work with engineers to resolve them",
+        "Validate compliance with aviation and data security standards"
+      ],
+      "techStack": [
+        "Selenium / Cypress",
+        "Python (pytest, Robot Framework)",
+        "Jenkins / GitHub Actions",
+        "JIRA / TestRail"
+      ]
+    },
+    {
+      "title": "Network Engineer",
+      "description": "We need a network engineer",
+      "category": "Engineering",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "network-engineer",
+            "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+
+      "aboutThisRole": "Design and maintain secure, low-latency networks that connect drones, ground stations, and cloud infrastructure.",
+      "whatYouWillDo": [
+        "Configure VPNs, VLANs, and SD-WAN",
+        "Monitor network health and optimize bandwidth",
+        "Implement zero-trust security policies",
+        "Support field deployments in remote environments"
+      ],
+      "techStack": [
+        "Cisco / Juniper routers",
+        "Palo Alto / Fortinet firewalls",
+        "Wireshark",
+        "Zabbix / Prometheus"
+      ]
+    },
+    {
+      "title": "Data Scientist",
+      "description": "We need a data scientist",
+      "category": "Data & Analytics",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "data-scientist",
+      "aboutThisRole": "Turn flight telemetry and sensor data into actionable insights that improve autonomy and predictive maintenance.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Build ML models for anomaly detection and flight optimization",
+        "Design data pipelines with Spark and Kafka",
+        "Visualize trends using Looker / Tableau",
+        "Collaborate with domain experts to define KPIs"
+      ],
+      "techStack": [
+        "Python (Pandas, Scikit-learn, TensorFlow)",
+        "Apache Spark",
+        "Kafka",
+        "SQL / BigQuery"
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "description": "We need a business analyst",
+      "category": "Data & Analytics",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "business-analyst",
+      "aboutThisRole": "Bridge the gap between technical teams and stakeholders to deliver data-driven business solutions.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        
+        "Gather and document requirements",
+        "Create user stories and process flows",
+        "Analyze ROI of new features",
+        "Facilitate sprint planning and retrospectives"
+      ],
+      "techStack": [
+        "JIRA / Confluence",
+        "Lucidchart / Miro",
+        "Advanced Excel / Google Sheets",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Marketing Specialist",
+      "description": "We need a marketing specialist",
+      "category": "Marketing & Sales",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "marketing-specialist",
+      "aboutThisRole": "Grow brand awareness and drive lead generation through digital campaigns and industry events.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Plan and execute paid ad campaigns (Google, LinkedIn)",
+        "Manage content calendar and social media",
+        "Analyze campaign performance and optimize",
+        "Support product launches and trade shows"
+      ],
+      "techStack": [
+        "Google Ads / Analytics",
+        "HubSpot / Marketo",
+        "Canva",
+        "Hootsuite"
+      ]
+    },
+    {
+      "title": "Sales Representative",
+      "description": "We need a sales representative",
+      "category": "Marketing & Sales",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "sales-representative",
+      "aboutThisRole": "Close enterprise deals with defense, logistics, and infrastructure clients for our UAV solutions.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Qualify leads and run discovery calls",
+        "Prepare proposals and demos",
+        "Negotiate contracts and pricing",
+        "Maintain CRM and forecast pipeline"
+      ],
+      "techStack": [
+        "Salesforce",
+        "LinkedIn Sales Navigator",
+        "DocuSign",
+        "Gong / Chorus"
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "description": "We need a project manager",
+      "category": "Management",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "project-manager",
+      "aboutThisRole": "Lead cross-functional teams to deliver UAV projects on time, within scope, and under budget.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Define project scope, goals, and deliverables",
+        "Create detailed timelines and resource plans",
+        "Track progress and mitigate risks",
+        "Report to executive stakeholders"
+      ],
+      "techStack": [
+        "MS Project / Asana",
+        "JIRA",
+        "Confluence",
+        "Smartsheet"
+      ]
+    },
+    {
+      "title": "Technical Writer",
+      "description": "We need a technical writer",
+      "category": "Content & Support",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "technical-writer",
+      "aboutThisRole": "Produce clear, accurate documentation for developers, operators, and end-users of our drone platforms.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Write API docs, user manuals, and SDK guides",
+        "Create in-app tooltips and onboarding flows",
+        "Review documentation with engineers",
+        "Maintain version-controlled docs"
+      ],
+      "techStack": [
+        "Markdown / MDX",
+        "Docusaurus / ReadTheDocs",
+        "Git",
+        "Confluence"
+      ]
+    },
+    {
+      "title": "Customer Support Specialist",
+      "description": "We need a customer support specialist",
+      "category": "Content & Support",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "customer-support-specialist",
+      "aboutThisRole": "Be the voice of the customer – resolve issues quickly and turn support interactions into loyalty.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Respond to tickets via email, chat, and phone",
+        "Troubleshoot hardware/software issues remotely",
+        "Escalate complex cases to engineering",
+        "Update knowledge base articles"
+      ],
+      "techStack": [
+        "Zendesk / Freshdesk",
+        "Slack",
+        "TeamViewer",
+        "Google Workspace"
+      ]
+    },
+    {
+      "title": "Database Administrator",
+      "description": "We need a database administrator",
+      "category": "IT Operations",
+      "leftText": "$150k - $200k",
+      "rightText": "Full-time",
+      "slug": "database-administrator",
+      "aboutThisRole": "Keep our mission-critical databases secure, fast, and always available – even during live flights.",
+      "shortText": "Build real-time, mission-critical systems that power autonomous flight.",
+      "whatYouWillDo": [
+        "Perform backups, restores, and disaster recovery drills",
+        "Tune queries and optimize schema",
+        "Implement replication and failover",
+        "Monitor performance and capacity"
+      ],
+      "techStack": [
+        "PostgreSQL / MySQL",
+        "AWS RDS / Aurora",
+        "pgAdmin / DBeaver",
+        "Datadog / New Relic"
+      ]
+    }
+  ]
 }
