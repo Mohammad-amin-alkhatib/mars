@@ -8,13 +8,13 @@
         {
             "title": " MARSNAV AHRS 100",
             "description": "MARSNAV-AHRS 100 is a compact, cost-effective navigation solution based on an Adaptive Extended Kalman Filter (AEKF) algorithm, delivering precise roll, pitch, and heading data for accurate attitude determination up to 200 Hz update rate. Built with an industrial-grade sensor (9-DOF), it ensures robust performance and stabilization in dynamic land, marine, and aerospace environments.",
-            "image": "MARSNAV.png",
+            "image": "MARSNAV AHRS100.png",
             "href": "/products/marsnav/MARSNAV AHRS 100"
         },
         {
             "title": "MARSNAV GNSS/INS 100",
             "description": "MARSNAV-GNSS/INS 100 is an advanced navigation system that integrates GNSS and INS data, enhanced by an Adaptive Linear Kalman Filter for real-time 3D positioning, velocity, and orientation. Equipped with a high-performance multi-band, multi-constellation GNSS receiver, it delivers exceptional accuracy: 0.5° RMS for pitch and roll, 1° RMS (static) and 2° RMS (dynamic) for yaw, along with precise position and velocity metrics. Engineered for precision and reliability, this system is optimized for diverse applications across land, marine, and aerospace domains.",
-            "image": "MARSNAV.png",
+            "image": "MARSNAV GNS-INS.png",
             "href": "/products/marsnav/MARSNAVGNSS INS 100"
         }
     ],

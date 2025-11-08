@@ -2,15 +2,36 @@
 @import '../../styles/variables/fonts.scss';
 @import '../../styles/variables/breakpoints.scss';
 
-.ourMission {
-    background-color: $black-400;
-}
+.ourVision,
+.ourMission,
 .ourApproach {
-    background-color: $black-400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20 auto;
+  width: 100%;
+  padding: 80px 100px;
+
+  @include bp-below(medium) {
+    padding: 60px 50px;
+  }
+
+  @include bp-below(small) {
+    padding: 40px 25px;
+  }
+
+  /* Remove the global color override that was causing issues */
+  /* Apply specific text colors to text elements only */
+   p, div, span, li {
+    color: #767E87 !important;  /* Black text color */
+    text-align: start;
+  
 }
-.ourVision {
-    flex-direction: row-reverse;
 }
+
+
 
 .linkedinIcon {
     margin-top: 15px;

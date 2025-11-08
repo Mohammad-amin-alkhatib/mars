@@ -45,7 +45,9 @@ const InrtoHeader = ({ header, className }) => {
                     backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${header.reduceOpacity})` : "",
                 },
             })}>
-            {header?.videoUrl &&
+            {
+            
+            header?.videoUrl &&
                 <video
                     autoPlay
                     muted
@@ -58,6 +60,8 @@ const InrtoHeader = ({ header, className }) => {
                 >
                     <source src={header.videoUrl} type="video/mp4" />
                 </video>
+
+                
             }
             {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
             <LetsWorkTogether

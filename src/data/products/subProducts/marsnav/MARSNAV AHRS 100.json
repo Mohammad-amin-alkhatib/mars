@@ -2,7 +2,7 @@
     "header": {
         "title": "MARSNAV AHRS 100",
         "description": "MARSNAV-AHRS 100 is a compact, cost-effective navigation solution based on an Adaptive Extended Kalman Filter (AEKF) algorithm, delivering precise roll, pitch, and heading data for accurate attitude determination up to 200 Hz update rate. Built with an industrial-grade sensor (9-DOF), it ensures robust performance and stabilization in dynamic land, marine, and aerospace environments.",
-        "imgSrc": "/MARSNAV.png"
+        "imgSrc": "/MARSNAV AHRS100.png"
     },
     "keyFeatures": [
         "ahrs",
@@ -19,6 +19,6 @@
         "title": "Specifications",
         "description": "Read more about  MARSNAV AHRS 100 .",
         "pdfFile": "MARSNAV AHRS 100.pdf",
-        "imgSrc": "/MARSNAV.png"
+        "imgSrc": ""
     }
 }

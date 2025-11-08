@@ -1,69 +1,79 @@
 {
-    "header": {
-        "title": "About",
-        "description": "Mazari Autonomous Robotics Systems (MARS Robotics®) specializes in UAV solutions, offering flight control systems, GPS/INS navigation, mission planning, and testing. Focused on low-speed, short-range UAVs and UGVs, MARS Robotics® provides ITAR-free products. <br /><br/> They offer turnkey solutions, OEM support, and technical assistance for autonomous systems design, integration, and adaptation. Their MARSFly system cuts autopilot costs by 50-60%. MARS Robotics® also designs and develops MALE UAV systems, providing comprehensive design, development, and flight control integration per customer needs.",
-        "imgSrc": "/about.png",
-        "coverImage": true,
-        "reduceOpacity": 0.75
+  "header": {
+    "title": "About",
+    "description": "Mazari Autonomous Robotics Systems (MARS Robotics®) specializes in UAV solutions, offering flight control systems, GPS/INS navigation, mission planning, and testing. Focused on low-speed, short-range UAVs and UGVs, MARS Robotics® provides ITAR-free products. <br /><br/> They offer turnkey solutions, OEM support, and technical assistance for autonomous systems design, integration, and adaptation. Their MARSFly system cuts autopilot costs by 50-60%. MARS Robotics® also designs and develops MALE UAV systems, providing comprehensive design, development, and flight control integration per customer needs.",
+    "imgSrc": "/about.png",
+    "coverImage": true,
+    "reduceOpacity": 0.75
+  },
+  "ourMission": {
+    "title": "Mission",
+    "descriptionTitle": "MARSRobotics® is divided into two main divisions:",
+    "description": "MARSRobotics® Engineering with its mission: enables UAS OEMs to rapidly develop, price competitive, differentiated low cost and ITAR free systems solutions and services, while creating and maintaining their own intellectual property.<br /><br/>MARSRobotics® Remote Sensing with its mission: empowers our customers in implementing state of the art remote sensing solutions, High Accuracy workflows for construction inspection, surveying, aerial mapping, mining and public safety.",
+    "imgSrc": "/NewMission.svg"
+  },
+  "ourVision": {
+    "title": "Vision",
+    "description": "To be customers first-choice in providing World-Class UAS services and innovative products while leading Guidance and Control technologies to support UAS OEMs solutions in the region.",
+    "imgSrc": "/vision.svg"
+  },
+  "ourApproach": {
+    "title": "Approach",
+    "descriptionTitle": "Our Strategic Approach",
+    "description": "At MARSRobotics®, our approach is rooted in innovation and collaboration. We emphasize agile development cycles, tight integration between hardware and software teams, and a strong focus on customer-specific solutions that reduce cost and maximize efficiency.",
+    "imgSrc": "/Our Approach.png"
+  },
+  "ceoSection": {
+    "title": "The People are the actual investment. ",
+    "description": "Your CEO message content here...",
+    "imgSrc": "/ceo.png",
+    "descriptionTitle": "Optional subtitle"
+  },
+
+  "teamMembers": [
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/1710802152374.jpg",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
     },
-    "ourMission": {
-        "title": "Mission",
-        "descriptionTitle": "MARSRobotics® is divided into two main divisions:",
-        "description": "MARSRobotics® Engineering with its mission: enables UAS OEMs to rapidly develop, price competitive, differentiated low cost and ITAR free systems solutions and services, while creating and maintaining their own intellectual property.<br /><br/>MARSRobotics® Remote Sensing with its mission: empowers our customers in implementing state of the art remote sensing solutions, High Accuracy workflows for construction inspection, surveying, aerial mapping, mining and public safety.",
-        "imgSrc": "/mission.svg"
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/AnasPMO.png",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
     },
-    "ourVision": {
-        "title": "Vision",
-        "description": "To be customers first-choice in providing World-Class UAS services and innovative products while leading Guidance and Control technologies to support UAS OEMs solutions in the region.",
-        "imgSrc": "/vision.svg"
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/1710802152374.jpg",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
     },
-    "ourApproach": {
-        "title": "Approach",
-        "descriptionTitle": "Our Strategic Approach",
-        "description": "At MARSRobotics®, our approach is rooted in innovation and collaboration. We emphasize agile development cycles, tight integration between hardware and software teams, and a strong focus on customer-specific solutions that reduce cost and maximize efficiency.",
-        "imgSrc": "/Our Approach.png"
+
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/AnasPMO.png",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
     },
-    "teamMembers": [
-        {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/1710802152374.jpg",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        },
-                {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/AnasPMO.png",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        },
-               {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/1710802152374.jpg",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        },
-        
-        {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/AnasPMO.png",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        },        {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/1710802152374.jpg",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        },        {
-            "name": "Anas Shahin",
-            "jobTitle": "Head of PMO",
-            "imgSrc": "/AnasPMO.png",
-             "href": "https://www.linkedin.com/in/anas-shahin/"
-        }
-    ],   "letsWorkTogether": {
-        "title": "Let's Work Together",
-        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
-        "buttonText": "Contact Us",
-        "href": "/contact",
-        "imgSrc": "/work-together.svg"
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/1710802152374.jpg",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
+    },
+    {
+      "name": "Anas Shahin",
+      "jobTitle": "Head of PMO",
+      "imgSrc": "/AnasPMO.png",
+      "href": "https://www.linkedin.com/in/anas-shahin/"
     }
+  ],
+  "letsWorkTogether": {
+    "title": "Let's Work Together",
+    "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+    "buttonText": "Contact Us",
+    "href": "/contact",
+    "imgSrc": "/work-together.svg"
+  }
 }

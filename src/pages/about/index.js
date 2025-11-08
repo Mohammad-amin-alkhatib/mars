@@ -43,8 +43,30 @@ function getBreakPoints() {
         },
     };
 };
+const CeoSection = () => {
+    return (
+      <section className={styles.ceoSection}>
+        <div className={styles.ceoSection__content}>
+          <h2 className={styles.ceoSection__title}>A Message from Our CEO</h2>
+          <p className={styles.ceoSection__description}>
+            "At our company, we believe in innovation, collaboration, and
+            excellence. My advice to all aspiring professionals is to stay
+            curious, embrace challenges, and never stop learning."
+          </p>
+        </div>
+        <div className={styles.ceoSection__image}>
+          <img
+            src="/path-to-ceo-image.jpg"
+            alt="CEO"
+            className={styles.ceoImage}
+          />
+        </div>
+      </section>
+    );
+  };
+  
 
-export default function About({ header, ourMission, ourVision, ourApproach, teamMembers, letsWorkTogether }) {
+export default function About({ header, ourMission, ourVision, ourApproach,ceoSection, teamMembers, letsWorkTogether }) {
     const prevRefCustom = React.useRef(null);
     const nextRefCustom = React.useRef(null);
     const paginationRef = React.useRef(null);
@@ -54,31 +76,45 @@ export default function About({ header, ourMission, ourVision, ourApproach, team
             <div className="aboutPage">
 
                 <InrtoHeader header={header} />
+                
+                <LetsWorkTogether
+                    title={ourVision.title}
+                    description={ourVision.description}
+                    // imgSrc={ourVision.imgSrc}
+                    className={styles.ourVision}
+                />
+
                 <LetsWorkTogether
                     title={ourMission.title}
                     description={ourMission.description}
                     imgSrc={ourMission.imgSrc}
                     className={styles.ourMission}
                     descriptionTitle={ourMission.descriptionTitle}
-                    darkMode
+                    // darkMode
                 />
 
-                <LetsWorkTogether
-                    title={ourVision.title}
-                    description={ourVision.description}
-                    imgSrc={ourVision.imgSrc}
-                    className={styles.ourVision}
-                />
 
                 <LetsWorkTogether
                     title={ourApproach.title}
                     description={ourApproach.description}
-                    imgSrc={ourApproach.imgSrc}
+                    // imgSrc={ourApproach.imgSrc}
                     className={styles.ourApproach}
                     descriptionTitle={ourApproach.descriptionTitle}
-                    darkMode
+                    // darkMode
                 />
-                {teamMembers && (
+
+                    {CeoSection && (
+                    <LetsWorkTogether
+                        title={ceoSection.title}
+                        description={ceoSection.description}
+                        imgSrc={ceoSection.imgSrc}
+                        className={styles.ceoSection}
+                        descriptionTitle={ceoSection.descriptionTitle}
+                    />
+                )}
+
+
+                {/* {teamMembers && (
                     <div className={styles.meetOurTeam}>
                         <LetsWorkTogether title={"Meet Our Team"} className={styles.meetOurTeamTitleSection} />
                         <CaraouselSlider
@@ -101,7 +137,7 @@ export default function About({ header, ourMission, ourVision, ourApproach, team
                             <button ref={nextRefCustom} className={styles.arrow}><Arrow /></button>
                         </div>
                     </div>
-                )}
+                )} */}
                 <LetsWorkTogether
                     title={letsWorkTogether.title}
                     description={letsWorkTogether.description}

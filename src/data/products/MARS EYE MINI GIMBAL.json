@@ -1,24 +1,23 @@
 {
-    "header": {
-        "title": "MARS EYE MINI GIMBAL",
-        "description": "The MARSEye110 is an advanced 2-axis gimbal surveillance system engineered for seamless integration with unmanned aerial vehicles (UAVs). Equipped with a high-performance 30x electro-optical (EO) camera, a 3x long-wave infrared (LWIR) camera, and a laser rangefinder, it is the perfect solution for border security, public safety, infrastructure inspection, and environmental monitoring.",
-        "imgSrc": "/MARS EYE MINI GIMBAL.png"
-    },
-    "keyFeatures": [
-        "direct-drive-architecture",
-        "digital-video-hd",
-        "environmentally-seal",
-        "laser-rangefinder",
-        "visible-thermal-cameras",
-        "ethernet-interface",
-        "itar-free",
-        "meata"
-    ],
-    "footer": {
-        "title": "Specifications",
-        "description": "Read more about  MARSEye110 .",
-        "pdfFile": "MARSEye 110 .pdf",
-        "imgSrc": "/MARS EYE MINI GIMBAL.png"
-    }
-    
+  "header": {
+    "title": "MARS EYE MINI GIMBAL",
+    "description": "The MARSEye110 is an advanced 2-axis gimbal surveillance system engineered for seamless integration with unmanned aerial vehicles (UAVs). Equipped with a high-performance 30x electro-optical (EO) camera, a 3x long-wave infrared (LWIR) camera, and a laser rangefinder, it is the perfect solution for border security, public safety, infrastructure inspection, and environmental monitoring.",
+    "imgSrc": "/New_Gimbal.png"
+  },
+  "keyFeatures": [
+    "direct-drive-architecture",
+    "digital-video-hd",
+    "environmentally-seal",
+    "laser-rangefinder",
+    "visible-thermal-cameras",
+    "ethernet-interface",
+    "itar-free",
+    "meata"
+  ],
+  "footer": {
+    "title": "Specifications",
+    "description": "Read more about  MARSEye110 .",
+    "pdfFile": "MARSEye 110 .pdf",
+    "imgSrc": ""
+  }
 }

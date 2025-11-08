@@ -1,14 +1,14 @@
 {
     "header": {
-        "videoUrl": "/homepageVideo.mp4",
+        "imgSrc": "/New_Products.png",
         "title": "Explore Our Products",
         "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
     },
     "products": [
         {
-            "title": "Marsnav",
+            "title": "MARSNAV",
             "description": "Navigate confidently through the world with cutting-edge technology that seamlessly integrates real-time data, intelligent routing, and intuitive features for an unparalleled navigation experience.",
-            "image": "MARSNAV.png",
+            "image": "New_MarsNav.png",
             "href": "/products/marsnav"
         },
         {
@@ -24,7 +24,7 @@
             "href": "/products/ANTENNA TRACKER"
         },
         {
-            "title": "MARSFly",
+            "title": "MARSFlY AUTOPILOT",
             "description": "An autonomous flight management system consists of multiple avionics systems, including autopilot, ground station, and user interface. MARS Fly’s design flexibility and commitment to continuous development ensure that the system can be tailored to meet the unique needs and preferences of customers while adapting to evolving market demands.",
             "image": "MARSFLY  AUTOPILOT AP300.png",
             "href": "/products/MARSFly"
@@ -32,7 +32,7 @@
         {
             "title": "MARS EYE MINI GIMBAL",
             "description": "Compact and agile, our Mini Gimbal for UAVs delivers stabilized imaging capabilities, empowering aerial platforms with precision and versatility.",
-            "image": "MARS EYE MINI GIMBAL.png",
+            "image": "New_Gimbal.png",
             "href": "/products/MARS EYE MINI GIMBAL"
         }
     ],
