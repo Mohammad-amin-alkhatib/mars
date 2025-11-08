@@ -63,9 +63,12 @@ const JobDescription = () => {
       <div className={styles.tag}>{job.leftText}</div>
     </div>
 
-    <button className={styles.applyButton}>
-      Apply for this role
-    </button>
+   <button
+  onClick={() => router.push("/registration")}
+  className={styles.applyButton}
+>
+  Apply for this role
+</button>
   </div>
 </div>
 

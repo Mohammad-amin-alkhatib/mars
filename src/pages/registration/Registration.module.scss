@@ -1,0 +1,176 @@
+// pages/registration/Registration.module.scss
+@import "../../styles/variables/fonts.scss";
+@import "../../styles/variables/breakpoints.scss";
+
+.container {
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding: 80px 100px;
+
+  @include bp-below(medium) {
+    padding: 60px 45px;
+  }
+
+  @include bp-below(small) {
+    padding: 40px 20px;
+  }
+}
+
+.inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.pageTitle {
+  font-family: $gibson;
+  font-size: clamp(32px, 5vw, 40px);
+  font-weight: 500;
+  color: #000;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+.subtitle {
+  font-family: $gibson;
+  font-size: 18px;
+  color: #7c7c7c;
+  line-height: 150%;
+  margin: 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  @include bp-below(small) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: $gibson;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.input {
+  padding: 14px 18px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  font-family: $gibson;
+  font-size: 16px;
+  background: #fff;
+  transition: border 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #ff4713;
+  }
+}
+
+.errorInput {
+  border-color: #ff4713;
+}
+
+.error {
+  color: #ff4713;
+  font-size: 14px;
+  font-family: $gibson;
+}
+
+.fileUpload {
+  position: relative;
+}
+
+.fileInput {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fileLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border: 2px dashed #eaeaea;
+  border-radius: 16px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
+  text-align: center;
+
+  &:hover {
+    border-color: #ff4713;
+    background: #fff9f5;
+  }
+}
+
+.fileName {
+  font-family: $gibson;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.uploadText {
+  font-family: $gibson;
+  font-size: 16px;
+  color: #7c7c7c;
+  margin-bottom: 4px;
+}
+
+.uploadSubtext {
+  font-family: $gibson;
+  font-size: 14px;
+  color: #999;
+}
+
+.submitButton {
+  margin-top: 16px;
+  padding: 16px 32px;
+  background-color: #041c2c;
+  color: #fff;
+  border: none;
+  border-radius: 360px;
+  font-family: $gibson;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+
+  &:hover {
+    background-color: #333;
+  }
+
+  @include bp-below(small) {
+    width: 100%;
+    padding: 18px;
+  }
+}
