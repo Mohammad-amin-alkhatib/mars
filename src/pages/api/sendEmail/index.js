@@ -25,8 +25,8 @@ export default async function handler(req, res) {
         });
 
         const mailOptions = {
-            from: 'mkhatib@marsrobotic.com',
-            to: 'info@marsrobotic.com',
+            from: 'Jawabreh@marsrobotic.com',
+            to: 'mahmoud.Abedelfattah@marsrobotic.com',
             subject: 'Test Email from Node.js',
             text: `
                 Name: ${name}

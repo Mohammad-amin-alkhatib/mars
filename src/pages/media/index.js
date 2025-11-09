@@ -29,9 +29,9 @@ const ContactPage = ({ header, news = [] }) => {
         handleResize();
 
         const handleResizeForUserAgent = () => {
-            console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
-
-            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            if (navigator.userAgent.match(/Android/i) || 
+                navigator.userAgent.match(/iPhone/i) || 
+                navigator.userAgent.match(/iPad/i)) {
                 setIsMobile(true);
                 return;
             }
@@ -48,47 +48,76 @@ const ContactPage = ({ header, news = [] }) => {
         };
     }, []);
 
+    // Format date for display
+
+
     return (
         <>
+            <Head>
+                <title>MARS News - Latest Investment Updates</title>
+                <meta name="description" content={header?.description} />
+            </Head>
             <div>
                 {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
                 <LetsWorkTogether
                     title={header?.title}
                     description={header?.description}
                 />
-                {news && <div className={styles.news}>
-                    <div className={styles.newsContainer}>
-                        {
-                            currentNews?.map((newCard, index) => (
-                                <a key={index} className={styles.newsItem} href={'/media/' + newCard.id}>
-                                    <div className={styles.newCard}>
+                {news && (
+                    <div className={styles.news}>
+                        <div className={styles.newsContainer}>
+                            {currentNews?.map((newCard, index) => (
+                                <a 
+                                    key={index} 
+                                    className={styles.newsItem} 
+                                    href={'/media/' + newCard.id}
+                                >
+                                    <article className={styles.newCard}>
                                         <img
                                             className={styles.image}
+                                            // src={newCard.imgSrc}
                                             src={'https://fastly.picsum.photos/id/459/600/400.jpg?hmac=n3Krd9fH0v3W0RCYNLw6IcI2A17urizqjxYLlv_Df3c'}
+                                            alt={newCard.title}
+                                            loading="lazy"
                                         />
                                         <div className={styles.info}>
-                                            <h2 className={styles.titleCard}>{newCard.title}</h2>
-                                            <p className={styles.descriptionCard}>{newCard.description}</p>
+                                            <h2 className={styles.titleCard}>
+                                                {newCard.title}
+                                            </h2>
+                                            <div className={styles.categoryBadge}>
+                                                {newCard.category}
+                                            </div>
+                                           
+                                            <p className={styles.descriptionCard}>
+                                                {newCard.description}
+                                            </p>
+                                            <div className={styles.metaInfo}>
+                                                <span className={styles.dateText}>
+                                                    {newCard.date}
+                                                </span>
+                                                <span className={styles.readMore}>
+                                                    Read More
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </a>
-                            ))
-                        }
+                            ))}
+                        </div>
+                        {news.length > newsPerPage && (
+                            <Pagination
+                                currentPage={currentPage}
+                                pageNumbers={Math.ceil(news?.length / newsPerPage)}
+                                setPage={setCurrentPage}
+                                numberPerPage={newsPerPage}
+                            />
+                        )}
                     </div>
-                    {news.length > newsPerPage && (
-                        <Pagination
-                            currentPage={currentPage}
-                            pageNumbers={Math.ceil(news?.length / newsPerPage)}
-                            setPage={setCurrentPage}
-                            numberPerPage={newsPerPage}
-                        />
-                    )}
-                </div>}
+                )}
             </div>
         </>
-    )
-}
-
+    );
+};
 
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), 'src/data/mediaPage.json');

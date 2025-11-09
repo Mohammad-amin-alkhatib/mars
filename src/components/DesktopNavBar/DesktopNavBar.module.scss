@@ -23,38 +23,60 @@
     }
     100% {
       background-color: initial;
-      color: initial;
+      color: $orange;
       border-color: initial;
     }
 }
 
+
 @keyframes title-hover {
     0% {
-      color:  initial;
+      color: initial;
+      border-bottom-color: transparent;
+      border-bottom-width: 2px;
     }
     100% {
       color: $orange;
-      border-bottom: 2px solid $orange;
+      border-bottom-color: $orange;
+      border-bottom-width: 2px;
     }
 }
 
 @keyframes title-unhover {
     0% {
       color: $orange;
-      border-bottom: 2px solid $orange;
+      border-bottom-color: $orange;
+      border-bottom-width: 2px;
     }
     100% {
-        color:  initial;
+      color: initial;
+      border-bottom-color: transparent;
+      border-bottom-width: 2px;
     }
 }
 
+
+
 .navBarContainer {
-    height: 100%;
+    height: 8.5%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
-    padding: 16px 95px;
+    padding: 10px 60px;
     gap: 40px;
+    position: fixed; // Make navbar fixed
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0); // Start transparent
+
+    &.scrolled {
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.9); // Max 90% white
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .mainLogo {
@@ -80,12 +102,20 @@
     font: 400 20px/100% $gibson;
     white-space: nowrap;
     position: relative;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+        animation: title-hover 0.3s ease-in forwards;
+        border-bottom-color: $orange;
+        color: $orange;
+    }
 }
 
 .contactBtn {
     position: relative;
-    border: 1px solid $black-100;
+    // border: 1px solid $black-100;
     display: flex;
+    color: $orange;
     padding: 20px 35px;
     align-items: center;
     justify-content: center;

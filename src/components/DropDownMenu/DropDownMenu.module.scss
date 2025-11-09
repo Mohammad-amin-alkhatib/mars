@@ -5,34 +5,153 @@
     position: absolute;
     width: 730px;
     height: fit-content;
-    padding: 30px;
-    background-color: $white;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba($black-400, 0.98) 0%, rgba($black-400, 0.95) 100%);
+    backdrop-filter: blur(10px);
     display: flex;
-    gap: 20px;
+    gap: 35px;
     z-index: 10;
     top: 70px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    animation: slideDown 0.3s ease-out;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, 
+            transparent 0%, 
+            $orange 20%, 
+            $orange 80%, 
+            transparent 100%);
+        opacity: 0.6;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .dropDownWrapper {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    padding: 5px 0;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        right: -17.5px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: linear-gradient(180deg, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.1) 20%, 
+            rgba(255, 255, 255, 0.1) 80%, 
+            transparent 100%);
+    }
+    
+    &:last-child::after {
+        display: none;
+    }
 }
 
 .dropDownTitle {
-    font: 600 20px/18px $gibson;
-    margin-bottom: 10px;
+    font: 600 20px/24px $gibson;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+    letter-spacing: -0.02em;
+    color: rgb(173, 173, 173);
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, $orange, rgba($orange, 0.5));
+        transition: width 0.3s ease;
+    }
 
     &:hover {
         color: $orange;
+        transform: translateX(3px);
+        
+        &::after {
+            width: 100%;
+            
+        }
     }
 }
 
 .subItem {
-    font: 400 20px/18px $gibson;
+    font: 400 16px/22px $gibson;
     color: #929492;
-    margin-bottom: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    position: relative;
+    letter-spacing: -0.01em;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 2px;
+        background: $orange;
+        transition: width 0.25s ease;
+    }
 
     &:hover {
         color: $orange;
+        background-color: rgba($orange, 0.08);
+        padding-left: 20px;
+        
+        &::before {
+            width: 8px;
+            left: 8px;
+        }
+    }
+    
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .dropDownContainer {
+        width: 100%;
+        max-width: 730px;
+        padding: 30px 25px;
+        gap: 25px;
+        flex-direction: column;
+    }
+    
+    .dropDownWrapper::after {
+        display: none;
     }
 }

@@ -3,71 +3,214 @@
 @import '../../styles/variables/fonts.scss';
 
 .container {
-    padding: 60px 100px 80px 100px;
-    background: #F3F3F3;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 
-    @include bp-below(small) {
-        padding: 32px;
+    @media (max-width: 768px) {
+        padding: 1rem;
     }
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
 }
 
 .formGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
 }
 
 .inputGroup {
     display: flex;
     flex-direction: column;
-    color: #2E3134;
-    font: 18px $gibson;
-    gap: 4px;
+    gap: 0.5rem;
+
+    &:last-child {
+        grid-column: 1 / -1;
+    }
+
+    label {
+        font: 500 0.9rem/1.2 $gibson;
+        color: #333;
+        margin-left: 0.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 0.85rem;
+        }
+    }
 }
 
 .input {
-    padding: 18px 30px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #f5f5f5;
+    font: 400 1rem/1.5 $gibson;
+    transition: all 0.3s ease;
+
+    @media (max-width: 768px) {
+        padding: 0.875rem 1.25rem;
+        font-size: 16px; // Prevents iOS zoom
+    }
+
+    &::placeholder {
+        color: #aaa;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $orange;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba($orange, 0.1);
+    }
+}
+
+textarea.input {
+    min-height: 150px;
+    resize: vertical;
+
+    @media (max-width: 768px) {
+        min-height: 120px;
+    }
 }
 
 .consent {
     display: flex;
     align-items: flex-start;
-    gap: 35px;
-}
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    @media (max-width: 768px) {
+        padding: 1rem;
+        gap: 1rem;
+    }
 
-.checkbox {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
-    accent-color: $orange;
-}
+    label {
+        font: 400 14px/1.6 $gibson;
+        color: #4a4a4a;
+        letter-spacing: 0.2px;
 
-.submit {
-    padding: 20px 35px;
-    background: var(--MarsGray-light, #767E87);
-    color: #FFF;
+        @media (max-width: 768px) {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+    }
 
-    text-align: center;
-    /* p */
-    font-family: Gibson;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    .checkbox {
+        min-width: 22px;
+        height: 22px;
+        margin-top: 0.2rem;
+        accent-color: $orange;
+        cursor: pointer;
+        border: 2px solid $orange;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+
+        &:checked {
+            background-color: $orange;
+            border-color: $orange;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0 4px rgba($orange, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            min-width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 .error {
-    color: red;
-    font-family: $gibson;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.submit {
+    align-self: flex-start;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background: $orange;
+    color: white;
+    font: 600 1rem/1.2 $gibson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media (max-width: 768px) {
+        align-self: stretch;
+        padding: 0.875rem 2rem;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba($orange, 0.3);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    &.loading {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    &.success {
+        animation: success 0.5s ease;
+    }
+}
+
+
+
+
+
+@keyframes success {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./DesktopNavBar.module.scss";
 import navBarData from "../../data/NavBar/navBar.json";
 import MarsLogo from "../../assets/icons/mars-logo.svg";
@@ -10,9 +10,40 @@ import cx from "classnames";
 const DesktopNavBar = () => {
   const [isHoveredItem, setIsHoveredItem] = useState(null);
   const [isHoveredBtn, setIsHoveredBtn] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scroll percentage (0 to 1)
+      const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      
+      // Set scrolled state based on scroll position
+      setScrolled(window.scrollY > 0);
+
+      // Update navbar background opacity (max 0.9)
+      const navbar = document.querySelector(`.${styles.navBarContainer}`);
+      if (navbar) {
+        const opacity = Math.min(scrollPercent * 0.9, 0.9);
+        navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+      }
+
+      // Detect current section
+      const sections = document.querySelectorAll('section[id]');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className={styles.navBarContainer}>
+    <div className={cx(styles.navBarContainer, { [styles.scrolled]: scrolled })}>
       <a href="/">
         <MarsLogo className={styles.mainLogo} />
       </a>
@@ -21,9 +52,7 @@ const DesktopNavBar = () => {
           <div
             key={item.title}
             className={styles.navItemWrapper}
-            onMouseEnter={() =>
-              item.hasDropDown && setIsHoveredItem(item.title)
-            }
+            onMouseEnter={() => item.hasDropDown && setIsHoveredItem(item.title)}
             onMouseLeave={() => setIsHoveredItem(null)}
           >
             <div className={styles.itemWrapper}>
@@ -34,6 +63,7 @@ const DesktopNavBar = () => {
               <a
                 className={cx(styles.subNavItem, {
                   [styles.unHover]: isHoveredItem !== item.title,
+                  [styles.active]: activeSection === item.url.replace('/', '')
                 })}
                 href={item.url}
               >
