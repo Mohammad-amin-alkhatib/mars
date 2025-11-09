@@ -8,12 +8,13 @@ import styles from "./Registration.module.scss";
 const Registration = () => {
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    cv: null,
-  });
+      const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        cv: null,
+      });
   const [errors, setErrors] = useState({});
 
   // Detect mobile (same logic as your other pages)
@@ -24,13 +25,14 @@ const Registration = () => {
         window.innerWidth <= 1440;
       setIsMobile(mobile);
     };
-    check();
-    window.addEventListener("resize", check);
+    check(); //The function to call when resize happens
+
+    window.addEventListener("resize", check);    //listening for window size changes
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
+  const handleInputChange = (e) => { //function that runs when user types in an input field
+    const { name, value } = e.target;// This is equivalent to:  const name = e.target.name;   const value = e.target.value;
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
@@ -43,17 +45,36 @@ const Registration = () => {
     if (errors.cv) setErrors((prev) => ({ ...prev, cv: "" }));
   };
 
-  const validate = () => {
-    const newErrors = {};
-    if (!formData.firstName.trim()) newErrors.firstName = "First name is required";
-    if (!formData.lastName.trim()) newErrors.lastName = "Last name is required";
-    if (!formData.email.trim()) newErrors.email = "Email is required";
-    else if (!/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = "Email is invalid";
-    if (!formData.cv) newErrors.cv = "CV is required";
-    return newErrors;
-  };
-
+ const validate = () => {
+  const newErrors = {};
+  const nameRegex = /^[a-zA-Z\s]+$/; // Only letters and spaces
+  const phoneRegex = /^\+962[789]\d{8}$/; // +962 then 7/8/9 then 8 more digits
+  
+  if (!formData.firstName.trim()) {
+    newErrors.firstName = "First name is required";
+  } else if (!nameRegex.test(formData.firstName.trim())) {
+    newErrors.firstName = "First name should only contain letters";
+  }
+  
+  if (!formData.lastName.trim()) {
+    newErrors.lastName = "Last name is required";
+  } else if (!nameRegex.test(formData.lastName.trim())) {
+    newErrors.lastName = "Last name should only contain letters";
+  }
+  
+  if (!formData.email.trim()) newErrors.email = "Email is required";
+  else if (!/\S+@\S+\.\S+/.test(formData.email))
+    newErrors.email = "Email is invalid";
+    
+  if (!formData.phoneNumber.trim()) {
+    newErrors.phoneNumber = "Phone number is required";
+  } else if (!phoneRegex.test(formData.phoneNumber.trim())) {
+    newErrors.phoneNumber = "Phone must be +962 followed by 7/8/9 and 8 digits";
+  }
+  
+  if (!formData.cv) newErrors.cv = "CV is required";
+  return newErrors;
+};
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -62,14 +83,12 @@ const Registration = () => {
       return;
     }
 
-    // Simulate submission
     alert("Application submitted successfully!");
     console.log("Form Data:", formData);
 
-    // Optionally redirect back or to thank you page
-    // router.push("/thank-you");
-  };
 
+  };
+//noValidate → disables default HTML5 validation
   return (
     <>
       {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
@@ -83,20 +102,22 @@ const Registration = () => {
               form below.
             </p>
           </div>
+  
 
-          <form onSubmit={handleSubmit} className={styles.form} noValidate>
+          
+          <form onSubmit={handleSubmit} className={styles.form} noValidate>  
             <div className={styles.row}>
               <div className={styles.field}>
                 <label className={styles.label}>First Name *</label>
                 <input
-                  type="text"
+                  type="text"   //means it’s a normal text box
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleInputChange}
                   className={`${styles.input} ${
                     errors.firstName ? styles.errorInput : ""
                   }`}
-                  placeholder="John"
+                  placeholder="Mahmoud"
                 />
                 {errors.firstName && (
                   <span className={styles.error}>{errors.firstName}</span>
@@ -113,7 +134,7 @@ const Registration = () => {
                   className={`${styles.input} ${
                     errors.lastName ? styles.errorInput : ""
                   }`}
-                  placeholder="Doe"
+                  placeholder="Moath"
                 />
                 {errors.lastName && (
                   <span className={styles.error}>{errors.lastName}</span>
@@ -131,20 +152,35 @@ const Registration = () => {
                 className={`${styles.input} ${
                   errors.email ? styles.errorInput : ""
                 }`}
-                placeholder="john.doe@example.com"
+                placeholder="Mahmoud.doe@example.com"
               />
               {errors.email && (
                 <span className={styles.error}>{errors.email}</span>
               )}
             </div>
-
+                <div className={styles.field}>
+                  <label className={styles.label}>Phone Number *</label>
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={handleInputChange}
+                    className={`${styles.input} ${
+                      errors.phoneNumber ? styles.errorInput : ""
+                    }`}
+                    placeholder="+962791234567"
+                  />
+                  {errors.phoneNumber && (
+                    <span className={styles.error}>{errors.phoneNumber}</span>
+                  )}
+                </div>
             <div className={styles.field}>
               <label className={styles.label}>Upload CV (PDF) *</label>
               <div className={styles.fileUpload}>
                 <input
-                  type="file"
+                  type="file" //file selector
                   id="cv"
-                  accept=".pdf"
+                  accept=".pdf" // Only allows PDF files to be selected
                   onChange={handleFileChange}
                   className={styles.fileInput}
                 />

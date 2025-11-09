@@ -3,6 +3,8 @@
 @import "../../styles/variables/breakpoints.scss";
 
 .container {
+  //Main page container with light gray background
+
   background-color: #fafafa;
   min-height: 100vh;
   padding: 80px 100px;
@@ -16,16 +18,17 @@
   }
 }
 
-.inner {
+.inner { // Centers and constrains content width    
   max-width: 780px;
   margin: 0 auto;
+  
 }
 
 .header {
-  margin-bottom: 48px;
+  margin-bottom: 48px; //  title and subtitle area
 }
 
-.pageTitle {
+.pageTitle {//Main page title 
   font-family: $gibson;
   font-size: clamp(32px, 5vw, 40px);
   font-weight: 500;
@@ -34,7 +37,8 @@
   margin: 0 0 16px 0;
 }
 
-.subtitle {
+.subtitle { 
+  //Subtitle below main title
   font-family: $gibson;
   font-size: 18px;
   color: #7c7c7c;
@@ -45,35 +49,39 @@
 }
 
 .form {
+  //Main form container
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
+  }
 
 .row {
+//Two-column layout for first/last name fields
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-
-  @include bp-below(small) {
+    @include bp-below(small) {
     grid-template-columns: 1fr;
   }
 }
 
 .field {
+  // Container for each form field
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
+  }
 
 .label {
+  //Form field labels
   font-family: $gibson;
   font-size: 16px;
   font-weight: 500;
   color: #000;
-}
+ }
 
 .input {
+  //the text input fields
   padding: 14px 18px;
   border: 1px solid #eaeaea;
   border-radius: 12px;
@@ -89,20 +97,24 @@
 }
 
 .errorInput {
+  //Highlights invalid input fields with orange border
   border-color: #ff4713;
 }
 
 .error {
+  //Error message text below invalid fields
   color: #ff4713;
   font-size: 14px;
   font-family: $gibson;
 }
 
 .fileUpload {
+  //Container for custom file upload
   position: relative;
 }
 
 .fileInput {
+  //The real <input type="file"> is hidden with display: none;
   position: absolute;
   opacity: 0;
   width: 100%;
@@ -112,6 +124,7 @@
 }
 
 .fileLabel {
+  //The visible clickable area that triggers the hidden input.
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,6 +145,8 @@
 }
 
 .fileName {
+  //Displays the uploaded file name in bold once a file is chosen.
+  
   font-family: $gibson;
   font-size: 16px;
   color: #000;
