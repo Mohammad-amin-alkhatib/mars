@@ -96,6 +96,7 @@
     img {
       width: 50%;
       margin: 60px 0 85px;
+      border-radius: 20px;
     }
   }
 
@@ -107,6 +108,10 @@
 .icon {
   @include bp-below(medium) {
     display: none;
+  }
+  
+  img {
+    border-radius: 20px;
   }
 }
 
@@ -120,7 +125,34 @@
 .listItem {
   margin-top: 16px;
 }
+.divisionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.divisionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;  // This adds spacing between division items
+  color: $black-200;
+  font: 400 20px $gibson;
+  text-align: justify;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.divisionDot {
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: $orange;
+  border-radius: 50%;
+  margin-top: 8px;   
+}
 .downloadButton {
   color: #2E3134;
   font: 600 30px $gibson;

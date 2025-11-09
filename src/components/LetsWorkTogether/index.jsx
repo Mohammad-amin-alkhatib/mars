@@ -10,6 +10,7 @@ const LetsWorkTogether = ({
     className,
     imgSrc,
     description,
+     divisions,
     href,
     textButton,
     darkMode = false,
@@ -53,7 +54,18 @@ const LetsWorkTogether = ({
                 </div>
 
                 {showSeparator && <Separator className={styles.separator} />}
+
                 {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
+                {!!divisions?.length && (
+                    <ul className={styles.divisionsList}>
+                        {divisions.map((item, index) => (
+                            <li key={index} className={styles.divisionItem}>
+                                <span className={styles.divisionDot} />
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                )}
                 {!!description?.length && !listStyle && (
                     <div
                         className={styles.description}

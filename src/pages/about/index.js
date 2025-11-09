@@ -84,14 +84,14 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
                     className={styles.ourVision}
                 />
 
-                <LetsWorkTogether
-                    title={ourMission.title}
-                    description={ourMission.description}
-                    imgSrc={ourMission.imgSrc}
-                    className={styles.ourMission}
-                    descriptionTitle={ourMission.descriptionTitle}
-                    // darkMode
-                />
+           <LetsWorkTogether
+    title={ourMission.title}
+    description={ourMission.description}
+    divisions={ourMission.divisions}   
+    imgSrc={ourMission.imgSrc}
+    className={styles.ourMission}
+    descriptionTitle={ourMission.descriptionTitle}
+/>
 
 
                 <LetsWorkTogether

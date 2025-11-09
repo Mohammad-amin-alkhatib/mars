@@ -24,6 +24,8 @@ const NewsPage = ({ header, chooseUs, serviceDescription, articles }) => {
                     className={styles.whyChooseSection}
                     {...chooseUs}
                 />
+                <div>
+                 </div>
             </div >
         </>
     )
