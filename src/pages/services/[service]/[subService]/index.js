@@ -25,6 +25,7 @@ const NewsPage = ({ header, chooseUs, serviceDescription, articles }) => {
                     {...chooseUs}
                 />
             </div >
+            
         </>
     )
 }

@@ -1,4 +1,6 @@
 @import '../../styles/variables/breakpoints.scss';
+@import '../../styles/variables/colors.scss';
+@import '../../styles/variables/fonts.scss';
 
 .headerContainer {
     position: relative;
@@ -11,7 +13,7 @@
 .header {
     position: relative;
     height: calc(100vh - 100px);
-
+    font: $gibson;
     @include bp-below(medium) {
         height: calc(100vh - 80px);
     }
