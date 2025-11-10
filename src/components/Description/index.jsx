@@ -10,6 +10,9 @@ const Description = ({ items }) => {
           {!!item?.videoUrl && <video src={`/${item.videoUrl}`} controls className={styles.video} />}
           <div className={styles.titleContainer}>
             <h1>{item.title}</h1>
+             {item.subtitle && (
+              <p className={styles.subtitle}>{item.subtitle}</p>
+            )}
             <p>{item.description}</p>
           </div>
         </div>

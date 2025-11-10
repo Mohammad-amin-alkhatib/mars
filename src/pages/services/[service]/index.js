@@ -20,9 +20,10 @@ const NewsPage = ({ header, chooseUs, serviceDescription, subServices, articles 
                     className={styles.discriptionHeader}
                     dangerouslySetInnerHTML={{ __html: serviceDescription }}
                 />}
-                {subServices?.length && <CardContainer cards={subServices} className={styles.cardContainer} />}
+                
+                 {subServices?.length && <CardContainer cards={subServices} className={styles.cardContainer} />}
                 {articles?.length && <Description items={articles} />}
-                <LetsWorkTogether
+                 <LetsWorkTogether
                     className={styles.whyChooseSection}
                     {...chooseUs}
                 />

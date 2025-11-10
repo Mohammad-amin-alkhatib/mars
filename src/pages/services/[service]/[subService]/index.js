@@ -19,12 +19,14 @@ const NewsPage = ({ header, chooseUs, serviceDescription, articles }) => {
                     className={styles.discriptionHeader}
                     dangerouslySetInnerHTML={{ __html: serviceDescription }}
                 />}
-                {articles?.length && <Description items={articles} />}
-                <LetsWorkTogether
+                 
+                 {articles?.length && <Description items={articles} />}
+                 <LetsWorkTogether
                     className={styles.whyChooseSection}
                     {...chooseUs}
                 />
                 <div>
+
                  </div>
             </div >
             

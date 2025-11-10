@@ -10,34 +10,37 @@
     "serviceDescription": "",
     "articles": [
         {
-            "title": "Surveying",
+
+            "title": "Volumetric Measurements",
+             "subtitle": "Geomatics & Remote Sensing",
+
             "description": "LiDAR mapping using drones for surveying captures highly accurate, detailed topographic data, even in challenging terrain. It generates precise 3D models, point clouds, and contour maps, improving measurement accuracy. This technology enables efficient, non-invasive surveying for infrastructure, land development, and environmental projects.",
-            "imgSrc": "Surveying.png"
+            "imgSrc": "Volumetric Measurements .png"
         },
         {
-            "title": "Forestry",
+            "title": "Forest Management",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "LiDAR mapping using drones in forestry provides detailed, accurate data on tree height, canopy structure, and forest density. It helps assess biomass, monitor forest health, and detect changes over time. This technology enables efficient, large-scale forest management and conservation without disturbing the environment.",
-            "imgSrc": "Forestry.png"
+            "imgSrc": "Forest Management.png"
         },
         {
             "title": "Urban Planning",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "LiDAR mapping using drones in urban planning generates precise 3D models of cities, capturing detailed building heights, road layouts, and infrastructure. This data supports zoning, construction, and transportation planning, optimizing land use. It enhances decision-making and helps create more sustainable, efficient urban environments.",
             "imgSrc": "Urban Planning.png"
         },
         {
-            "title": "Archaeology",
+            "title": "Archaeological Sites Documentation",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "LiDAR mapping using drones for archaeological documentation focuses on uncovering and preserving ancient document sites, such as ruins, inscriptions, or historical structures. It provides precise 3D models and topographic data, revealing hidden details beneath vegetation or debris. This technology allows archaeologists to efficiently document, analyze, and protect these culturally significant sites. b ",
-            "imgSrc": "Archaeology.png"
+            "imgSrc": "Archaeological Sites Documentation.png"
         }
     ],
     "chooseUs": {
-        "title": "Why Choose MARS Robotics",
-        "imgSrc": "/lampInHand.svg",
-        "description": [
-            "Innovation: We are constantly pushing the boundaries of robotic technology.",
-            "Focus on You: our solutions are customer-centric, tailored to meet your needs and challenges.",
-            "ITAR-Free Advantage: Our solutions are not subject to ITAR restrictions, making them accessible to a wider audience.",
-            "Reliable Partner: We are committed to providing you with the support and expertise you need to succeed."
-        ]
+        "title": "Let's Work Together",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+        "textButton": "Contact Us",
+        "href": "/contact",
+        "imgSrc": "/work-together.svg"
     }
 }
