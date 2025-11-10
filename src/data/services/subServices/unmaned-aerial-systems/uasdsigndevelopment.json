@@ -1,10 +1,10 @@
 {
     "header": {
-           "imgSrc": "/UnmandPick.png",
+        "videoUrl": "/UnmannedVideo.mp4",
         "title": "UAS Design & Development",
         "showSeparator": false,
         "coverImage": true,
-        "reduceOpacity": 0.81,
+        "reduceOpacity": 0.5,
         "description": "Our engineering team delivers end-to-end solutions for advanced unmanned aerial platforms, ensuring efficiency, reliability, and mission readiness. We cover every aspect of development with precision, from aerodynamic design to mechanical and structural engineering."
         
     },
@@ -15,21 +15,25 @@
         {
             "title": "Aerodynamic Design",
             "description": "Our team specializes in delivering optimized aerodynamic design and analysis using up-to-date techniques in Computational Fluid Dynamics (CFD) and flow simulations.",
+            "subtitle": "UAS System Integration & Operation",
             "imgSrc": "uasDes&Dev.png"
         },
         {
             "title": "Mechanical & Structural Design",
             "description": "We provide end-to-end platform design capabilities, from the mechanical design of the airframe structure to structural analysis using simulation conditions in compliance with STANAG 4671.",
+            "subtitle": "UAS System Integration & Operation",
             "imgSrc": "Mechanical & Structural Design.png"
         },
         {
             "title": "Design for Manufacturing & Assembly (DFM & DFA)",
             "description": "Our team is specialized in providing engineering capabilities for Design for Manufacturing (DFM) and tooling design. This is a crucial part of the process, enabling a seamless transition from concept to production while maintaining quality, scalability, and cost-effectiveness.",
+            "subtitle": "UAS System Integration & Operation",
             "imgSrc": "Topographic mapping.png"
         },
         {
             "title": "Design for Testing & Validation",
             "description": "We offer efficient, cost-effective test setup design and integration for UAS users and suppliers globally. Our services include Test Bench Design, Test Rigs, and hardware selection and integration.",
+            "subtitle": "UAS System Integration & Operation",
             "imgSrc": "Testing & Validation.png"
         }
         
