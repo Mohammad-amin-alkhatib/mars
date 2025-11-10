@@ -111,7 +111,7 @@ const ContactPage = ({ header, getIntouch }) => {
                         </div>
 
                         {/* Company Logos Below Map */}
-                        <div className={styles.partners}>
+                        {/* <div className={styles.partners}>
                             <h3>Our Partners</h3>
                             <div className={styles.partnerLogos}>
                                 {companyLogos.map((company, index) => (
@@ -120,7 +120,7 @@ const ContactPage = ({ header, getIntouch }) => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className={styles.info}>
