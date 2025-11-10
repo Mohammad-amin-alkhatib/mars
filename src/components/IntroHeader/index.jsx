@@ -8,7 +8,7 @@ import LetsWorkTogether from "../LetsWorkTogether";
 // Styles
 import styles from "./IntroHeader.module.scss";
 
-const InrtoHeader = ({ header, className }) => {
+const IntroHeader = ({ header, className }) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -37,17 +37,31 @@ const InrtoHeader = ({ header, className }) => {
             className={cx(styles.headerContainer,
                 { [styles.headerContainerImage]: !header?.imgSrc }
                 , className)}
-            {...(header?.imgSrc && {
+            {...(!isMobile && header?.imgSrc && {
                 style: {
                     background: `url(${header.imgSrc}) no-repeat 100% 35%`,
                     backgroundSize: header.coverImage ? "cover" : "",
                     backgroundBlendMode: header.reduceOpacity ? "overlay" : "",
                     backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${header.reduceOpacity})` : "",
+                    marginRight: header.coverImage ? '' : '20rem ',
                 },
             })}>
-            {
             
-            header?.videoUrl &&
+            {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
+            
+            {/* Image for mobile - appears above content */}
+            {isMobile && header?.imgSrc && (
+                <div className={styles.mobileImageContainer}>
+                    <img 
+                        src={header.imgSrc} 
+                        alt={header.title || "Header"} 
+                        className={styles.mobileImage}
+                        style={{ opacity: header.reduceOpacity ? header.reduceOpacity : 1 }}
+                    />
+                </div>
+            )}
+
+            {header?.videoUrl && (
                 <video
                     autoPlay
                     muted
@@ -60,10 +74,8 @@ const InrtoHeader = ({ header, className }) => {
                 >
                     <source src={header.videoUrl} type="video/mp4" />
                 </video>
+            )}
 
-                
-            }
-            {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
             <LetsWorkTogether
                 title={header?.title}
                 description={header?.description}
@@ -76,4 +88,5 @@ const InrtoHeader = ({ header, className }) => {
     );
 }
 
-export default InrtoHeader;
+export default IntroHeader;
+

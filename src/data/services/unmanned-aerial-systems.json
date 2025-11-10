@@ -1,11 +1,11 @@
 {
     "header": {
-        "imgSrc": "/UnmandPick.png",
-        "title": "Unmanned Aerial Systems(UAS)",
-        "showSeparator": false,
-        "coverImage": true,
-        "reduceOpacity": 0.5,
-        "description": "The MARSRobotics Design Team develops and manufactures advanced airframes for Unmanned Aerial Systems (UAS) and related subsystems. Our innovative airframe designs focus on efficiency, durability, and versatility, ensuring exceptional performance across a wide range of applications."
+        "videoUrl": "/UnmannedVideo.mp4",
+        "title": "UAVs System Design",
+        "description": "MARS Robotics® focuses on the innovative design and development of advanced Unmanned Aerial Systems (UAS), covering a wide range from Group 1 to Group 4 classifications.",
+        "hrefHeader": "MARSECU.pdf",
+        "ctaHeader": "Download company profile",
+        "reduceOpacity": 0.2
     },
     "serviceDescription": "   ",
     "subServices": [

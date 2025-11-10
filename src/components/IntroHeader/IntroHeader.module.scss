@@ -12,6 +12,7 @@
 
 .header {
     position: relative;
+    
     height: calc(100vh - 100px);
     font: $gibson;
     @include bp-below(medium) {
@@ -28,3 +29,4 @@
     top: 0;
     width: 100%;
 }
+

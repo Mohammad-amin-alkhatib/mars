@@ -40,6 +40,7 @@ const ProductPage = ({ header, keyFeatures, products, footer }) => {
         <>
             {header.coverImage ? <InrtoHeader header={header} /> : (<>
                 {!isMobile ? <DesktopNavBar /> : <MobileNavBar />}
+                
                 <LetsWorkTogether {...header} />
             </>)}
             {!!products?.length && <CardContainer cards={products} className={styles.productsContainer} />}
