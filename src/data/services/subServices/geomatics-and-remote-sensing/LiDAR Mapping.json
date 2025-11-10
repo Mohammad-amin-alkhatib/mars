@@ -6,7 +6,9 @@
         "coverImage": true,
         "reduceOpacity": 0.5,
         "description": " LiDAR mapping uses laser pulses to measure distances and create precise 3D representations of the Earth's surface or objects. Mounted on drones, aircraft, or vehicles, LiDAR sensors capture detailed topographic data, even penetrating vegetation to map ground surfaces. This technology is widely used in surveying, forestry, urban planning, and archaeology. Its ability to generate high-resolution, accurate maps makes it essential for analyzing terrain, infrastructure, and environmental changes."
+        
     },
+    "shortdesc": "See how LiDAR Mapping is transforming industries.",
     "serviceDescription": "",
     "articles": [
         {

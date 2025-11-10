@@ -13,7 +13,72 @@
         margin: 40px 45px;
     }
 }
+.titleStack {
+    position: relative;
+    width: 100%;
+    min-height: 280px;                     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    gap: 20px;
+     margin-bottom: 40px;
 
+    @include bp-below(small) {
+        min-height: 220px;
+        padding: 40px 20px;
+        gap: 16px;
+    }
+}
+
+.stackTitle {
+       
+   color: var(--Black, #2E3134);
+text-align: center;
+
+/* h1 */
+font-family: $gibson;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ &:first-child{
+          color: var(--Light-Grey-Grey-7, #ABABAB);
+text-align: center;
+ font-family: var(--Font-Family-Sub-heading, "DM Mono");
+font-size: var(--Font-Size-sm, 14px);
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 1.3px;
+text-transform: uppercase
+    }
+    &:last-child {
+            color: var(--Dark-Grey-Grey-9, #5E5E5E);
+        text-align: center;
+        font-variant-numeric: slashed-zero;
+        font-feature-settings: 'cv01' on, 'cv02' on, 'cv03' on, 'cv04' on, 'cv07' on, 'cv10' on, 'cv11' on;
+
+         font-family: var(--Font-Family-Body, Inter);
+        font-size: var(--Font-Size-md, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.3px;
+    }
+
+    @include bp-below(medium) {
+        font-size: 42px;
+        &:last-child { font-size: 30px; }
+    }
+
+    @include bp-below(small) {
+        font-size: 32px;
+        &:last-child { font-size: 24px; }
+    }
+}
 .content {
     margin: 0 100px 100px;
     max-width: 90%;
@@ -31,8 +96,7 @@
 
 .text {
     text-align: justify;
-    color: #e7e9ec;
-    display: flex;
+     display: flex;
     flex-direction: column;
     font: 20px $gibson;
     gap: 20px;

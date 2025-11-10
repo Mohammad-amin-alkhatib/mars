@@ -7,29 +7,31 @@
         "reduceOpacity": 0.81,
         "description": "Photogrammetry is the science and technology of extracting accurate measurements and spatial information from photographs. It transforms 2D images into 3D models, maps, or orthophotos, widely used in surveying, architecture, and remote sensing. By analyzing image overlaps and camera positions, photogrammetry reconstructs real-world objects or terrains with precision. It is essential for applications like topographic mapping, urban planning, and heritage preservation."
     },
+        "shortdesc": "See how Photogrammetry is transforming industries.",
+
     "serviceDescription": "",
     "articles": [
         {
             "title": "GIS Applications",
-             "subtitle": "Spatial Analysis & Mapping Solutions",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "integrate high-resolution 3D models and orthophotos into spatial analyses and mapping. They support urban planning, infrastructure monitoring, and environmental management with accurate geospatial data. Photogrammetry enhances GIS workflows by providing precise terrain and feature measurements for informed decision-making.",
             "imgSrc": "GIS Applications.png"
         },
            {
             "title": "Surveying",
-             "subtitle": "Spatial Analysis & Mapping Solutions",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "LiDAR mapping using drones for surveying captures highly accurate, detailed topographic data, even in challenging terrain. It generates precise 3D models, point clouds, and contour maps, improving measurement accuracy. This technology enables efficient, non-invasive surveying for infrastructure, land development, and environmental projects.",
             "imgSrc": "Surveying.png"
         },
         {
             "title": "Topographic mapping",
-             "subtitle": "Spatial Analysis & Mapping Solutions",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "generates accurate maps by converting overlapping aerial images into 3D terrain models. This method captures detailed elevation data, contour lines, and surface features efficiently. It is widely used in engineering, construction, and environmental studies for precise land analysis and planning.",
             "imgSrc": "Topographic mapping.png"
         },
         {
           "title": "Propulsion System Integration & Testing",
-           "subtitle": "Spatial Analysis & Mapping Solutions",
+            "subtitle": "Geomatics & Remote Sensing",
             "description": "captures high-resolution aerial images to create detailed 3D models and orthophotos of road networks. It enables accurate assessment of road conditions, detecting cracks, deformations, and other surface issues. This efficient method supports maintenance planning, infrastructure monitoring, and safety enhancements."
            , "imgSrc": "Propulsion System Integration & Testing.png"   
         }
