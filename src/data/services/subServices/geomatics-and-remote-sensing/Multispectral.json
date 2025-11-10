@@ -8,6 +8,8 @@
         "description": "Multispectral imaging captures data across multiple wavelengths of light, including visible and non-visible spectrums like near-infrared. Mounted on drones or satellites, it helps analyze vegetation health, soil composition, and water quality by detecting unique spectral signatures. This technology is widely used in agriculture, forestry, and environmental monitoring for precision management and resource assessment. Its ability to provide detailed insights into material properties makes it indispensable for scientific and industrial applications."
     },
     "serviceDescription": "",
+        "shortdesc": "See how LiDAR Mapping is transforming industries.",
+
     "articles": [
         {
             "title": "Agriculture",

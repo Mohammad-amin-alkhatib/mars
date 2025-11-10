@@ -10,26 +10,30 @@ import InrtoHeader from "@/components/IntroHeader";
 // Styles
 import styles from './SubService.module.scss';
 
-const NewsPage = ({ header, chooseUs, serviceDescription, articles }) => {
+const NewsPage = ({ header, chooseUs, serviceDescription, articles, shortdesc }) => {
     return (
         <>
             <div>
                 <InrtoHeader header={header} className={styles.headerContainer} />
+
+                            <div className={styles.titleStack}>
+                <h2 className={styles.stackTitle}>Solutions</h2>
+                <h2 className={styles.stackTitle}>Explore Applications</h2>
+                {shortdesc && <h2 className={styles.stackTitle}>{shortdesc}</h2>}
+            </div>
+ 
                 {!!serviceDescription && <div
                     className={styles.discriptionHeader}
                     dangerouslySetInnerHTML={{ __html: serviceDescription }}
                 />}
                  
-                 {articles?.length && <Description items={articles} />}
-                 <LetsWorkTogether
+                {articles?.length && <Description items={articles} />}
+                 
+                <LetsWorkTogether
                     className={styles.whyChooseSection}
                     {...chooseUs}
                 />
-                <div>
-
-                 </div>
-            </div >
-            
+            </div>
         </>
     )
 }

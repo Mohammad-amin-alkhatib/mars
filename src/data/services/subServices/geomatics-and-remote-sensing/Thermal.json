@@ -8,6 +8,8 @@
         "description": "Thermal imaging with drones captures heat signatures using thermal sensors, providing detailed temperature data for various applications. These images help detect anomalies like heat loss, electrical faults, or water leaks in infrastructure and buildings. They are widely used in agriculture, search and rescue, industrial inspections, and environmental monitoring. Drones equipped with thermal cameras offer efficient, safe, and cost-effective solutions for inspecting hard-to-reach or hazardous areas."
     },
     "serviceDescription": "",
+        "shortdesc": "See how Thermal Imaging is transforming industries.",
+
     "articles": [
         {
             "title": "Agriculture",
