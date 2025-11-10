@@ -67,7 +67,6 @@
 }
 
 .title {
-  border: 1px solid $black-200;
   color: $black-200;
   font: 600 28px $gibson;
   padding: 6px 14px;
@@ -82,7 +81,7 @@
 }
 
 .description {
-  color: $orange;
+  color: $black-200;
   font: 18px $gibson;
   line-height: 1.6;
   display: -webkit-box;

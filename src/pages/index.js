@@ -7,6 +7,7 @@ import Head from "next/head";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
+import BuildFutureSection from "@/components/FutureSection";
 // Styles
 import styles from "./index.module.scss";
 // Assets
@@ -19,6 +20,7 @@ export default function Home({
   header,
   letsWorkTogether,
   services,
+  buildFuture,
   ourPartners = []
 }) {
   return (
@@ -43,8 +45,17 @@ export default function Home({
           </div>
           {!!services?.description && <p className={styles.serviceDescription}> {services.description}</p>}
         </div>
+        
+        {/* NEW SECTION - Build the Future With Us */}
+        {buildFuture && (
+          <BuildFutureSection
+            title={buildFuture.title}
+            description={buildFuture.description}
+            images={buildFuture.images}
+          />
+        )}
+        
         <LetsWorkTogether
-          // className={styles.whyChooseSection}
           title={chooseUs?.title}
           imgSrc={chooseUs?.imgSrc}
           description={chooseUs?.description}

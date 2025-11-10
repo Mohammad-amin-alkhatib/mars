@@ -1,7 +1,7 @@
 {
     "header": {
         "title": "Explore Our Solutions",
-        "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await.(fill text) (fill text) (fill text) (fill text) (fill text)",
+        "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await.",
         "videoUrl": "/homepageVideo.mp4",
         "coverImage": true,
         "reduceOpacity": 0.75
@@ -22,13 +22,13 @@
         "cards": [
             {
                 "title": "Products",
-                "description": "(fill text) We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await. (fill text) (fill text) (fill text) ",
-                "imgSrc": "products.png",
+                "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await.",
+                "imgSrc": "New_Products.png",
                 "href": "/products"
             },
             {
                 "title": "Services",
-                "description": "(fill text) We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await. (fill text) (fill text) (fill text) ",
+                "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await.",
                 "imgSrc": "Services.png",
                 "href": "/services"
             }

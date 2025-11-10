@@ -1,0 +1,46 @@
+{
+    "header": {
+           "imgSrc": "/UnmandPick.png",
+        "title": "UAS System Integration & Operation",
+        "showSeparator": false,
+        "coverImage": true,
+        "reduceOpacity": 0.81,
+        "description": "Our specialists excel in systems integration and mission-ready operations for unmanned aerial systems (UAS). We combine cutting-edge flight control integration, harness and configuration management, and propulsion system testing to deliver reliable and sophisticated solutions."
+    },
+    "serviceDescription": "",
+    "articles": [
+        {
+            "title": "System Integration",
+            "description": "Our integration team provides reliable, fast, and excellent UAV system integration, covering everything from autopilot integration and configuration to sensor and actuator calibration, interface design, and mission equipment integration.",
+            "imgSrc": "System Integration.png"
+        },
+        {
+            "title": "Harness Integration",
+            "description": "The MARS Integration team specializes in MIL-STD, highly reliable, and redundant electrical harness integration for UAS.",
+            "imgSrc": "Harness Integration.png"
+        },
+        {
+            "title": "Propulsion System Integration & Testing",
+            "description": "The MARS team has accumulated extensive experience in propulsion system integration and testing, both on a test bench and on the platform itself. We provide full end-to-end engine qualification techniques to customers throughout the region.",
+            "imgSrc": "collage5.png"
+        },
+        {
+            "title": "Static & Flight Testing",
+            "description": "Our team specializes in UAV first power-up and configuration, along with static testing that includes power checks and control surface authority. We also conduct end-to-end operations and flight testing, integrating mission equipment to maximize operational effectiveness and mission success",
+            "imgSrc": "collage8.png"
+        },
+        {
+            "title": "Ground Control Management & Support",
+            "description": "Our software team is capable of troubleshooting and interfacing with all kinds of software standards used in ground control stations.",
+            "imgSrc": "Ground Control Management & Support.png"
+        }
+        
+    ],
+    "chooseUs": {
+        "title": "Let's Work Together",
+        "description": "Ready to take the next step? Contact us today to discuss your needs and explore how our expertise can drive your success.",
+        "textButton": "Contact Us",
+        "href": "/contact",
+        "imgSrc": "/work-together.svg"
+    }
+}

@@ -10,36 +10,34 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 20 auto;
+  margin: 20px auto;
   width: 100%;
-  padding: 80px 100px;
+  max-width: 1200px;
+  padding: clamp(40px, 5vw, 80px) clamp(25px, 8vw, 100px);
 
   @include bp-below(medium) {
-    padding: 60px 50px;
+    padding: clamp(30px, 4vw, 60px) clamp(20px, 5vw, 50px);
   }
 
   @include bp-below(small) {
     padding: 40px 25px;
   }
 
-  /* Remove the global color override that was causing issues */
-  /* Apply specific text colors to text elements only */
-   p, div, span, li {
-    color: #767E87 !important;  /* Black text color */
+  p, div, span, li {
+    color: #767E87;
     text-align: start;
-  
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.6;
+  }
 }
-}
-
-
 
 .linkedinIcon {
-    margin-top: 15px;
+    margin-top: clamp(10px, 2vw, 15px);
     display: inline-block;
 
     svg {
-        width: 24px;
-        height: 24px;
+        width: clamp(20px, 3vw, 24px);
+        height: clamp(20px, 3vw, 24px);
         fill: #0077b5;
         transition: transform 0.2s;
 
@@ -48,32 +46,41 @@
         }
     }
 }
+
 .letsWorkTogether {
     background-color: $black-400;
+    padding: clamp(40px, 5vw, 80px) 20px;
+    width: 100%;
 }
 
 .meetOurTeam {
-    margin: 70px 0px 70px 100px;
+    margin: clamp(40px, 5vw, 70px) clamp(20px, 5vw, 100px);
 
     @include bp-below(medium) {
-        margin: 70px 0px 70px 50px;
+        margin: 50px 30px;
     }
 
     @include bp-below(small) {
-        margin: 40px 45px;
+        margin: 30px 20px;
     }
 }
 
 .meetOurTeamTitleSection {
     padding: 0;
+    h2 {
+        font-size: clamp(24px, 4vw, 36px);
+        margin-bottom: clamp(20px, 3vw, 30px);
+    }
 }
 
 .carousel {
-    margin: 60px 20px 60px 0;
+    margin: clamp(30px, 4vw, 60px) clamp(10px, 2vw, 20px);
     position: relative;
+    width: 100%;
+    max-width: 1200px;
 
     @include bp-below(medium) {
-        margin-right: 0;
+        margin: 40px 10px;
     }
 }
 
@@ -83,18 +90,24 @@
     justify-content: space-between;
     max-width: 565px;
     margin: 0 auto;
+    padding: 0 15px;
+
+    @include bp-below(small) {
+        max-width: 100%;
+    }
 }
 
 .arrowRight {
     transform: rotate(180deg);
 
     svg {
-        height: 25px;
+        height: clamp(20px, 3vw, 25px);
     }
 }
 
 .arrow {
     svg {
-        height: 25px;
+        height: clamp(20px, 3vw, 25px);
+        cursor: pointer;
     }
 }

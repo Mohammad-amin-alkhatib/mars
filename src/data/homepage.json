@@ -35,6 +35,25 @@
         ],
         "description": ""
     },
+      "buildFuture": {
+    "title": "Build the Future With Us",
+    "description": "Join us in revolutionizing robotics and automation. Our innovative solutions are shaping the future of technology, bringing cutting-edge advancements to industries worldwide. Together, we can create tomorrow's possibilities today.",
+    "images": [
+      "collage1.png",
+      "collage2.png",
+      "collage3.png",
+      "collage4.png",
+      "collage5.png",
+      "collage6.png",
+      "collage7.png",
+      "collage8.png",
+      "collage9.png",
+      "collage10.png",
+      "Geomatics & Remote Sensing.png",
+      "CEO.png"
+    ]
+  },
+
     "chooseUs": {
         "title": "Why Choose MARS Robotics",
         "imgSrc": "Why Choose MARS Robotics.png",

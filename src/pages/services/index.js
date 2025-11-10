@@ -48,10 +48,11 @@ const ContactPage = ({ header, services, chooseUs }) => {
                                 href={card.href}
                             />
                         ))}
-                    </div>
+                     </div>
+                    
                     {!!services?.description && <p className={styles.serviceDescription}> {services.description}</p>}
                 </div>
-                <LetsWorkTogether
+                 <LetsWorkTogether
                     className={styles.whyChooseSection}
                     {...chooseUs}
                 />
