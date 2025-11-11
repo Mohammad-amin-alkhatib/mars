@@ -3,14 +3,14 @@ import Separator from '../Separator';
 import styles from './LetsWorkTogether.module.scss';
 import cx from 'classnames';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const LetsWorkTogether = ({
     className,
     imgSrc,
     description,
-     divisions,
+    divisions,
     href,
     textButton,
     darkMode = false,
@@ -22,12 +22,27 @@ const LetsWorkTogether = ({
     ctaHeader
 }) => {
     const listStyle = Array.isArray(description);
+    const [isMobile, setIsMobile] = useState(false);
 
     const { ref, inView } = useInView({
         threshold: 0.1,
     });
 
     const titleRef = useRef(null);
+
+    // Detect mobile viewport
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         if (titleRef.current) {
@@ -43,9 +58,12 @@ const LetsWorkTogether = ({
             ref={ref}
         >
             <div className={styles.textPart}>
-                {!!imgSrc && <div className={styles.iconAbove}>
-                    <img src={imgSrc} />
-                </div>}
+                {/* Mobile Image - Shows ABOVE content on mobile */}
+                {!!imgSrc && isMobile && (
+                    <div className={styles.iconAbove}>
+                        <img src={imgSrc} alt={title || "Section image"} />
+                    </div>
+                )}
 
                 {/* TITLE WITH ANIMATION */}
                 <div className={styles.revealTextWrapper}>
@@ -55,7 +73,15 @@ const LetsWorkTogether = ({
 
                 {showSeparator && <Separator className={styles.separator} />}
 
-                {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
+                {!!descriptionTitle &&  <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
+                                
+                {!!description?.length && !listStyle && (
+                    <span
+                        className={styles.description}
+                        dangerouslySetInnerHTML={{ __html: description }}
+                    ></span>
+                )}
+
                 {!!divisions?.length && (
                     <ul className={styles.divisionsList}>
                         {divisions.map((item, index) => (
@@ -66,12 +92,9 @@ const LetsWorkTogether = ({
                         ))}
                     </ul>
                 )}
-                {!!description?.length && !listStyle && (
-                    <div
-                        className={styles.description}
-                        dangerouslySetInnerHTML={{ __html: description }}
-                    ></div>
-                )}
+                
+
+                
                 {!!description?.length && listStyle && (
                     <ul className={styles.description}>
                         {description.map((item, index) => (
@@ -82,24 +105,30 @@ const LetsWorkTogether = ({
                         ))}
                     </ul>
                 )}
+                
                 {!!hrefHeader && (
                     <a href={`/pdfs/${hrefHeader}`} className={styles.linkDownload} download>
                         {ctaHeader}
-                    </a>)}
+                    </a>
+                )}
+                
                 {href && <ArrowButton text={textButton} href={href} />}
+                
                 {pdfFile && (
                     <a
                         href={`/pdfs/${pdfFile}`}
                         download
                         className={styles.downloadButton}
                     >
-                        Download Brouchure
+                        Download Brochure
                     </a>
                 )}
             </div>
-            {!!imgSrc && (
+            
+            {/* Desktop Image - Shows BESIDE content on desktop */}
+            {!!imgSrc && !isMobile && (
                 <div className={styles.icon}>
-                    <img src={imgSrc} />
+                    <img src={imgSrc} alt={title || "Section image"} />
                 </div>
             )}
         </div>

@@ -23,11 +23,17 @@
     padding: 40px 25px;
   }
 
-  p, div, span, li {
+  p, span, li {
     color: #767E87;
     text-align: start;
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: 1.6;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.1;
+  }
+  div{
+    text-align: start;
+    font-size: clamp(14px, 2vw, 30px);
+    color: #767E87;
+
   }
 }
 
@@ -82,6 +88,10 @@
     @include bp-below(medium) {
         margin: 40px 10px;
     }
+}
+
+.ceoSection{
+background: #ebecec;
 }
 
 .carouselControls {

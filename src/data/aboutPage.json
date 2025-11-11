@@ -23,9 +23,16 @@
   },
   "ourApproach": {
     "title": "Approach",
-    "descriptionTitle": "Our Strategic Approach",
-    "description": "At MARSRobotics®, our approach is rooted in innovation and collaboration. We emphasize agile development cycles, tight integration between hardware and software teams, and a strong focus on customer-specific solutions that reduce cost and maximize efficiency.",
-    "imgSrc": "/Our Approach.png"
+    "descriptionTitle": "What we offer?",
+        "description": "A complete solution, including:",
+    "imgSrc": "/Our Approach.png",
+       "divisions": [
+    "Industry-Leading Hardware: Unmanned mini and short-range aerial vehicles (UAVs) in fixed-wing, rotary-wing, and hybrid configurations.",
+    "Seamless Integration: System integration with leading commercial autopilots for customized aerial platforms.",
+    "Technical Expertise: Comprehensive support for autonomous system integration, adaptation, procurement, and development.",
+    "Vision Technology: Advanced daylight vision payloads with future expansion plans.",
+    "Unwavering Commitment: Reliable support, training, and service to ensure your success."
+  ]
   },
   "ceoSection": {
     "title": "The People are the actual investment. ",

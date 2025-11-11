@@ -2,7 +2,8 @@ import Image from "next/image";
 import styles from "./Card.module.scss";
 import { Space_Grotesk } from 'next/font/google'
 import cx from 'classnames';
-import ArrowButton from "../ArrowButton";
+// import ArrowButton from "../ArrowButton";
+
 
 const spaceGrotesk = Space_Grotesk({
     display: 'swap',
@@ -28,7 +29,11 @@ const Card = ({ title, description, image, href }) => {
             </div>
             {wrapLink(href, <h2 className={styles.title}>{title}</h2>)}
             <div className={cx(styles.description, spaceGrotesk.className)}>{description}</div>
-            {href && <ArrowButton text="Read full blog" href={href} className={styles.arrowButtonNoBg} />}
+            {href && (
+                <a href={href} className={styles.readMore}>
+                    Read full blog
+                </a>
+            )}
         </div>
     );
 }

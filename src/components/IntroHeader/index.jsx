@@ -13,18 +13,16 @@ const IntroHeader = ({ header, className }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            console.log(navigator.userAgent, "isMobile: ", window.innerWidth <= 768);
-
-            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-                setIsMobile(true);
-                return;
-            }
-
-            setIsMobile(window.innerWidth <= 1440);
+            // Check for mobile devices first
+            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            // Use consistent breakpoint: 768px (matches SCSS medium breakpoint)
+            const isMobileWidth = window.innerWidth <= 768;
+            
+            setIsMobile(isMobileDevice || isMobileWidth);
         };
 
         handleResize();
-
         window.addEventListener("resize", handleResize);
 
         return () => {
@@ -33,40 +31,28 @@ const IntroHeader = ({ header, className }) => {
     }, []);
 
     return (
-        <div
-            className={cx(styles.headerContainer,
-                { [styles.headerContainerImage]: !header?.imgSrc }
-                , className)}
-            {...(!isMobile && header?.imgSrc && {
-                style: {
-                    background: `url(${header.imgSrc}) no-repeat 100% 35%`,
-                    backgroundSize: header.coverImage ? "cover" : "",
-                    backgroundBlendMode: header.reduceOpacity ? "overlay" : "",
-                    backgroundColor: header.reduceOpacity ? `rgba(255, 255, 255, ${header.reduceOpacity})` : "",
-                    marginRight: header.coverImage ? '' : '20rem ',
-                },
-            })}>
-            
-            {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
-            
-            {/* Image for mobile - appears above content */}
-            {isMobile && header?.imgSrc && (
-                <div className={styles.mobileImageContainer}>
-                    <img 
-                        src={header.imgSrc} 
-                        alt={header.title || "Header"} 
-                        className={styles.mobileImage}
-                        style={{ opacity: header.reduceOpacity ? header.reduceOpacity : 1 }}
-                    />
-                </div>
+        <div className={cx(styles.headerContainer, className)}>
+            {/* Background layer - only for desktop */}
+            {!isMobile && header?.imgSrc && (
+                <div 
+                    className={styles.backgroundImage}
+                    style={{
+                        backgroundImage: `url(${header.imgSrc})`,
+                        backgroundSize: header.coverImage ? "cover" : "",
+                        backgroundPosition: header.coverImage ? "center" : "100% 35%",
+                        backgroundRepeat: "no-repeat",
+                        opacity: header.reduceOpacity ? header.reduceOpacity : 1,
+                    }}
+                />
             )}
 
+            {/* Video background */}
             {header?.videoUrl && (
                 <video
                     autoPlay
                     muted
                     loop
-                    style={{ opacity: header.reduceOpacity ?? 1 }}
+                    style={{ opacity: header.reduceOpacity ?? 0.5 }}
                     controls={false}
                     playsInline
                     className={styles.video}
@@ -76,17 +62,33 @@ const IntroHeader = ({ header, className }) => {
                 </video>
             )}
 
-            <LetsWorkTogether
-                title={header?.title}
-                description={header?.description}
-                className={styles.header}
-                showSeparator={header?.showSeparator}
-                hrefHeader={header?.hrefHeader}
-                ctaHeader={header?.ctaHeader}
-            />
+            {/* Content layer - always on top */}
+            <div className={styles.contentLayer}>
+                {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
+                
+                {/* Mobile image - in content flow */}
+                {isMobile && header?.imgSrc && (
+                    <div className={styles.mobileImageContainer}>
+                        <img 
+                            src={header.imgSrc} 
+                            alt={header.title || "Header"} 
+                            className={styles.mobileImage}
+                            style={{ opacity: header.reduceOpacity ? header.reduceOpacity : 1 }}
+                        />
+                    </div>
+                )}
+
+                <LetsWorkTogether
+                    title={header?.title}
+                    description={header?.description}
+                    className={styles.header}
+                    showSeparator={header?.showSeparator}
+                    hrefHeader={header?.hrefHeader}
+                    ctaHeader={header?.ctaHeader}
+                />
+            </div>
         </div>
     );
 }
 
 export default IntroHeader;
-

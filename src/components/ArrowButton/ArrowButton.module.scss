@@ -18,10 +18,10 @@
 }
 
 .arrow {
-     height: 24px;
-    width: 24;
+     height: 40px;
+    width: 30;
 transition: transform 0.3s ease, color 0.3s ease;
-    transform: translateX(0);    
+    transform: translateX(2px);    
       // initial state
       flex-shrink: 0;  // Add this to prevent arrow from shrinking
 }

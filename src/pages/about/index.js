@@ -98,13 +98,14 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
                     title={ourApproach.title}
                     description={ourApproach.description}
                     // imgSrc={ourApproach.imgSrc}
+                        divisions={ourApproach.divisions}   
                     className={styles.ourApproach}
                     descriptionTitle={ourApproach.descriptionTitle}
                     // darkMode
                 />
 
                     {CeoSection && (
-                    <LetsWorkTogether
+                    <LetsWorkTogether 
                         title={ceoSection.title}
                         description={ceoSection.description}
                         imgSrc={ceoSection.imgSrc}

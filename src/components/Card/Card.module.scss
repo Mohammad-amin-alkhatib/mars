@@ -4,14 +4,12 @@
 
 .container {
   background: $white;
-  // border: 1px solid $gray-light;
-  // border-bottom: 4px solid $black-200;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding: 40px;
-  width: 100%; // ✅ fill available grid space
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom-color 0.3s ease;
 
   @include bp-below(medium) {
@@ -20,7 +18,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 28px 40px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 16px 20px rgba(255, 0, 0, 0.16);
     border-bottom-color: $orange;
 
     .title {
@@ -29,9 +27,12 @@
       border-color: $orange;
     }
 
-    .learnMore svg {
-      color: $orange;
-      transform: translateX(5px);
+    .readMore {
+      gap: 10px;
+      
+      &::after {
+        transform: translateX(4px);
+      }
     }
 
     .image img {
@@ -43,6 +44,9 @@
 .image {
   align-self: flex-start;  
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
   img {
     height: 280px;
@@ -61,7 +65,7 @@
    @include bp-below(small) {
     img {
       max-width: 100%;
-       object-fit: fill;
+      object-fit: fill;
     }
   }
 }
@@ -95,22 +99,36 @@
   }
 }
 
-.learnMore {
-  
+.readMore {
+  font: 600 16px/28px $gibson;
+  color: $orange;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  color: #767E87;
-  line-height: 28px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  gap: 6px;
+  transition: gap 0.3s ease;
+  text-decoration: none;
+  width: fit-content;
 
-  svg {
-    transition: transform 0.3s ease, color 0.3s ease;
+  &::after {
+    content: '→';
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    gap: 10px;
+    
+    &::after {
+      transform: translateX(4px);
+    }
   }
 
   @include bp-below(medium) {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    
+    &::after {
+      font-size: 16px;
+    }
   }
 }
