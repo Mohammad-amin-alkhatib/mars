@@ -63,8 +63,11 @@ const JobDescription = () => {
       <div className={styles.tag}>{job.leftText}</div>
     </div>
 
-   <button
-  onClick={() => router.push("/registration")}
+ <button
+  onClick={() => router.push({
+    pathname: "/registration",
+    query: { jobTitle: job.title }
+  })}
   className={styles.applyButton}
 >
   Apply for this role
