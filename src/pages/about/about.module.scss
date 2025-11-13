@@ -36,7 +36,9 @@
 
   }
 }
-
+.fullWidthSection {
+  width: 100%;
+ }
 .linkedinIcon {
     margin-top: clamp(10px, 2vw, 15px);
     display: inline-block;
@@ -114,7 +116,40 @@ background: #ebecec;
         height: clamp(20px, 3vw, 25px);
     }
 }
+.heroImageWrapper {
+  width: 100%;
+  margin: 0 0 100px 0; // Space below image
+  overflow: hidden;
 
+  @include bp-below(medium) {
+    margin-bottom: 60px;
+  }
+
+  @include bp-below(small) {
+    margin-bottom: 40px;
+  }
+}
+
+.heroImage {
+   margin: 0 0 100px 0;
+   padding: 0 100px;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 25;
+  object-fit: cover;
+  display: block;
+  
+  @include bp-below(medium) {
+    border-radius: 0 0 16px 16px;
+    max-height: 60vh;
+  }
+
+  @include bp-below(small) {
+    border-radius: 0 0 12px 12px;
+    max-height: 50vh;
+  }
+}
 .arrow {
     svg {
         height: clamp(20px, 3vw, 25px);

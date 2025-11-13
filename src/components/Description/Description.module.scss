@@ -61,7 +61,7 @@
     }
      h1 {
     color: var(--Black, #2E3134);
-    font-family: Gibson;
+    font-family: $gibson;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -70,7 +70,7 @@
   }
     h2 {
         color: var(--Black, #2E3134);
-        font-family: Gibson;
+        font-family: $gibson;
         font-size: 40px;
         font-style: normal;
         font-weight: 600;
@@ -79,7 +79,7 @@
 
      p {
         color: var(--Black, #2E3134);
-        font-family: Gibson;
+        font-family: $gibson;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;

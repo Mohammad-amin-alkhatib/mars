@@ -8,11 +8,16 @@ import Head from "next/head";
 import CaraouselSlider from "@/components/CarouselSlider";
 import InrtoHeader from "@/components/IntroHeader";
 import LetsWorkTogether from "@/components/LetsWorkTogether";
+ 
 import PersonCard from "@/components/PersonCard";
 // Styles
 import styles from "./about.module.scss";
 // Assets
 import Arrow from "@/assets/icons/arrow-no-bg.svg";
+
+  import HorizontalLetsWorkTogether from '@/components/HorizontalLetsWorkTogether';
+
+
 
 const breakpoints = {
     medium: '768px',
@@ -77,43 +82,56 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
 
                 <InrtoHeader header={header} />
                 
-                <LetsWorkTogether
-                    title={ourVision.title}
-                    description={ourVision.description}
-                    // imgSrc={ourVision.imgSrc}
-                    className={styles.ourVision}
-                />
+          <div className={styles.heroImageWrapper}>
+        <img 
+          src="/collage7.png" 
+          alt="About Us - Our Journey" 
+          className={styles.heroImage}
+        />
+      </div>
 
-           <LetsWorkTogether
-    title={ourMission.title}
-    description={ourMission.description}
-    divisions={ourMission.divisions}   
-    imgSrc={ourMission.imgSrc}
-    className={styles.ourMission}
+                
+
+                 
+<div className="aboutPage">
+  <section className={styles.fullWidthSection}>
+    <HorizontalLetsWorkTogether    
+    title={ourVision.title}
+  description={ourVision.description}
+   
+   />
+  </section>
+  <section className={styles.fullWidthSection}>
+    <HorizontalLetsWorkTogether  title={ourApproach.title}
     descriptionTitle={ourMission.descriptionTitle}
-/>
-
-
-                <LetsWorkTogether
-                    title={ourApproach.title}
-                    description={ourApproach.description}
+   description={ourApproach.description}
                     // imgSrc={ourApproach.imgSrc}
-                        divisions={ourApproach.divisions}   
-                    className={styles.ourApproach}
-                    descriptionTitle={ourApproach.descriptionTitle}
-                    // darkMode
-                />
+                        divisions={ourApproach.divisions}
+  
+  
+   />
+  </section>
+  <section className={styles.fullWidthSection}>
+    <HorizontalLetsWorkTogether   title={ourMission.title}
+  description={ourMission.description}
+  divisions={ourMission.divisions}
+   
+  descriptionTitle={ourMission.descriptionTitle}
+   />
+  </section>
 
-                    {CeoSection && (
+   
+</div>
+   {CeoSection && (
                     <LetsWorkTogether 
                         title={ceoSection.title}
                         description={ceoSection.description}
                         imgSrc={ceoSection.imgSrc}
                         className={styles.ceoSection}
                         descriptionTitle={ceoSection.descriptionTitle}
+                          role={ceoSection.role}
                     />
                 )}
-
 
                 {/* {teamMembers && (
                     <div className={styles.meetOurTeam}>
@@ -143,7 +161,7 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
                     title={letsWorkTogether.title}
                     description={letsWorkTogether.description}
                     imgSrc={letsWorkTogether.imgSrc}
-
+                
                     descriptionTitle={letsWorkTogether.descriptionTitle}
 
                 />

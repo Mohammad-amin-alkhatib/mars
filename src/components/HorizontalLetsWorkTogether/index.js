@@ -1,12 +1,12 @@
 import ArrowButton from '../ArrowButton';
 import Separator from '../Separator';
-import styles from './LetsWorkTogether.module.scss';
+import styles from './HorizontalLetsWorkTogether.module.scss';
 import cx from 'classnames';
 
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const LetsWorkTogether = ({
+const HorizontalLetsWorkTogether = ({
     className,
     imgSrc,
     description,
@@ -20,8 +20,7 @@ const LetsWorkTogether = ({
     title,
     hrefHeader,
     ctaHeader,
-     role 
-
+    role 
 }) => {
     const listStyle = Array.isArray(description);
     const [isMobile, setIsMobile] = useState(false);
@@ -59,7 +58,18 @@ const LetsWorkTogether = ({
             }, className)}
             ref={ref}
         >
-            <div className={styles.textPart}>
+            {/* TITLE SECTION - Far Left */}
+            <div className={styles.titleSection}>
+                <div className={styles.revealTextWrapper}>
+                    <h2 className={styles.revealText} ref={titleRef}>{title}</h2>
+                    {inView && <div className={styles.revealOverlay}></div>}
+                </div>
+                 
+                                {showSeparator && <Separator className={styles.separator} />}
+
+            </div>
+  {/* CONTENT SECTION - Far Right */}
+            <div className={styles.contentSection}>
                 {/* Mobile Image - Shows ABOVE content on mobile */}
                 {!!imgSrc && isMobile && (
                     <div className={styles.iconAbove}>
@@ -67,15 +77,9 @@ const LetsWorkTogether = ({
                     </div>
                 )}
 
-                {/* TITLE WITH ANIMATION */}
-                <div className={styles.revealTextWrapper}>
-                    <h2 className={styles.revealText} ref={titleRef}>{title}</h2>
-                    {inView && <div className={styles.revealOverlay}></div>}
-                </div>
+               
 
-                {showSeparator && <Separator className={styles.separator} />}
-
-                {!!descriptionTitle &&  <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
+                {!!descriptionTitle && <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
                              
                 {!!description?.length && !listStyle && (
                     <span
@@ -83,7 +87,9 @@ const LetsWorkTogether = ({
                         dangerouslySetInnerHTML={{ __html: description }}
                     ></span>
                 )}
-                 {!!role && <div className={styles.role}>{role}</div>}  
+
+                {!!role && <div className={styles.role}>{role}</div>}
+                
                 {!!divisions?.length && (
                     <ul className={styles.divisionsList}>
                         {divisions.map((item, index) => (
@@ -94,9 +100,7 @@ const LetsWorkTogether = ({
                         ))}
                     </ul>
                 )}
-                
 
-                
                 {!!description?.length && listStyle && (
                     <ul className={styles.description}>
                         {description.map((item, index) => (
@@ -125,16 +129,16 @@ const LetsWorkTogether = ({
                         Download Brochure
                     </a>
                 )}
+
+                {/* Desktop Image - Shows at bottom of content on desktop */}
+                {!!imgSrc && !isMobile && (
+                    <div className={styles.icon}>
+                        <img src={imgSrc} alt={title || "Section image"} />
+                    </div>
+                )}
             </div>
-            
-            {/* Desktop Image - Shows BESIDE content on desktop */}
-            {!!imgSrc && !isMobile && (
-                <div className={styles.icon}>
-                    <img src={imgSrc} alt={title || "Section image"} />
-                </div>
-            )}
         </div>
     );
 };
 
-export default LetsWorkTogether;
+export default HorizontalLetsWorkTogether;

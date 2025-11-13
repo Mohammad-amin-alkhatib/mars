@@ -4,51 +4,45 @@
 
 .container {
   position: relative;
-  align-items: center;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 80px 100px;
-  gap: 40px;
+  gap: 60px;
 
   @include bp-below(medium) {
     padding: 40px 45px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+    gap: 30px;
   }
 
   @include bp-below(small) {
     padding: 30px 20px;
+    gap: 25px;
   }
 }
-.role {
-    text-align: start;
-    font-size: clamp(16px, 2vw, 20px);
-    color: #555;
-    font-weight: 500;
-    font-family: $gibson;
 
- }
 .transperatBackground {
   background: none;
 }
 
-.textPart {
-  font: $gibson;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  flex: 1;
- 
+ .titleSection {
+  flex-shrink: 0;
+  flex-basis: 35%;
+  max-width: 450px;
+  position: sticky;
+  top: 100px;
+  
+  @include bp-below(large) {
+    flex-basis: 30%;
+    max-width: 350px;
+  }
+
   @include bp-below(medium) {
-    gap: 30px;
+    position: static;
+    flex-basis: auto;
     max-width: 100%;
     width: 100%;
-  }
-  
-  @include bp-below(small) {
-    gap: 25px;
   }
 }
 
@@ -56,6 +50,7 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .revealText {
@@ -108,14 +103,42 @@
   }
 }
 
+/* CONTENT SECTION - Far Right */
+.contentSection {
+  font: $gibson;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  max-width: 800px;
+ 
+  @include bp-below(medium) {
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  @include bp-below(small) {
+    gap: 25px;
+  }
+}
+
+.role {
+  text-align: start;
+  font-size: clamp(16px, 2vw, 20px);
+  color: #555;
+  font-weight: 500;
+  font-family: $gibson;
+}
+
 // Mobile image - shows ABOVE content
 .iconAbove {
   width: 100%;
-  display: none; // Hidden on desktop
+  display: none;
   margin-bottom: 0;
   
   @include bp-below(medium) {
-    display: block; // Show on mobile/tablet
+    display: block;
   }
   
   img {
@@ -136,26 +159,23 @@
   }
 }
 
-// Desktop image - shows BESIDE content
+// Desktop image - shows at bottom of content section
 .icon {
-  flex-shrink: 0;
+  width: 100%;
   display: block;
+  margin-top: 10px;
   
   @include bp-below(medium) {
-    display: none; // Hide on mobile, use iconAbove instead
+    display: none;
   }
   
   img {
     border-radius: 20px;
-    max-width: 70rem;
+    max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    
-    @include bp-below(large) {
-      max-width: 300px;
-    }
   }
 }
 
