@@ -42,6 +42,7 @@ const IntroHeader = ({ header, className }) => {
                         backgroundPosition: header.coverImage ? "center" : "100% 35%",
                         backgroundRepeat: "no-repeat",
                         opacity: header.reduceOpacity ? header.reduceOpacity : 1,
+                        
                     }}
                 />
             )}

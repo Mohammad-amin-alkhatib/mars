@@ -19,7 +19,7 @@
     height: 100%;
     z-index: 0;
     pointer-events: none;
-    
+    background-size: contain;
     @include bp-below(medium) {
         display: none; // Hide on mobile - we'll show it in content flow
     }
