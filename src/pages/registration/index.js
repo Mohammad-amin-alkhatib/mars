@@ -16,7 +16,14 @@ const Registration = () => {
         cv: null,
       });
   const [errors, setErrors] = useState({});
+const [jobTitle, setJobTitle] = useState("");
 
+// Get job title from URL query
+React.useEffect(() => {
+  if (router.isReady && router.query.jobTitle) {
+    setJobTitle(router.query.jobTitle);
+  }
+}, [router.isReady, router.query.jobTitle]);
   // Detect mobile (same logic as your other pages)
   React.useEffect(() => {
     const check = () => {
@@ -75,19 +82,60 @@ const Registration = () => {
   if (!formData.cv) newErrors.cv = "CV is required";
   return newErrors;
 };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  const validationErrors = validate();
+  
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  try {
+    // Create FormData object for file upload
+    const submitData = new FormData(); // Changed variable name to avoid conflict
+    submitData.append('firstName', formData.firstName);
+    submitData.append('lastName', formData.lastName);
+    submitData.append('email', formData.email);
+    submitData.append('phoneNumber', formData.phoneNumber);
+    submitData.append('cv', formData.cv); // This should be the file object
+    submitData.append('jobTitle', jobTitle);
+    // Debug: Check what's being appended
+    console.log('FormData contents:');
+    for (let [key, value] of submitData.entries()) {
+      console.log(key, value);
     }
 
-    alert("Application submitted successfully!");
-    console.log("Form Data:", formData);
+    // Submit to API
+    const response = await fetch('/api/apply', {
+      method: 'POST',
+      body: submitData, // Use the corrected variable name
+    });
 
+    const result = await response.json();
 
-  };
+    if (!response.ok) {
+      throw new Error(result.error || 'Failed to submit application');
+    }
+
+    alert('Application submitted successfully!');
+    console.log('Application submitted:', result);
+
+    // Reset form after successful submission
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      cv: null,
+    });
+    setErrors({});
+
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert(error.message || 'Failed to submit application. Please try again.');
+  }
+};
 //noValidate → disables default HTML5 validation
   return (
     <>
@@ -95,13 +143,14 @@ const Registration = () => {
 
       <div className={styles.container}>
         <div className={styles.inner}>
-          <div className={styles.header}>
-            <h1 className={styles.pageTitle}>Apply for this role</h1>
-            <p className={styles.subtitle}>
-              We’re excited you’re interested in joining us. Please fill out the
-              form below.
-            </p>
-          </div>
+         <div className={styles.header}>
+  <h1 className={styles.pageTitle}>
+    {jobTitle ? `Apply for ${jobTitle} Position` : "Apply for this role"}
+  </h1>
+  <p className={styles.subtitle}>
+    We're excited you're interested in joining us. Please fill out the form below.
+  </p>
+</div>
   
 
           

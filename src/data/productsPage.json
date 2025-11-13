@@ -3,6 +3,8 @@
         "imgSrc": "/New_Products.png",
         "title": "Explore Our Products",
         "description": "We live in an accelerating world. Characterised by uncharted frontiers, the future is empowered by advanced technology that is galvanising a new breed of players. At the edge of these frontiers exists no limits – where boundless opportunities await."
+        ,"coverImage": true,
+        "reduceOpacity": 0.5
         
     },
     "products": [
