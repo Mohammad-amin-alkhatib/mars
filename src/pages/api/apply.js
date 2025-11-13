@@ -56,8 +56,8 @@ export default async function handler(req, res) {
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM || 'Jawabreh@marsrobotic.com',
-      to: process.env.EMAIL_TO || 'mahmoud.Abedelfattah@marsrobotic.com',
+      from: process.env.EMAIL_FROM || 'mahmoud.Abedelfattah@marsrobotic.com',
+      to: process.env.EMAIL_TO || 'Jawabreh@marsrobotic.com',
       subject: `Job Application: ${firstName} ${lastName}`,
       text: `
 New Job Application Received:
