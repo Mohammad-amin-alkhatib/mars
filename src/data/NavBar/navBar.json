@@ -5,12 +5,12 @@
         "hasDropDown": false
     },
     {
-        "title": "Solutions",
+        "title": "What We Do",
         "url": "/solutions",
         "hasDropDown": true,
         "dropDownItems": [
             {
-                "title": "Products",
+                "title": "Our Products",
                 "url": "/products",
                 "menuItems": [
                     {
@@ -36,7 +36,7 @@
                 ]
             },
             {
-                "title": "Services",
+                "title": "Our Services",
                 "url": "/services",
                 "menuItems": [
                     {
