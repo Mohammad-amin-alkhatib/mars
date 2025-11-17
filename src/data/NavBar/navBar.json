@@ -38,16 +38,16 @@
             {
                 "title": "Our Services",
                 "url": "/services",
-                "menuItems": [
-                    {
-                        "subItem": "Systems Operation & Integration",
-                        "url": ""
-                    },
-                    {
-                        "subItem": "Structure, Mechanics & System Design",
-                        "url": ""
-                    }
-                ]
+    "menuItems": [
+    {
+        "subItem": "Systems Operation & Integration",
+        "url": "/services/unmaned-aerial-systems/uasIntegrationoperation/"
+    },
+    {
+        "subItem": "Structure, Mechanics & System Design",
+        "url": "/services/unmaned-aerial-systems/uasdsigndevelopment/"
+    }
+]
             }
         ]
     },
@@ -55,15 +55,7 @@
         "title": "Geomatics & RS",
         "url": "/services/geomatics-and-remote-sensing",
         "hasDropDown": false
-    },
-    {
-        "title": "Media",
-        "url": "/media",
-        "hasDropDown": false
-    },
-    {
-        "title": "Careers",
-        "url": "/careers",
-        "hasDropDown": false
     }
+      
+    
 ]

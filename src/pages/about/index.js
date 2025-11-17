@@ -103,7 +103,7 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
   </section>
   <section className={styles.fullWidthSection}>
     <HorizontalLetsWorkTogether  title={ourApproach.title}
-    descriptionTitle={ourMission.descriptionTitle}
+    descriptionTitle={ourApproach.descriptionTitle}
    description={ourApproach.description}
                     // imgSrc={ourApproach.imgSrc}
                         divisions={ourApproach.divisions}
@@ -130,6 +130,7 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
                         className={styles.ceoSection}
                         descriptionTitle={ceoSection.descriptionTitle}
                           role={ceoSection.role}
+                           showBottomContent={true}
                     />
                 )}
 
@@ -161,7 +162,7 @@ export default function About({ header, ourMission, ourVision, ourApproach,ceoSe
                     title={letsWorkTogether.title}
                     description={letsWorkTogether.description}
                     imgSrc={letsWorkTogether.imgSrc}
-                
+                    className={styles.workWithUs}
                     descriptionTitle={letsWorkTogether.descriptionTitle}
 
                 />
@@ -181,3 +182,4 @@ export async function getStaticProps() {
         },
     };
 }
+// #767e87

@@ -67,6 +67,13 @@
     font-weight: 600;
     line-height: normal;
     margin-bottom: 0px;  
+       @include bp-below(medium) {
+            font-size: 32px;
+        }
+        
+        @include bp-below(small) {
+            font-size: 28px;
+        }
   }
     h2 {
         color: var(--Black, #2E3134);
@@ -75,6 +82,13 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+         @include bp-below(medium) {
+            font-size: 32px;
+        }
+        
+        @include bp-below(small) {
+            font-size: 28px;
+        }
     }
 
      p {
@@ -84,6 +98,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+           @include bp-below(medium) {
+            font-size: 18px;
+        }
+        
+        @include bp-below(small) {
+            font-size: 16px;
+        }
     }
     .subtitle {
   color: var(--Dark-Grey-Grey-8, #7C7C7C);
@@ -96,6 +117,14 @@
   font-weight: 400;
   line-height: 150%;  
   letter-spacing: -0.284px;
+     @include bp-below(medium) {
+            font-size: 17px;
+        }
+        
+        @include bp-below(small) {
+            font-size: 15px;
+        }
+    
 }
 
 }

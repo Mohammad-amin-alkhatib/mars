@@ -59,6 +59,7 @@ const ContactPage = ({ header, getIntouch }) => {
                 title={getIntouch?.title}
                 description={getIntouch?.description}
                 imgSrc={getIntouch?.imgSrc}
+                className={styles.intro}
             />
             <div className={styles.contactUs}>
                 <div className={styles.infoContainer}>

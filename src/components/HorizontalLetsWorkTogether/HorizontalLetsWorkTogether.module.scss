@@ -180,11 +180,18 @@
 }
 
 .descriptionTitle {
-  font-size: clamp(1.125rem, 0.875rem + 1vw, 1.5rem);
+  font-size: 35px;
   font-weight: 600;
   font-family: $gibson;
-  color: $black-200;
+ color: #767E87;
   line-height: 1.4;
+    @include bp-below(medium) {
+    font-size: 30px;
+  }
+  
+  @include bp-below(small) {
+    font-size: 20px;
+  }
 }
 
 .description,

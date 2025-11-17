@@ -173,7 +173,19 @@
         padding: 0.75rem;
     }
 }
+.intro{
+    margin-top: 100px;
+    margin-left: 80px;
+     @include bp-below(medium) {
+   margin-top: 70px;
+    margin-left: 65px;
+  }
 
+  @include bp-below(small) {
+    margin-top: 60px;
+    
+  }
+}
 .info {
     padding: 3rem;
     display: flex;

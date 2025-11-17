@@ -39,11 +39,11 @@ const ProductPage = ({ header, keyFeatures, products, footer }) => {
     return (
         <>
             {header.coverImage ? <InrtoHeader header={header} /> : (<>
-                {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
-                <LetsWorkTogether {...header} />
-            </>)}
+    {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
+    <LetsWorkTogether className={styles.headerWithNav} {...header} />
+</>)}
             {!!products?.length && <CardContainer cards={products} className={styles.productsContainer} />}
-            {!!keyFeatures?.length && <KeyFeatures keyFeaturesKeys={keyFeatures} />}
+{!!keyFeatures?.length && <KeyFeatures keyFeaturesKeys={keyFeatures} className={styles.keyFeaturesContainer} />}
             <LetsWorkTogether
                 className={styles.letsWorkTogether}
                 {...footer}

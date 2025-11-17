@@ -7,7 +7,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 80px 100px;
+  padding-left: 10px;
   gap: 40px;
 
   @include bp-below(medium) {
@@ -22,13 +22,19 @@
   }
 }
 .role {
-    text-align: start;
-    font-size: clamp(16px, 2vw, 20px);
-    color: #555;
-    font-weight: 500;
-    font-family: $gibson;
+  text-align: start;
+  font-size: clamp(16px, 2vw, 20px);
+  color: #555;
+  font-weight: 500;
+  font-family: $gibson;
 
- }
+  // Optional: add spacing from content above
+  margin-top: 20px;
+
+  @include bp-below(medium) {
+    margin-top: 16px;
+  }
+}
 .transperatBackground {
   background: none;
 }
@@ -140,14 +146,12 @@
 .icon {
   flex-shrink: 0;
   display: block;
-  
-  @include bp-below(medium) {
+    @include bp-below(medium) {
     display: none; // Hide on mobile, use iconAbove instead
   }
   
   img {
-    border-radius: 20px;
-    max-width: 70rem;
+     max-width: 70rem;
     width: 100%;
     height: auto;
     display: block;

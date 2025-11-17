@@ -77,7 +77,7 @@
     display: flex;
     align-items: center;
     font-family: $gibson;
-    
+    margin-left: 80px;
     @include bp-below(medium) {
         flex: initial;
         align-items: flex-start;

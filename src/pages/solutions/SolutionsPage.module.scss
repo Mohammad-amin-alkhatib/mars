@@ -20,7 +20,22 @@
     max-width: 553px;
 
 }
+.whyChooseSection{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+     @include bp-below(medium) {
+        margin-left: 40px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    }
 
+    @include bp-below(small) {
+        margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    }
+}
 .containerServices {
     display: flex;
     gap: 40px;

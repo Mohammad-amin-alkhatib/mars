@@ -4,7 +4,7 @@ import LinkdInLogo from '@/assets/icons/linkedIn.svg';
 import FacebookLogo from '@/assets/icons/facebook.svg';
 import styles from './Footer.module.scss';
 import cx from 'classnames';
-
+ 
 const navigation = [
 	{
 		title: 'About Us',
@@ -18,14 +18,7 @@ const navigation = [
 		title: 'Geomatics & RS',
 		url: "/services/geomatics-and-remote-sensing",
 	},
-	{
-		title: 'Media',
-		url: '/media',
-	},
-	{
-		title: 'Careers',
-		url: '/careers',
-	}
+	 
 ]
 
 const contactInfo = {
@@ -75,7 +68,7 @@ const Footer = ({ className }) => {
 						<span>
 							MARSROBOTICS© {new Date().getFullYear()}. All Rights Reserved.
 						</span>
-						<Link href="/privacy-policy">
+						<Link href="/privacypage">
 							Privacy Policy
 						</Link>
 					</div>

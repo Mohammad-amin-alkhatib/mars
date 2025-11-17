@@ -59,6 +59,7 @@ export default function Home({
           title={chooseUs?.title}
           imgSrc={chooseUs?.imgSrc}
           description={chooseUs?.description}
+          className={styles.features}
         />
         {!!ourPartners.length && (
           <div className={styles.scrollerWrapper}>
@@ -83,6 +84,7 @@ export default function Home({
           href={letsWorkTogether?.href}
           imgSrc={letsWorkTogether?.imgSrc}
           textButton={letsWorkTogether?.buttonText}
+           className={styles.WorkWithUs}
         />
       </div >
     </>

@@ -86,7 +86,20 @@ text-transform: uppercase
     flex-direction: column;
     gap: 80px;
 }
+.whyChooseSection{
+     margin-top: 30px;
+        margin-bottom: 20px;
+     @include bp-below(medium) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
 
+    @include bp-below(small) {
+          margin-top: 18px;
+        margin-bottom: 15px;
+         }
+}
 .video,
 .image {
     height: 600px;
@@ -101,7 +114,22 @@ text-transform: uppercase
     font: 20px $gibson;
     gap: 20px;
 }
+.whyChooseSection{
+    margin-left: 40px;
+    margin-bottom: 20px;
+     margin-top: 40px;
+     @include bp-below(medium) {
+        margin-left: 30px;
+        margin-bottom: 18px;
+        margin-top: 30px;
 
+    }
+     @include bp-below(small) {
+       margin-left: 25px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+}
 .cardContainer {
     margin: 0 100px;
 

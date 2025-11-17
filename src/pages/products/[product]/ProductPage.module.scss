@@ -1,13 +1,53 @@
 @import '../../../styles/variables/breakpoints.scss';
 
-.InrtoHeader {
-    background-position-y: 75% !important;
-}
+ .InrtoHeader {
+    margin-top: 8.5vh;    
 
 .productsContainer {
     margin: 33px 100px;
 
     @include bp-below(medium) {
         margin: 33px 45px;
+    }
+}}
+.headerWithNav {
+    margin-top: 120px;  
+    margin-left: 100px;
+    @include bp-below(medium) {
+        margin-top: 40px;  
+        margin-left: 45px;
+    }
+}
+.letsWorkTogether {
+    margin-left: 100px;
+    margin-right: 100px;
+     margin-bottom: 60px;
+    @include bp-below(medium) {
+        margin-left: 45px;
+        margin-right: 45px;
+          margin-bottom: 40px;
+    }
+}.keyFeaturesContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    @include bp-below(medium) {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+.letsWorkTogether{
+         margin-left: 45px;
+           margin-bottom:35px;
+           margin-top: 40px;
+     @include bp-below(medium) {
+        margin-left: 35px;
+           margin-bottom:25px;
+           margin-top: 25px;
+    }
+     @include bp-below(medium) {
+        margin-left:30px;
+        margin-right: 20px;
+          margin-bottom: 20px;
     }
 }

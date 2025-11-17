@@ -25,7 +25,21 @@
     flex-direction: column;
     gap: 80px;
 }
-
+.whyChooseSection{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+   @include bp-below(medium) {
+       margin-top: 20px;
+        margin-left: 35px;
+        margin-bottom: 18px;
+    }
+      @include bp-below(small) {
+       margin-top: 20px;
+        margin-left:28px;
+        margin-bottom: 15px;
+    }
+}
 .video,
 .image {
   align-self: flex-start; // align image with title (left side)
