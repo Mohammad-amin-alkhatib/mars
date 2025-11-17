@@ -12,8 +12,8 @@
   text-align: center;
   margin: 20px auto;
   width: 100%;
-  max-width: 1800px;
- padding: clamp(40px, 5vw, 80px) clamp(25px, 5vw, 80px);
+  max-width: 1200px;
+  padding: clamp(40px, 5vw, 80px) clamp(25px, 8vw, 100px);
 
   @include bp-below(medium) {
     padding: clamp(30px, 4vw, 60px) clamp(20px, 5vw, 50px);
@@ -36,9 +36,7 @@
 
   }
 }
-.fullWidthSection {
-  width: 100%;
- }
+
 .linkedinIcon {
     margin-top: clamp(10px, 2vw, 15px);
     display: inline-block;
@@ -116,58 +114,7 @@ background: #ebecec;
         height: clamp(20px, 3vw, 25px);
     }
 }
-.heroImageWrapper {
-  width: 100%;
- margin: 0 0 clamp(40px, 8vw, 100px) 0; // Space below image
-  overflow: hidden;
 
-  @include bp-below(medium) {
-   margin-bottom: clamp(30px, 6vw, 60px);
-  }
-
-  @include bp-below(small) {
-   margin-bottom: clamp(20px, 5vw, 40px);
-  }
-  
-}
-.workWithUs{
-  margin-left: 20px;
-  margin-top: 35px;
-  margin-bottom: 15px;
-   @include bp-below(medium) {
-    margin-left: 20px;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  }
-
-  @include bp-below(small) {
-    margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  }
-}
-.heroImage {
-  margin: 0;   
-  padding: 0 100px;
-  width: 100%;
-  height: auto;
-  max-height: 80vh;
-  border-radius: 25px;
-  object-fit: cover;
-  display: block;
-  
-  @include bp-below(medium) {
-    padding: 0 50px;  
-    border-radius: 16px;
-    max-height: 60vh;
-  }
-
-  @include bp-below(small) {
-    padding: 0 20px;  
-    border-radius: 12px;
-    max-height: 50vh;
-  }
-}
 .arrow {
     svg {
         height: clamp(20px, 3vw, 25px);

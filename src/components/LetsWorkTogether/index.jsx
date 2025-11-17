@@ -19,9 +19,7 @@ const LetsWorkTogether = ({
     pdfFile,
     title,
     hrefHeader,
-    ctaHeader,
-     role 
-
+    ctaHeader
 }) => {
     const listStyle = Array.isArray(description);
     const [isMobile, setIsMobile] = useState(false);
@@ -76,14 +74,14 @@ const LetsWorkTogether = ({
                 {showSeparator && <Separator className={styles.separator} />}
 
                 {!!descriptionTitle &&  <div className={styles.descriptionTitle}>{descriptionTitle}</div>}
-                             
+                                
                 {!!description?.length && !listStyle && (
                     <span
                         className={styles.description}
                         dangerouslySetInnerHTML={{ __html: description }}
                     ></span>
                 )}
-                 {!!role && <div className={styles.role}>{role}</div>}  
+
                 {!!divisions?.length && (
                     <ul className={styles.divisionsList}>
                         {divisions.map((item, index) => (

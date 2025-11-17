@@ -4,21 +4,17 @@
 
 .container {
   //Main page container with light gray background
-  margin-top: 60px;
+  margin-top: 20px;
   background-color: #fafafa;
   min-height: 100vh;
   padding: 80px 100px;
 
   @include bp-below(medium) {
     padding: 60px 45px;
-      margin-top: 50px;
-
   }
 
   @include bp-below(small) {
     padding: 40px 20px;
-          margin-top: 30px;
-
   }
 }
 

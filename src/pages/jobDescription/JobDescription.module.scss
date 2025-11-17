@@ -4,16 +4,16 @@
 .jobsContainer {
   background-color: #FAFAFA;
   padding: 50px 100px;
-  margin-top: 70px;
+  margin-top: 35px;
 
   @include bp-below(medium) {
     padding: 30px 45px;
-     margin-top: 40px;
+     margin-top: 20px;
   }
 
   @include bp-below(small) {
     padding: 30px 20px;
-         margin-top: 30px;
+         margin-top: 20px;
 
   }
 }

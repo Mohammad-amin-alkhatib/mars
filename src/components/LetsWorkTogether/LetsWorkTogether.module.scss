@@ -7,7 +7,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
+  padding: 80px 100px;
   gap: 40px;
 
   @include bp-below(medium) {
@@ -21,32 +21,18 @@
     padding: 30px 20px;
   }
 }
-.role {
-  text-align: start;
-  font-size: clamp(16px, 2vw, 20px);
-  color: #555;
-  font-weight: 500;
-  font-family: $gibson;
 
-  // Optional: add spacing from content above
-  margin-top: 20px;
-
-  @include bp-below(medium) {
-    margin-top: 16px;
-  }
-}
 .transperatBackground {
   background: none;
 }
 
 .textPart {
-  font: $gibson;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
   max-width: 800px;
   flex: 1;
- 
+
   @include bp-below(medium) {
     gap: 30px;
     max-width: 100%;
@@ -146,12 +132,14 @@
 .icon {
   flex-shrink: 0;
   display: block;
-    @include bp-below(medium) {
+  
+  @include bp-below(medium) {
     display: none; // Hide on mobile, use iconAbove instead
   }
   
   img {
-     max-width: 70rem;
+    border-radius: 20px;
+    max-width: 70rem;
     width: 100%;
     height: auto;
     display: block;

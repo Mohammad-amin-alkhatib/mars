@@ -40,26 +40,7 @@
         text-align: justify;
     }
 }
-.features{
-    margin-top: 15px;
-    margin-left:80px;
-     @include bp-below(medium) {
-    margin-left: 50px;
-    } @include bp-below(small) {
-    margin-left: 40px;
-    }
-}
-.WorkWithUs{
-     margin-top: 40px;
-    margin-left:80px;
-     @include bp-below(medium) {
-    margin-left: 50px;
-    margin-top: 30px;
-    } @include bp-below(small) {
-    margin-left: 40px;
-    margin-top: 25px;
-    }
-}
+
 .scrollerWrapper {
     overflow: hidden;
     position: relative;
