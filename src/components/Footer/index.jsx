@@ -45,7 +45,7 @@ const Footer = ({ className }) => {
 						<a href="https://www.linkedin.com/company/mars-robotics" target='_blank'>
 							<LinkdInLogo className={styles.socialIcon} alt="LinkedIn Icon" />
 						</a>
-						<a href="https://web.facebook.com/marsroboticc" target='_blank'>
+						<a href="https://www.facebook.com/marsrobotic/" target='_blank'>
 							<FacebookLogo className={styles.socialIcon} alt="Facebook Icon" />
 						</a>
 					</div>
