@@ -21,7 +21,21 @@
     padding: 30px 20px;
   }
 }
-
+.role {
+  font-size: 18px;
+  font-family: $gibson;
+  font-weight: 500;
+  font-family: $gibson;
+  color: gray;
+   line-height: 1.5;
+  
+  @include bp-below(medium) {
+    font-size: 16px
+  }
+   @include bp-below(small) {
+    font-size: 14px
+  }
+}
 .transperatBackground {
   background: none;
 }
@@ -100,14 +114,13 @@
   }
 }
 
-// Mobile image - shows ABOVE content
-.iconAbove {
+ .iconAbove {
   width: 100%;
-  display: none; // Hidden on desktop
+  display: none;  
   margin-bottom: 0;
   
   @include bp-below(medium) {
-    display: block; // Show on mobile/tablet
+    display: block;  
   }
   
   img {

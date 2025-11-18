@@ -58,7 +58,30 @@
     padding: clamp(40px, 5vw, 80px) 20px;
     width: 100%;
 }
+.heroImageWrapper {
+  width: 100%;
+  margin: clamp(20px, 3vw, 40px) clamp(15px, 3vw, 40px);
+  
+  @include bp-below(medium) {
+    margin: 20px 20px;
+  }
 
+  @include bp-below(small) {
+    margin: 15px 15px;
+  }
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: clamp(8px, 1.5vw, 16px);
+  
+  @include bp-below(small) {
+    border-radius: 8px;
+  }
+}
 .meetOurTeam {
     margin: clamp(40px, 5vw, 70px) clamp(20px, 5vw, 100px);
 

@@ -19,7 +19,8 @@ const LetsWorkTogether = ({
     pdfFile,
     title,
     hrefHeader,
-    ctaHeader
+    ctaHeader,
+     role
 }) => {
     const listStyle = Array.isArray(description);
     const [isMobile, setIsMobile] = useState(false);
@@ -95,7 +96,7 @@ const LetsWorkTogether = ({
                 
 
                 
-                {!!description?.length && listStyle && (
+                            {!!description?.length && listStyle && (
                     <ul className={styles.description}>
                         {description.map((item, index) => (
                             <li key={index} className={styles.listItem}>
@@ -104,6 +105,11 @@ const LetsWorkTogether = ({
                             </li>
                         ))}
                     </ul>
+                )}
+
+                {/* Add this role section */}
+                {!!role && (
+                    <div className={styles.role}>{role}</div>
                 )}
                 
                 {!!hrefHeader && (
