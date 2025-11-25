@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => {
             <h1 className={styles.headerTitle}>Privacy Policy</h1>
             <p className={styles.headerSubtitle}>We care about your privacy</p>
             <p className={styles.headerDescription}>
-              Explore how Sirius can transform your workflow and elevate your team's collaboration.
+              Explore how Sirius can transform your workflow and elevate your team&apos;s collaboration.
             </p>
           </div>
         </div>
@@ -33,16 +33,8 @@ const PrivacyPolicyPage = () => {
           </div>
         </div>
       </main>
-     
     </>
   );
 };
 
 export default PrivacyPolicyPage;
-
-
-
-
-
-
-
